@@ -1,0 +1,146 @@
+{
+  "accuracy": 0.9903864278982092,
+  "best_epoch": 4,
+  "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+  "candidate": "regularized_mlp_final",
+  "candidate_spec": {
+    "dropout": 0.4,
+    "label_smoothing": 0.05,
+    "readout": "regularized official final-normed last-block concat"
+  },
+  "checkpoint_file": "/kaggle/working/v7_dinov3_vit7b_frozen_raw/heads/assessment_selected_regularized_mlp_final_fold2_seed42.pt",
+  "class_weights_from_training_partition": [
+    0.8843605518341064,
+    2.2322499752044678,
+    0.7036005854606628
+  ],
+  "classification_report": {
+    "Electronic": {
+      "f1-score": 0.9936868686868687,
+      "precision": 0.9936868686868687,
+      "recall": 0.9936868686868687,
+      "support": 792.0
+    },
+    "Organic": {
+      "f1-score": 0.9912280701754386,
+      "precision": 0.9932081502197363,
+      "recall": 0.9892558694787107,
+      "support": 2513.0
+    },
+    "Recyclable": {
+      "f1-score": 0.9880299251870324,
+      "precision": 0.9855721393034826,
+      "recall": 0.9905,
+      "support": 2000.0
+    },
+    "accuracy": 0.9903864278982092,
+    "macro avg": {
+      "f1-score": 0.9909816213497799,
+      "precision": 0.9908223860700293,
+      "recall": 0.9911475793885266,
+      "support": 5305.0
+    },
+    "weighted avg": {
+      "f1-score": 0.9903894421724678,
+      "precision": 0.9904008218867414,
+      "recall": 0.9903864278982092,
+      "support": 5305.0
+    }
+  },
+  "confidence_summary": {
+    "all": {
+      "count": 5305,
+      "mean": 0.9320267181144808,
+      "median": 0.9430859684944153,
+      "q10": 0.8951839327812194,
+      "q90": 0.9833319067955018,
+      "std": 0.06454393614093881
+    },
+    "correct": {
+      "count": 5254,
+      "mean": 0.9346252941601986,
+      "median": 0.9432995915412903,
+      "q10": 0.8987386465072632,
+      "q90": 0.9835393130779266,
+      "std": 0.057304719841328774
+    },
+    "errors": {
+      "count": 51,
+      "mean": 0.6643224329340691,
+      "median": 0.6713024973869324,
+      "q10": 0.4816145896911621,
+      "q90": 0.901040256023407,
+      "std": 0.15058926017756002
+    }
+  },
+  "confusion_matrix": [
+    [
+      1981,
+      3,
+      16
+    ],
+    [
+      4,
+      787,
+      1
+    ],
+    [
+      25,
+      2,
+      2486
+    ]
+  ],
+  "history_file": "/kaggle/working/v7_dinov3_vit7b_frozen_raw/heads/assessment_selected_regularized_mlp_final_fold2_seed42_history.csv",
+  "macro_f1": 0.9909816213497799,
+  "multiclass_log_loss": 0.08507380155462374,
+  "organic_to_recyclable": 25,
+  "parameter_count": 4212739,
+  "prediction_file": "/kaggle/working/v7_dinov3_vit7b_frozen_raw/heads/assessment_selected_regularized_mlp_final_fold2_seed42_predictions.csv",
+  "recyclable_to_organic": 16,
+  "revision_marker": "v7_official_final_norm_before_pooling_v2",
+  "rows": 5305,
+  "schema_version": 1,
+  "seed": 42,
+  "stage": "assessment_selected",
+  "top_two_margin_summary": {
+    "all": {
+      "count": 5305,
+      "mean": 0.8834505392295224,
+      "median": 0.8997492417693138,
+      "q10": 0.8292433992028236,
+      "q90": 0.9726817011833191,
+      "std": 0.10996629169009027
+    },
+    "correct": {
+      "count": 5254,
+      "mean": 0.8879776631381816,
+      "median": 0.900318069383502,
+      "q10": 0.8333798203617334,
+      "q90": 0.9729117630049586,
+      "std": 0.09680644998861503
+    },
+    "errors": {
+      "count": 51,
+      "mean": 0.4170680095021631,
+      "median": 0.4025309085845947,
+      "q10": 0.05854526162147522,
+      "q90": 0.8365026265382767,
+      "std": 0.26980520587963386
+    }
+  },
+  "total_errors": 51,
+  "train_class_counts": [
+    7999,
+    3169,
+    10054
+  ],
+  "trainable_parameter_count": 4212739,
+  "training_folds": [
+    0,
+    1,
+    3,
+    4
+  ],
+  "training_seconds": 13.581029966000642,
+  "validation_fold": 2
+}

@@ -1,0 +1,17 @@
+{
+  "assessment_folds_accessed_during_selection": [],
+  "baseline_fold0_macro_f1": 0.987817584442138,
+  "baseline_head": "baseline_mlp_final",
+  "best_ranked_gain_over_baseline": 0.002100427348463829,
+  "best_ranked_head": "regularized_mlp_final",
+  "development_fold": 0,
+  "minimum_nonbaseline_gain": 0.0002,
+  "revision_marker": "v7_official_final_norm_before_pooling_v2",
+  "schema_version": 1,
+  "selected_fold0_log_loss": 0.10112759881958534,
+  "selected_fold0_macro_f1": 0.9899180117906018,
+  "selected_head": "regularized_mlp_final",
+  "selection_metric": "macro_f1",
+  "selection_reason": "best fold-0 Macro F1 and gain cleared the locked anti-noise threshold",
+  "tie_break": "lower multiclass log loss, then fixed candidate order"
+}

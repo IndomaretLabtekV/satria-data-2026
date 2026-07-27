@@ -1,0 +1,1110 @@
+{
+  "artifact_inventory": {
+    "feature_shard_count": 104,
+    "head_files": [
+      "assessment_baseline_baseline_mlp_final_fold1_seed42.pt",
+      "assessment_baseline_baseline_mlp_final_fold1_seed42_classification_report.csv",
+      "assessment_baseline_baseline_mlp_final_fold1_seed42_history.csv",
+      "assessment_baseline_baseline_mlp_final_fold1_seed42_metrics.json",
+      "assessment_baseline_baseline_mlp_final_fold1_seed42_predictions.csv",
+      "assessment_baseline_baseline_mlp_final_fold2_seed42.pt",
+      "assessment_baseline_baseline_mlp_final_fold2_seed42_classification_report.csv",
+      "assessment_baseline_baseline_mlp_final_fold2_seed42_history.csv",
+      "assessment_baseline_baseline_mlp_final_fold2_seed42_metrics.json",
+      "assessment_baseline_baseline_mlp_final_fold2_seed42_predictions.csv",
+      "assessment_baseline_baseline_mlp_final_fold3_seed42.pt",
+      "assessment_baseline_baseline_mlp_final_fold3_seed42_classification_report.csv",
+      "assessment_baseline_baseline_mlp_final_fold3_seed42_history.csv",
+      "assessment_baseline_baseline_mlp_final_fold3_seed42_metrics.json",
+      "assessment_baseline_baseline_mlp_final_fold3_seed42_predictions.csv",
+      "assessment_baseline_baseline_mlp_final_fold4_seed42.pt",
+      "assessment_baseline_baseline_mlp_final_fold4_seed42_classification_report.csv",
+      "assessment_baseline_baseline_mlp_final_fold4_seed42_history.csv",
+      "assessment_baseline_baseline_mlp_final_fold4_seed42_metrics.json",
+      "assessment_baseline_baseline_mlp_final_fold4_seed42_predictions.csv",
+      "assessment_selected_regularized_mlp_final_fold1_seed42.pt",
+      "assessment_selected_regularized_mlp_final_fold1_seed42_classification_report.csv",
+      "assessment_selected_regularized_mlp_final_fold1_seed42_history.csv",
+      "assessment_selected_regularized_mlp_final_fold1_seed42_metrics.json",
+      "assessment_selected_regularized_mlp_final_fold1_seed42_predictions.csv",
+      "assessment_selected_regularized_mlp_final_fold2_seed42.pt",
+      "assessment_selected_regularized_mlp_final_fold2_seed42_classification_report.csv",
+      "assessment_selected_regularized_mlp_final_fold2_seed42_history.csv",
+      "assessment_selected_regularized_mlp_final_fold2_seed42_metrics.json",
+      "assessment_selected_regularized_mlp_final_fold2_seed42_predictions.csv",
+      "assessment_selected_regularized_mlp_final_fold3_seed42.pt",
+      "assessment_selected_regularized_mlp_final_fold3_seed42_classification_report.csv",
+      "assessment_selected_regularized_mlp_final_fold3_seed42_history.csv",
+      "assessment_selected_regularized_mlp_final_fold3_seed42_metrics.json",
+      "assessment_selected_regularized_mlp_final_fold3_seed42_predictions.csv",
+      "assessment_selected_regularized_mlp_final_fold4_seed42.pt",
+      "assessment_selected_regularized_mlp_final_fold4_seed42_classification_report.csv",
+      "assessment_selected_regularized_mlp_final_fold4_seed42_history.csv",
+      "assessment_selected_regularized_mlp_final_fold4_seed42_metrics.json",
+      "assessment_selected_regularized_mlp_final_fold4_seed42_predictions.csv",
+      "development_baseline_mlp_final_fold0_seed42.pt",
+      "development_baseline_mlp_final_fold0_seed42_classification_report.csv",
+      "development_baseline_mlp_final_fold0_seed42_history.csv",
+      "development_baseline_mlp_final_fold0_seed42_metrics.json",
+      "development_baseline_mlp_final_fold0_seed42_predictions.csv",
+      "development_cosine_classifier_final_fold0_seed42.pt",
+      "development_cosine_classifier_final_fold0_seed42_classification_report.csv",
+      "development_cosine_classifier_final_fold0_seed42_history.csv",
+      "development_cosine_classifier_final_fold0_seed42_metrics.json",
+      "development_cosine_classifier_final_fold0_seed42_predictions.csv",
+      "development_dual_branch_gated_final_fold0_seed42.pt",
+      "development_dual_branch_gated_final_fold0_seed42_classification_report.csv",
+      "development_dual_branch_gated_final_fold0_seed42_history.csv",
+      "development_dual_branch_gated_final_fold0_seed42_metrics.json",
+      "development_dual_branch_gated_final_fold0_seed42_predictions.csv",
+      "development_last4_layer_weighted_gated_fold0_seed42.pt",
+      "development_last4_layer_weighted_gated_fold0_seed42_classification_report.csv",
+      "development_last4_layer_weighted_gated_fold0_seed42_history.csv",
+      "development_last4_layer_weighted_gated_fold0_seed42_metrics.json",
+      "development_last4_layer_weighted_gated_fold0_seed42_predictions.csv",
+      "development_regularized_mlp_final_fold0_seed42.pt",
+      "development_regularized_mlp_final_fold0_seed42_classification_report.csv",
+      "development_regularized_mlp_final_fold0_seed42_history.csv",
+      "development_regularized_mlp_final_fold0_seed42_metrics.json",
+      "development_regularized_mlp_final_fold0_seed42_predictions.csv"
+    ],
+    "safe_image_count": 233,
+    "top_level_files": [
+      "assessment_aggregate_comparison.csv",
+      "assessment_baseline_classification_report.csv",
+      "assessment_baseline_metrics_folds1_4.json",
+      "assessment_baseline_predictions_folds1_4.csv",
+      "assessment_confidence_margin_distributions.png",
+      "assessment_confusion_matrices.png",
+      "assessment_per_fold_comparison.csv",
+      "assessment_per_fold_metrics.json",
+      "assessment_selected_classification_report.csv",
+      "assessment_selected_metrics_folds1_4.json",
+      "assessment_selected_predictions_folds1_4.csv",
+      "baseline_comparison_table.csv",
+      "data_and_fold_signature.json",
+      "experiment_decision.json",
+      "feature_cache_manifest.json",
+      "fold0_head_comparison.csv",
+      "fold0_head_metrics.json",
+      "fold_assignments.csv",
+      "head_selection.json",
+      "model_and_preprocess_audit.json",
+      "preflight_report.json",
+      "run_manifest.json",
+      "runtime_and_memory_summary.json",
+      "safe_image_map_train.csv",
+      "selected_assessment_high_confidence_errors.csv",
+      "selected_assessment_recyclable_organic_gallery.csv",
+      "selected_assessment_recyclable_organic_gallery.png"
+    ]
+  },
+  "backbone_baseline_fold0_metrics": {
+    "accuracy": 0.9856765925367509,
+    "best_epoch": 3,
+    "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+    "candidate": "baseline_mlp_final",
+    "candidate_spec": {
+      "dropout": 0.2,
+      "label_smoothing": 0.0,
+      "readout": "official final-normed last-block concat CLS+true-patch mean; v6 conceptual head control"
+    },
+    "checkpoint_file": "/kaggle/working/v7_dinov3_vit7b_frozen_raw/heads/development_baseline_mlp_final_fold0_seed42.pt",
+    "class_weights_from_training_partition": [
+      0.8843188881874084,
+      2.232144832611084,
+      0.7036373615264893
+    ],
+    "classification_report": {
+      "Electronic": {
+        "f1-score": 0.9962073324905183,
+        "precision": 0.9974683544303797,
+        "recall": 0.9949494949494949,
+        "support": 792.0
+      },
+      "Organic": {
+        "f1-score": 0.9854726368159203,
+        "precision": 0.9860613301473516,
+        "recall": 0.984884645982498,
+        "support": 2514.0
+      },
+      "Recyclable": {
+        "f1-score": 0.981772784019975,
+        "precision": 0.9805486284289276,
+        "recall": 0.983,
+        "support": 2000.0
+      },
+      "accuracy": 0.9856765925367509,
+      "macro avg": {
+        "f1-score": 0.987817584442138,
+        "precision": 0.988026104335553,
+        "recall": 0.9876113803106644,
+        "support": 5306.0
+      },
+      "weighted avg": {
+        "f1-score": 0.9856803589008036,
+        "precision": 0.9856860869877795,
+        "recall": 0.9856765925367509,
+        "support": 5306.0
+      }
+    },
+    "confidence_summary": {
+      "all": {
+        "count": 5306,
+        "mean": 0.9925749834038562,
+        "median": 0.9999998807907104,
+        "q10": 0.9993412494659424,
+        "q90": 1.0,
+        "std": 0.045494964737682456
+      },
+      "correct": {
+        "count": 5230,
+        "mean": 0.9950562194132212,
+        "median": 0.9999998807907104,
+        "q10": 0.999600350856781,
+        "q90": 1.0,
+        "std": 0.03582245592314738
+      },
+      "errors": {
+        "count": 76,
+        "mean": 0.821826768548865,
+        "median": 0.893058717250824,
+        "q10": 0.5871812105178833,
+        "q90": 0.9977143406867981,
+        "std": 0.16314956952114174
+      }
+    },
+    "confusion_matrix": [
+      [
+        1966,
+        1,
+        33
+      ],
+      [
+        2,
+        788,
+        2
+      ],
+      [
+        37,
+        1,
+        2476
+      ]
+    ],
+    "history_file": "/kaggle/working/v7_dinov3_vit7b_frozen_raw/heads/development_baseline_mlp_final_fold0_seed42_history.csv",
+    "macro_f1": 0.987817584442138,
+    "multiclass_log_loss": 0.05007229091717252,
+    "organic_to_recyclable": 37,
+    "parameter_count": 4212739,
+    "prediction_file": "/kaggle/working/v7_dinov3_vit7b_frozen_raw/heads/development_baseline_mlp_final_fold0_seed42_predictions.csv",
+    "recyclable_to_organic": 33,
+    "revision_marker": "v7_official_final_norm_before_pooling_v2",
+    "rows": 5306,
+    "schema_version": 1,
+    "seed": 42,
+    "stage": "development",
+    "top_two_margin_summary": {
+      "all": {
+        "count": 5306,
+        "mean": 0.9852786452821988,
+        "median": 0.9999997346545726,
+        "q10": 0.9987058145925403,
+        "q90": 0.9999999999239536,
+        "std": 0.09025434194387662
+      },
+      "correct": {
+        "count": 5230,
+        "mean": 0.9902317450702199,
+        "median": 0.9999997479715717,
+        "q10": 0.9992059201875236,
+        "q90": 0.9999999999284849,
+        "std": 0.07078551569590064
+      },
+      "errors": {
+        "count": 76,
+        "mean": 0.644427173027585,
+        "median": 0.7861326783895493,
+        "q10": 0.17923198640346527,
+        "q90": 0.9956638854346238,
+        "std": 0.3256271409340636
+      }
+    },
+    "total_errors": 76,
+    "train_class_counts": [
+      7999,
+      3169,
+      10053
+    ],
+    "trainable_parameter_count": 4212739,
+    "training_folds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "training_seconds": 12.249063512999783,
+    "validation_fold": 0
+  },
+  "baseline_assessment_metrics": {
+    "accuracy": 0.9880778474152961,
+    "candidate": "baseline_mlp_final",
+    "classification_report": {
+      "Electronic": {
+        "f1-score": 0.9938514898313101,
+        "precision": 0.9930686830497795,
+        "recall": 0.9946355317134743,
+        "support": 3169.0
+      },
+      "Organic": {
+        "f1-score": 0.9886890228710947,
+        "precision": 0.9905151757188498,
+        "recall": 0.9868695911668158,
+        "support": 10053.0
+      },
+      "Recyclable": {
+        "f1-score": 0.9850280723643169,
+        "precision": 0.9830656207197112,
+        "recall": 0.9869983747968496,
+        "support": 7999.0
+      },
+      "accuracy": 0.9880778474152961,
+      "macro avg": {
+        "f1-score": 0.9891895283555739,
+        "precision": 0.9888831598294469,
+        "recall": 0.9895011658923799,
+        "support": 21221.0
+      },
+      "weighted avg": {
+        "f1-score": 0.9880799994835638,
+        "precision": 0.9880884792527834,
+        "recall": 0.9880778474152961,
+        "support": 21221.0
+      }
+    },
+    "confidence_summary": {
+      "all": {
+        "count": 21221,
+        "mean": 0.996184096054197,
+        "median": 1.0,
+        "q10": 0.9999743700027466,
+        "q90": 1.0,
+        "std": 0.031588622694818505
+      },
+      "correct": {
+        "count": 20968,
+        "mean": 0.9974712038619493,
+        "median": 1.0,
+        "q10": 0.9999837875366211,
+        "q90": 1.0,
+        "std": 0.024531773855890004
+      },
+      "errors": {
+        "count": 253,
+        "mean": 0.8895118568725737,
+        "median": 0.9804588556289673,
+        "q10": 0.6247869968414307,
+        "q90": 0.9999708890914917,
+        "std": 0.14934457433407547
+      }
+    },
+    "confusion_matrix": [
+      [
+        7895,
+        15,
+        89
+      ],
+      [
+        11,
+        3152,
+        6
+      ],
+      [
+        125,
+        7,
+        9921
+      ]
+    ],
+    "folds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "macro_f1": 0.9891895283555739,
+    "multiclass_log_loss": 0.06491023841991393,
+    "organic_to_recyclable": 125,
+    "recyclable_to_organic": 89,
+    "role": "baseline",
+    "rows": 21221,
+    "top_two_margin_summary": {
+      "all": {
+        "count": 21221,
+        "mean": 0.9924688224178279,
+        "median": 0.9999999992670203,
+        "q10": 0.9999492225178983,
+        "q90": 0.9999999999999446,
+        "std": 0.06232168501534622
+      },
+      "correct": {
+        "count": 20968,
+        "mean": 0.9950030446604688,
+        "median": 0.9999999993425603,
+        "q10": 0.9999681061815864,
+        "q90": 0.999999999999947,
+        "std": 0.04845327873924292
+      },
+      "errors": {
+        "count": 253,
+        "mean": 0.7824388936285173,
+        "median": 0.9609192162752151,
+        "q10": 0.258757770061493,
+        "q90": 0.9999452971191204,
+        "std": 0.29421337978670986
+      }
+    },
+    "total_errors": 253
+  },
+  "cached_representation": "official pretrained final LayerNorm per token before CLS/true-patch pooling",
+  "competition_compliance": {
+    "competition_test_accessed": false,
+    "development_data": "official labeled raw train images only",
+    "external_labels_used": false,
+    "official_class_codes": {
+      "0": "Recyclable",
+      "1": "Electronic",
+      "2": "Organic"
+    },
+    "prediction_features": "official-final-normed per-token visual backbone representations pooled as CLS/true-patch mean only",
+    "public_pretrained_model_documented": "facebook/dinov3-vit7b16-pretrain-lvd1689m",
+    "submission_created": false,
+    "visual_information_only": true
+  },
+  "data_and_fold_signature": {
+    "canonical_data": "official raw labeled train only",
+    "fold_assignment_sha256": "0a06976e5dc3cdb0b3f1f5043ff033bf95a40dd2b0cb82154bbf34d701ee305c",
+    "fold_class_counts": {
+      "0": {
+        "0": 2000,
+        "1": 792,
+        "2": 2514
+      },
+      "1": {
+        "0": 2000,
+        "1": 792,
+        "2": 2514
+      },
+      "2": {
+        "0": 2000,
+        "1": 792,
+        "2": 2513
+      },
+      "3": {
+        "0": 2000,
+        "1": 792,
+        "2": 2513
+      },
+      "4": {
+        "0": 1999,
+        "1": 793,
+        "2": 2513
+      }
+    },
+    "fold_definition": {
+      "implementation": "sklearn.model_selection.StratifiedKFold",
+      "n_splits": 5,
+      "ordering": "relative image_id ascending before split",
+      "random_state": 42,
+      "shuffle": true
+    },
+    "labels_sha256": "719d36e9918b1fd09711c06d1b259fca08ca6eb4d973de1388d5e3ddecf22d35",
+    "official_class_codes": {
+      "0": "Recyclable",
+      "1": "Electronic",
+      "2": "Organic"
+    },
+    "ordered_image_ids_sha256": "210f8f14797be49bad962e81f1da660a257ec28ee2136b54a7516950a66cb2e8",
+    "preflight_contract_signature": "961831943107801b06846ea7dfa69877601e0d2e0defd6e71c3a14c97ffa64cf",
+    "raw_class_counts": {
+      "0": 9999,
+      "1": 3961,
+      "2": 12567
+    },
+    "raw_data_sha256": "73bd0d3c17e75e7c0f10e4324ffa9ef81f6224cd2b3ba0e53e9f2aea7fde3212",
+    "row_count": 26527,
+    "schema_version": 1
+  },
+  "environment": {
+    "accelerate_version": "1.13.0",
+    "cuda_version": "12.8",
+    "platform": "Linux-6.12.90+-x86_64-with-glibc2.35",
+    "python_version": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+    "safetensors_version": "0.7.0",
+    "torch_version": "2.10.0+cu128",
+    "transformers_version": "4.57.6"
+  },
+  "experiment_decision": {
+    "backbone_baseline_result": {
+      "accuracy": 0.9856765925367509,
+      "development_fold": 0,
+      "gate": "strong backbone signal",
+      "head": "baseline_mlp_final",
+      "macro_f1": 0.987817584442138,
+      "multiclass_log_loss": 0.05007229091717252,
+      "representation": "official pretrained final LayerNorm per token before final-block CLS/true-patch pooling"
+    },
+    "comparability_limitations": [
+      "V7 is native 256px FP16 with the official pretrained final LayerNorm applied per token before CLS/true-patch pooling for each cached late block.",
+      "Prior project references used different resolution, precision, views, and/or seed aggregation.",
+      "Numerical differences are project decision evidence, not protocol-matched causal backbone effects."
+    ],
+    "experiment": "v7_dinov3_vit7b_frozen_raw",
+    "experiment_purpose": "native-resolution ViT-7B frozen feasibility/performance experiment",
+    "feasibility_runtime_evidence": {
+      "estimated_full_train_hours": 1.8833080148643666,
+      "feature_cache_complete": true,
+      "minimum_throughput_images_per_second": 0.8,
+      "preflight_passed": true,
+      "throughput_images_per_second": 3.9125894717979994,
+      "two_t4_device_map": {
+        "embeddings": "cuda:0",
+        "layer.0": "cuda:0",
+        "layer.1": "cuda:0",
+        "layer.10": "cuda:0",
+        "layer.11": "cuda:0",
+        "layer.12": "cuda:0",
+        "layer.13": "cuda:0",
+        "layer.14": "cuda:0",
+        "layer.15": "cuda:0",
+        "layer.16": "cuda:0",
+        "layer.17": "cuda:0",
+        "layer.18": "cuda:0",
+        "layer.19": "cuda:0",
+        "layer.2": "cuda:0",
+        "layer.20": "cuda:1",
+        "layer.21": "cuda:1",
+        "layer.22": "cuda:1",
+        "layer.23": "cuda:1",
+        "layer.24": "cuda:1",
+        "layer.25": "cuda:1",
+        "layer.26": "cuda:1",
+        "layer.27": "cuda:1",
+        "layer.28": "cuda:1",
+        "layer.29": "cuda:1",
+        "layer.3": "cuda:0",
+        "layer.30": "cuda:1",
+        "layer.31": "cuda:1",
+        "layer.32": "cuda:1",
+        "layer.33": "cuda:1",
+        "layer.34": "cuda:1",
+        "layer.35": "cuda:1",
+        "layer.36": "cuda:1",
+        "layer.37": "cuda:1",
+        "layer.38": "cuda:1",
+        "layer.39": "cuda:1",
+        "layer.4": "cuda:0",
+        "layer.5": "cuda:0",
+        "layer.6": "cuda:0",
+        "layer.7": "cuda:0",
+        "layer.8": "cuda:0",
+        "layer.9": "cuda:0",
+        "norm": "cuda:1",
+        "rope_embeddings": "cuda:0"
+      }
+    },
+    "follow_up_launched": false,
+    "head_readout_result": {
+      "fold0_gain_over_baseline": 0.002100427348463829,
+      "minimum_nonbaseline_gain": 0.0002,
+      "selected_fold0_macro_f1": 0.9899180117906018,
+      "selected_head": "regularized_mlp_final",
+      "selection_reason": "best fold-0 Macro F1 and gain cleared the locked anti-noise threshold"
+    },
+    "prohibited_follow_up_actions_performed": [],
+    "project_gates_are_statistical_significance_claims": false,
+    "project_reference_comparisons": {
+      "v5_vitl_fold0_macro_f1": 0.985022,
+      "v5_vitl_folds1_4_macro_f1": 0.986432,
+      "v6_vithplus_fold0_macro_f1": 0.9851880585732143
+    },
+    "revision_marker": "v7_official_final_norm_before_pooling_v2",
+    "schema_version": 1,
+    "untouched_assessment_result": {
+      "baseline_macro_f1": 0.9891895283555739,
+      "folds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "gate": "viable main frozen 7B pipeline",
+      "selected_accuracy": 0.9893501719994345,
+      "selected_macro_f1": 0.990190599402788,
+      "selected_multiclass_log_loss": 0.0912914039773015
+    }
+  },
+  "experiment_name": "v7_dinov3_vit7b_frozen_raw",
+  "experiment_purpose": "native-resolution ViT-7B frozen feasibility/performance experiment",
+  "feature_cache_complete": true,
+  "feature_cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+  "gpus": [
+    {
+      "device_id": 0,
+      "name": "Tesla T4",
+      "total_vram_gib": 14.56219482421875
+    },
+    {
+      "device_id": 1,
+      "name": "Tesla T4",
+      "total_vram_gib": 14.56219482421875
+    }
+  ],
+  "head_candidates": [
+    "baseline_mlp_final",
+    "regularized_mlp_final",
+    "cosine_classifier_final",
+    "dual_branch_gated_final",
+    "last4_layer_weighted_gated"
+  ],
+  "head_selection": {
+    "assessment_folds_accessed_during_selection": [],
+    "baseline_fold0_macro_f1": 0.987817584442138,
+    "baseline_head": "baseline_mlp_final",
+    "best_ranked_gain_over_baseline": 0.002100427348463829,
+    "best_ranked_head": "regularized_mlp_final",
+    "development_fold": 0,
+    "minimum_nonbaseline_gain": 0.0002,
+    "revision_marker": "v7_official_final_norm_before_pooling_v2",
+    "schema_version": 1,
+    "selected_fold0_log_loss": 0.10112759881958534,
+    "selected_fold0_macro_f1": 0.9899180117906018,
+    "selected_head": "regularized_mlp_final",
+    "selection_metric": "macro_f1",
+    "selection_reason": "best fold-0 Macro F1 and gain cleared the locked anti-noise threshold",
+    "tie_break": "lower multiclass log loss, then fixed candidate order"
+  },
+  "locked_contract": {
+    "assessment_folds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "backbone_dtype": "float16",
+    "backbone_frozen": true,
+    "development_fold": 0,
+    "early_stopping_patience": 5,
+    "experiment_purpose": "native-resolution ViT-7B frozen feasibility/performance experiment",
+    "feature_batch_size": 1,
+    "feature_storage_dtype": "float16",
+    "feature_view": "orig",
+    "final_block_source": "model_output.last_hidden_state",
+    "final_norm_equivalence_atol": 0.002,
+    "final_norm_equivalence_rtol": 0.002,
+    "image_size": 256,
+    "intermediate_block_source": "official final norm(raw transformer block output)",
+    "last_n_blocks": 4,
+    "max_epochs": 15,
+    "minimum_throughput_images_per_second": 0.8,
+    "model_id": "facebook/dinov3-vit7b16-pretrain-lvd1689m",
+    "n_folds": 5,
+    "normalization_timing": "before CLS extraction and true-patch pooling",
+    "official_raw_counts": {
+      "0": 9999,
+      "1": 3961,
+      "2": 12567
+    },
+    "patch_size_expected": 16,
+    "per_token_normalization": "official pretrained DINOv3 final LayerNorm",
+    "pooling_compute_dtype": "float32",
+    "revision_marker": "v7_official_final_norm_before_pooling_v2",
+    "seed": 42,
+    "sharding_max_memory": {
+      "0": 13958643712,
+      "1": 13958643712
+    },
+    "sharding_strategy": "balanced"
+  },
+  "locked_contract_signature": "d7e2221e6fc25d929377ff5dd36f193da12d6fb59a615886011dce2fb982abbb",
+  "model_and_preprocess": {
+    "backbone_dtype": "float16",
+    "block_list": "layer",
+    "cached_representation": "official pretrained final LayerNorm per token before CLS/true-patch pooling",
+    "device_map": {
+      "embeddings": "cuda:0",
+      "layer.0": "cuda:0",
+      "layer.1": "cuda:0",
+      "layer.10": "cuda:0",
+      "layer.11": "cuda:0",
+      "layer.12": "cuda:0",
+      "layer.13": "cuda:0",
+      "layer.14": "cuda:0",
+      "layer.15": "cuda:0",
+      "layer.16": "cuda:0",
+      "layer.17": "cuda:0",
+      "layer.18": "cuda:0",
+      "layer.19": "cuda:0",
+      "layer.2": "cuda:0",
+      "layer.20": "cuda:1",
+      "layer.21": "cuda:1",
+      "layer.22": "cuda:1",
+      "layer.23": "cuda:1",
+      "layer.24": "cuda:1",
+      "layer.25": "cuda:1",
+      "layer.26": "cuda:1",
+      "layer.27": "cuda:1",
+      "layer.28": "cuda:1",
+      "layer.29": "cuda:1",
+      "layer.3": "cuda:0",
+      "layer.30": "cuda:1",
+      "layer.31": "cuda:1",
+      "layer.32": "cuda:1",
+      "layer.33": "cuda:1",
+      "layer.34": "cuda:1",
+      "layer.35": "cuda:1",
+      "layer.36": "cuda:1",
+      "layer.37": "cuda:1",
+      "layer.38": "cuda:1",
+      "layer.39": "cuda:1",
+      "layer.4": "cuda:0",
+      "layer.5": "cuda:0",
+      "layer.6": "cuda:0",
+      "layer.7": "cuda:0",
+      "layer.8": "cuda:0",
+      "layer.9": "cuda:0",
+      "norm": "cuda:1",
+      "rope_embeddings": "cuda:0"
+    },
+    "device_map_strategy": "balanced",
+    "environment": {
+      "accelerate_version": "1.13.0",
+      "cuda_version": "12.8",
+      "platform": "Linux-6.12.90+-x86_64-with-glibc2.35",
+      "python_version": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+      "safetensors_version": "0.7.0",
+      "torch_version": "2.10.0+cu128",
+      "transformers_version": "4.57.6"
+    },
+    "feature_storage_dtype": "float16",
+    "final_norm_affine_parameter_names": [
+      "weight",
+      "bias"
+    ],
+    "final_norm_device": "cuda:1",
+    "final_norm_dtype": "torch.float16",
+    "final_norm_is_frozen": true,
+    "final_norm_module_class": "LayerNorm",
+    "final_norm_module_path": "norm",
+    "final_norm_normalized_shape": [
+      4096
+    ],
+    "gpus": [
+      {
+        "device_id": 0,
+        "name": "Tesla T4",
+        "total_vram_gib": 14.56219482421875
+      },
+      {
+        "device_id": 1,
+        "name": "Tesla T4",
+        "total_vram_gib": 14.56219482421875
+      }
+    ],
+    "hidden_size": 4096,
+    "last_four_block_indices": [
+      36,
+      37,
+      38,
+      39
+    ],
+    "last_four_block_names": [
+      "layer.36",
+      "layer.37",
+      "layer.38",
+      "layer.39"
+    ],
+    "model_id": "facebook/dinov3-vit7b16-pretrain-lvd1689m",
+    "model_load_seconds": 257.51774767599994,
+    "num_hidden_layers": 40,
+    "parameter_count": 6716035072,
+    "patch_input_device": "cuda:0",
+    "patch_input_module": "embeddings.patch_embeddings",
+    "patch_size": 16,
+    "patch_token_count": 256,
+    "pooling_compute_dtype": "float32",
+    "preprocess_signature": "452c2b084bfd9caae68eca3101e6d24293a11177cc568e87e13938744ff322f0",
+    "processor": {
+      "antialias": true,
+      "augmentation": "none",
+      "exif_transpose": true,
+      "feature_view": "orig",
+      "image_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "image_std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "processor_class": "DINOv3ViTImageProcessorFast",
+      "processor_native_size": {
+        "height": 224,
+        "width": 224
+      },
+      "resample": "BILINEAR",
+      "rescale_factor": 0.00392156862745098,
+      "resize_geometry": "direct_square",
+      "rgb_conversion": true,
+      "spatial_override": {
+        "height": 256,
+        "width": 256
+      }
+    },
+    "register_token_count": 4,
+    "requested_max_memory": {
+      "0": 13958643712,
+      "1": 13958643712
+    },
+    "resolved_revision": "b80367753773648a6793235ab9c65cdbb029506f",
+    "revision_marker": "v7_official_final_norm_before_pooling_v2",
+    "sequence_token_count": 261,
+    "trainable_parameter_count": 0
+  },
+  "notebook_elapsed_seconds": 8847.793532933001,
+  "preflight_contract_signature": "961831943107801b06846ea7dfa69877601e0d2e0defd6e71c3a14c97ffa64cf",
+  "revision_marker": "v7_official_final_norm_before_pooling_v2",
+  "runtime_and_memory_summary": {
+    "extraction_final_gpu_memory": [
+      {
+        "allocated_gib": 6.26665735244751,
+        "device_id": 0,
+        "peak_allocated_gib": 6.285067081451416,
+        "peak_reserved_gib": 6.302734375,
+        "reserved_gib": 6.302734375
+      },
+      {
+        "allocated_gib": 6.2607574462890625,
+        "device_id": 1,
+        "peak_allocated_gib": 6.282783508300781,
+        "peak_reserved_gib": 6.31640625,
+        "reserved_gib": 6.31640625
+      }
+    ],
+    "feature_cache_session_seconds": 8131.2675748950005,
+    "feature_rows_reused": 0,
+    "feature_rows_written": 26527,
+    "head_training_seconds_total": 225.83521560100053,
+    "host_rss_gib_after_assessment": 5.0478363037109375,
+    "model_load_seconds": 257.51774767599994,
+    "notebook_elapsed_seconds_so_far": 8847.591411247,
+    "post_backbone_release_gpu_memory": [
+      {
+        "allocated_gib": 0.008913040161132812,
+        "device_id": 0,
+        "peak_allocated_gib": 6.285067081451416,
+        "peak_reserved_gib": 6.302734375,
+        "reserved_gib": 0.0234375
+      },
+      {
+        "allocated_gib": 0.0089111328125,
+        "device_id": 1,
+        "peak_allocated_gib": 6.282783508300781,
+        "peak_reserved_gib": 6.31640625,
+        "reserved_gib": 0.021484375
+      }
+    ],
+    "preflight_estimated_full_train_hours": 1.8833080148643666,
+    "preflight_gpu_memory": [
+      {
+        "allocated_gib": 6.26665735244751,
+        "device_id": 0,
+        "peak_allocated_gib": 6.285067081451416,
+        "peak_reserved_gib": 6.302734375,
+        "reserved_gib": 6.302734375
+      },
+      {
+        "allocated_gib": 6.2607574462890625,
+        "device_id": 1,
+        "peak_allocated_gib": 6.296825408935547,
+        "peak_reserved_gib": 6.31640625,
+        "reserved_gib": 6.31640625
+      }
+    ],
+    "preflight_throughput_images_per_second": 3.9125894717979994
+  },
+  "runtime_risks_checked_only_on_kaggle": [
+    "gated ViT-7B checkpoint access and immutable revision availability",
+    "Transformers/Accelerate compatibility with the official model implementation",
+    "balanced two-T4 placement with no CPU or disk modules",
+    "FP16 finiteness and exact official token layout",
+    "actual throughput, VRAM headroom, host memory, and multi-hour session stability"
+  ],
+  "schema_version": 1,
+  "selected_assessment_metrics": {
+    "accuracy": 0.9893501719994345,
+    "candidate": "regularized_mlp_final",
+    "classification_report": {
+      "Electronic": {
+        "f1-score": 0.9938592347661785,
+        "precision": 0.9918290383406663,
+        "recall": 0.995897759545598,
+        "support": 3169.0
+      },
+      "Organic": {
+        "f1-score": 0.9901374775851763,
+        "precision": 0.9916192756659683,
+        "recall": 0.98866010146225,
+        "support": 10053.0
+      },
+      "Recyclable": {
+        "f1-score": 0.986575085857009,
+        "precision": 0.9855289421157685,
+        "recall": 0.9876234529316165,
+        "support": 7999.0
+      },
+      "accuracy": 0.9893501719994345,
+      "macro avg": {
+        "f1-score": 0.990190599402788,
+        "precision": 0.9896590853741344,
+        "recall": 0.9907271046464882,
+        "support": 21221.0
+      },
+      "weighted avg": {
+        "f1-score": 0.9893504589278551,
+        "precision": 0.9893549224238057,
+        "recall": 0.9893501719994345,
+        "support": 21221.0
+      }
+    },
+    "confidence_summary": {
+      "all": {
+        "count": 21221,
+        "mean": 0.9304625229164554,
+        "median": 0.9409425258636475,
+        "q10": 0.8942172527313232,
+        "q90": 0.986920952796936,
+        "std": 0.06635627385966529
+      },
+      "correct": {
+        "count": 20995,
+        "mean": 0.9330808099124169,
+        "median": 0.9412309527397156,
+        "q10": 0.8984795928001403,
+        "q90": 0.9870977282524109,
+        "std": 0.059489099215268404
+      },
+      "errors": {
+        "count": 226,
+        "mean": 0.6872282951279024,
+        "median": 0.6823166906833649,
+        "q10": 0.47643807530403137,
+        "q90": 0.8957931697368622,
+        "std": 0.15775379280394203
+      }
+    },
+    "confusion_matrix": [
+      [
+        7900,
+        18,
+        81
+      ],
+      [
+        10,
+        3156,
+        3
+      ],
+      [
+        106,
+        8,
+        9939
+      ]
+    ],
+    "folds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "macro_f1": 0.990190599402788,
+    "multiclass_log_loss": 0.0912914039773015,
+    "organic_to_recyclable": 106,
+    "recyclable_to_organic": 81,
+    "role": "selected",
+    "rows": 21221,
+    "top_two_margin_summary": {
+      "all": {
+        "count": 21221,
+        "mean": 0.8809523684135384,
+        "median": 0.8959871903061867,
+        "q10": 0.8270880058407784,
+        "q90": 0.9792162412777543,
+        "std": 0.11155646143262311
+      },
+      "correct": {
+        "count": 20995,
+        "mean": 0.8854101608290501,
+        "median": 0.8964652791619301,
+        "q10": 0.8329190418124199,
+        "q90": 0.9794576765969396,
+        "std": 0.09939285416513359
+      },
+      "errors": {
+        "count": 226,
+        "mean": 0.46683134291057304,
+        "median": 0.4556281417608261,
+        "q10": 0.07753686606884003,
+        "q90": 0.8297686092555523,
+        "std": 0.2783353252821946
+      }
+    },
+    "total_errors": 226
+  },
+  "selected_head": "regularized_mlp_final",
+  "selected_head_fold0_metrics": {
+    "accuracy": 0.9885035808518658,
+    "best_epoch": 5,
+    "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+    "candidate": "regularized_mlp_final",
+    "candidate_spec": {
+      "dropout": 0.4,
+      "label_smoothing": 0.05,
+      "readout": "regularized official final-normed last-block concat"
+    },
+    "checkpoint_file": "/kaggle/working/v7_dinov3_vit7b_frozen_raw/heads/development_regularized_mlp_final_fold0_seed42.pt",
+    "class_weights_from_training_partition": [
+      0.8843188881874084,
+      2.232144832611084,
+      0.7036373615264893
+    ],
+    "classification_report": {
+      "Electronic": {
+        "f1-score": 0.9955891619407687,
+        "precision": 0.9937106918238994,
+        "recall": 0.9974747474747475,
+        "support": 792.0
+      },
+      "Organic": {
+        "f1-score": 0.9886431560071728,
+        "precision": 0.9904191616766467,
+        "recall": 0.986873508353222,
+        "support": 2514.0
+      },
+      "Recyclable": {
+        "f1-score": 0.9855217174238642,
+        "precision": 0.9840478564307079,
+        "recall": 0.987,
+        "support": 2000.0
+      },
+      "accuracy": 0.9885035808518658,
+      "macro avg": {
+        "f1-score": 0.9899180117906018,
+        "precision": 0.9893925699770847,
+        "recall": 0.9904494186093231,
+        "support": 5306.0
+      },
+      "weighted avg": {
+        "f1-score": 0.9885033820781851,
+        "precision": 0.9885089244706057,
+        "recall": 0.9885035808518658,
+        "support": 5306.0
+      }
+    },
+    "confidence_summary": {
+      "all": {
+        "count": 5306,
+        "mean": 0.9222517562078791,
+        "median": 0.9329661130905151,
+        "q10": 0.8804584741592407,
+        "q90": 0.9866611659526825,
+        "std": 0.07093484194071217
+      },
+      "correct": {
+        "count": 5245,
+        "mean": 0.9252073727697276,
+        "median": 0.9332979321479797,
+        "q10": 0.8865261316299439,
+        "q90": 0.9868419885635377,
+        "std": 0.06384512681240584
+      },
+      "errors": {
+        "count": 61,
+        "mean": 0.6681171846194346,
+        "median": 0.6675922870635986,
+        "q10": 0.45965278148651123,
+        "q90": 0.8696756958961487,
+        "std": 0.14784457505647733
+      }
+    },
+    "confusion_matrix": [
+      [
+        1974,
+        2,
+        24
+      ],
+      [
+        2,
+        790,
+        0
+      ],
+      [
+        30,
+        3,
+        2481
+      ]
+    ],
+    "history_file": "/kaggle/working/v7_dinov3_vit7b_frozen_raw/heads/development_regularized_mlp_final_fold0_seed42_history.csv",
+    "macro_f1": 0.9899180117906018,
+    "multiclass_log_loss": 0.10112759881958534,
+    "organic_to_recyclable": 30,
+    "parameter_count": 4212739,
+    "prediction_file": "/kaggle/working/v7_dinov3_vit7b_frozen_raw/heads/development_regularized_mlp_final_fold0_seed42_predictions.csv",
+    "recyclable_to_organic": 24,
+    "revision_marker": "v7_official_final_norm_before_pooling_v2",
+    "rows": 5306,
+    "schema_version": 1,
+    "seed": 42,
+    "stage": "development",
+    "top_two_margin_summary": {
+      "all": {
+        "count": 5306,
+        "mean": 0.8663832346808679,
+        "median": 0.8813248332589865,
+        "q10": 0.8042512163519859,
+        "q90": 0.9783795862458646,
+        "std": 0.11864919392297733
+      },
+      "correct": {
+        "count": 5245,
+        "mean": 0.8712439204054242,
+        "median": 0.881816927343607,
+        "q10": 0.8112068742513656,
+        "q90": 0.9786104978993535,
+        "std": 0.10691321465005284
+      },
+      "errors": {
+        "count": 61,
+        "mean": 0.4484439457415557,
+        "median": 0.4317208379507065,
+        "q10": 0.10043665766716003,
+        "q90": 0.8023426905274391,
+        "std": 0.2549281240742817
+      }
+    },
+    "total_errors": 61,
+    "train_class_counts": [
+      7999,
+      3169,
+      10053
+    ],
+    "trainable_parameter_count": 4212739,
+    "training_folds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "training_seconds": 14.432350618999408,
+    "validation_fold": 0
+  }
+}

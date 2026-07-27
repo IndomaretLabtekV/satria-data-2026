@@ -1,0 +1,54 @@
+{
+  "canonical_data": "official raw labeled train only",
+  "fold_assignment_sha256": "0a06976e5dc3cdb0b3f1f5043ff033bf95a40dd2b0cb82154bbf34d701ee305c",
+  "fold_class_counts": {
+    "0": {
+      "0": 2000,
+      "1": 792,
+      "2": 2514
+    },
+    "1": {
+      "0": 2000,
+      "1": 792,
+      "2": 2514
+    },
+    "2": {
+      "0": 2000,
+      "1": 792,
+      "2": 2513
+    },
+    "3": {
+      "0": 2000,
+      "1": 792,
+      "2": 2513
+    },
+    "4": {
+      "0": 1999,
+      "1": 793,
+      "2": 2513
+    }
+  },
+  "fold_definition": {
+    "implementation": "sklearn.model_selection.StratifiedKFold",
+    "n_splits": 5,
+    "ordering": "relative image_id ascending before split",
+    "random_state": 42,
+    "shuffle": true
+  },
+  "labels_sha256": "719d36e9918b1fd09711c06d1b259fca08ca6eb4d973de1388d5e3ddecf22d35",
+  "official_class_codes": {
+    "0": "Recyclable",
+    "1": "Electronic",
+    "2": "Organic"
+  },
+  "ordered_image_ids_sha256": "210f8f14797be49bad962e81f1da660a257ec28ee2136b54a7516950a66cb2e8",
+  "preflight_contract_signature": "961831943107801b06846ea7dfa69877601e0d2e0defd6e71c3a14c97ffa64cf",
+  "raw_class_counts": {
+    "0": 9999,
+    "1": 3961,
+    "2": 12567
+  },
+  "raw_data_sha256": "73bd0d3c17e75e7c0f10e4324ffa9ef81f6224cd2b3ba0e53e9f2aea7fde3212",
+  "row_count": 26527,
+  "schema_version": 1
+}

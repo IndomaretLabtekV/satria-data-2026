@@ -1,0 +1,59 @@
+{
+  "extraction_final_gpu_memory": [
+    {
+      "allocated_gib": 6.26665735244751,
+      "device_id": 0,
+      "peak_allocated_gib": 6.285067081451416,
+      "peak_reserved_gib": 6.302734375,
+      "reserved_gib": 6.302734375
+    },
+    {
+      "allocated_gib": 6.2607574462890625,
+      "device_id": 1,
+      "peak_allocated_gib": 6.282783508300781,
+      "peak_reserved_gib": 6.31640625,
+      "reserved_gib": 6.31640625
+    }
+  ],
+  "feature_cache_session_seconds": 8131.2675748950005,
+  "feature_rows_reused": 0,
+  "feature_rows_written": 26527,
+  "head_training_seconds_total": 225.83521560100053,
+  "host_rss_gib_after_assessment": 5.0478363037109375,
+  "model_load_seconds": 257.51774767599994,
+  "notebook_elapsed_seconds_so_far": 8847.591411247,
+  "post_backbone_release_gpu_memory": [
+    {
+      "allocated_gib": 0.008913040161132812,
+      "device_id": 0,
+      "peak_allocated_gib": 6.285067081451416,
+      "peak_reserved_gib": 6.302734375,
+      "reserved_gib": 0.0234375
+    },
+    {
+      "allocated_gib": 0.0089111328125,
+      "device_id": 1,
+      "peak_allocated_gib": 6.282783508300781,
+      "peak_reserved_gib": 6.31640625,
+      "reserved_gib": 0.021484375
+    }
+  ],
+  "preflight_estimated_full_train_hours": 1.8833080148643666,
+  "preflight_gpu_memory": [
+    {
+      "allocated_gib": 6.26665735244751,
+      "device_id": 0,
+      "peak_allocated_gib": 6.285067081451416,
+      "peak_reserved_gib": 6.302734375,
+      "reserved_gib": 6.302734375
+    },
+    {
+      "allocated_gib": 6.2607574462890625,
+      "device_id": 1,
+      "peak_allocated_gib": 6.296825408935547,
+      "peak_reserved_gib": 6.31640625,
+      "reserved_gib": 6.31640625
+    }
+  ],
+  "preflight_throughput_images_per_second": 3.9125894717979994
+}

@@ -1,0 +1,146 @@
+{
+  "accuracy": 0.9832265359969845,
+  "best_epoch": 8,
+  "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+  "candidate": "cosine_classifier_final",
+  "candidate_spec": {
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "readout": "normalized official final-normed last-block concat and class weights; scale in [1,100]"
+  },
+  "checkpoint_file": "/kaggle/working/v7_dinov3_vit7b_frozen_raw/heads/development_cosine_classifier_final_fold0_seed42.pt",
+  "class_weights_from_training_partition": [
+    0.8843188881874084,
+    2.232144832611084,
+    0.7036373615264893
+  ],
+  "classification_report": {
+    "Electronic": {
+      "f1-score": 0.9943217665615142,
+      "precision": 0.9936948297604036,
+      "recall": 0.9949494949494949,
+      "support": 792.0
+    },
+    "Organic": {
+      "f1-score": 0.9831865492393915,
+      "precision": 0.9895245769540693,
+      "recall": 0.9769291964996022,
+      "support": 2514.0
+    },
+    "Recyclable": {
+      "f1-score": 0.978913420987348,
+      "precision": 0.9714426390940424,
+      "recall": 0.9865,
+      "support": 2000.0
+    },
+    "accuracy": 0.9832265359969845,
+    "macro avg": {
+      "f1-score": 0.9854739122627513,
+      "precision": 0.9848873486028383,
+      "recall": 0.9861262304830324,
+      "support": 5306.0
+    },
+    "weighted avg": {
+      "f1-score": 0.9832379694457681,
+      "precision": 0.9833313927291473,
+      "recall": 0.9832265359969845,
+      "support": 5306.0
+    }
+  },
+  "confidence_summary": {
+    "all": {
+      "count": 5306,
+      "mean": 0.9504511025922054,
+      "median": 0.9828284680843353,
+      "q10": 0.8734695911407471,
+      "q90": 0.9966692328453064,
+      "std": 0.08776230405527123
+    },
+    "correct": {
+      "count": 5217,
+      "mean": 0.9549821245103635,
+      "median": 0.9833059906959534,
+      "q10": 0.8900497794151306,
+      "q90": 0.9967389464378357,
+      "std": 0.07902579501493767
+    },
+    "errors": {
+      "count": 89,
+      "mean": 0.6848517616143387,
+      "median": 0.6861568093299866,
+      "q10": 0.4944163501262665,
+      "q90": 0.9071283340454102,
+      "std": 0.14618724848464734
+    }
+  },
+  "confusion_matrix": [
+    [
+      1973,
+      2,
+      25
+    ],
+    [
+      3,
+      788,
+      1
+    ],
+    [
+      55,
+      3,
+      2456
+    ]
+  ],
+  "history_file": "/kaggle/working/v7_dinov3_vit7b_frozen_raw/heads/development_cosine_classifier_final_fold0_seed42_history.csv",
+  "macro_f1": 0.9854739122627513,
+  "multiclass_log_loss": 0.07537457996101096,
+  "organic_to_recyclable": 55,
+  "parameter_count": 24577,
+  "prediction_file": "/kaggle/working/v7_dinov3_vit7b_frozen_raw/heads/development_cosine_classifier_final_fold0_seed42_predictions.csv",
+  "recyclable_to_organic": 25,
+  "revision_marker": "v7_official_final_norm_before_pooling_v2",
+  "rows": 5306,
+  "schema_version": 1,
+  "seed": 42,
+  "stage": "development",
+  "top_two_margin_summary": {
+    "all": {
+      "count": 5306,
+      "mean": 0.9114641888283118,
+      "median": 0.9700088608078659,
+      "q10": 0.7767330966889858,
+      "q90": 0.9944272480206564,
+      "std": 0.15998481933760347
+    },
+    "correct": {
+      "count": 5217,
+      "mean": 0.9197504862237987,
+      "median": 0.9713043142110109,
+      "q10": 0.8025381281971932,
+      "q90": 0.9944890229031443,
+      "std": 0.14419567586291843
+    },
+    "errors": {
+      "count": 89,
+      "mean": 0.425738194308589,
+      "median": 0.429916650056839,
+      "q10": 0.09600540399551392,
+      "q90": 0.8238514691591263,
+      "std": 0.25916788336659646
+    }
+  },
+  "total_errors": 89,
+  "train_class_counts": [
+    7999,
+    3169,
+    10053
+  ],
+  "trainable_parameter_count": 24577,
+  "training_folds": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "training_seconds": 17.68754812500083,
+  "validation_fold": 0
+}

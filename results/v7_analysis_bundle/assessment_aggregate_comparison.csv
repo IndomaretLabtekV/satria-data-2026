@@ -1,0 +1,3 @@
+role,candidate,macro_f1,accuracy,multiclass_log_loss,recyclable_to_organic,organic_to_recyclable,total_errors
+baseline,baseline_mlp_final,0.9891895283555739,0.9880778474152961,0.06491023841991393,89,125,253
+selected,regularized_mlp_final,0.990190599402788,0.9893501719994345,0.0912914039773015,81,106,226
