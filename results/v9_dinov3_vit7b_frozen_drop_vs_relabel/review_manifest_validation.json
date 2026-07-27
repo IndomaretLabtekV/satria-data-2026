@@ -1,0 +1,80 @@
+{
+  "action_counts": {
+    "AMBIGUOUS_KEEP": 357,
+    "DROP_CORRUPT_OR_UNUSABLE": 2,
+    "KEEP": 13,
+    "RELABEL_OBVIOUS_MISLABEL": 10
+  },
+  "audit_root": "/kaggle/input/datasets/riantamaputra/v9-audit-reviewed-drop-vs-relabel/v9_dinov3_vit7b_frozen_audited_cleaning",
+  "c1_counts_after": [
+    9994,
+    3961,
+    12560
+  ],
+  "c1_drop_count": 12,
+  "c1_drop_counts_by_class": [
+    5,
+    0,
+    7
+  ],
+  "c2_counts_after_relabel": [
+    9998,
+    3965,
+    12562
+  ],
+  "c2_objective_drop_counts_by_class": [
+    1,
+    0,
+    1
+  ],
+  "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+  "candidate_contract_sha256": "f1f93f745332460c76a1cd71e675cf7bbd9f3f4097cd98e3b20c133deeb1357d",
+  "class_counts_before": [
+    9999,
+    3961,
+    12567
+  ],
+  "cleaning_manifest_sha256": "9687504d834f24577c411215352533d743de8d149ffeed0fc3214add87430c6c",
+  "fold_signature": "0a06976e5dc3cdb0b3f1f5043ff033bf95a40dd2b0cb82154bbf34d701ee305c",
+  "immutable_review_fields_enforced": true,
+  "locked_review_decisions_applied": true,
+  "manifest_drop_count": 2,
+  "model_id": "facebook/dinov3-vit7b16-pretrain-lvd1689m",
+  "model_revision": "b80367753773648a6793235ab9c65cdbb029506f",
+  "objective_drops": 2,
+  "official_test_accessed": false,
+  "pass": true,
+  "ranking_file_sha256": "e71e903d08598805ada0decc5b58c1ea2527edf12c8397f6dd80ac4fa7cf3a63",
+  "relabel_matrix": [
+    {
+      "original_label": 0,
+      "reviewed_label": 1,
+      "rows": 2
+    },
+    {
+      "original_label": 0,
+      "reviewed_label": 2,
+      "rows": 2
+    },
+    {
+      "original_label": 2,
+      "reviewed_label": 0,
+      "rows": 4
+    },
+    {
+      "original_label": 2,
+      "reviewed_label": 1,
+      "rows": 2
+    }
+  ],
+  "revision": "v9_crossfitted_drop_vs_relabel_v2",
+  "rows": 382,
+  "run_mode": "SCREEN",
+  "schema_version": 2,
+  "seed": 42,
+  "semantic_drops": 0,
+  "semantic_relabels": 10,
+  "submission_created": false,
+  "training_only_relabeling": true,
+  "validation_rows_filtered": false
+}

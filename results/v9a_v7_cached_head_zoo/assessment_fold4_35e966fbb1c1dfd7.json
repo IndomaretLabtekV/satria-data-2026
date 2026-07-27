@@ -1,0 +1,85 @@
+{
+  "key": "35e966fbb1c1dfd7",
+  "spec": {
+    "type": "blend",
+    "left": {
+      "type": "standalone",
+      "model": "torch_msd_mlp512",
+      "readout": "mean_last4_concat",
+      "purpose": "head_zoo"
+    },
+    "right": {
+      "type": "standalone",
+      "model": "torch_mlp512",
+      "readout": "final_concat",
+      "purpose": "head_zoo"
+    },
+    "alpha_left": 0.9,
+    "purpose": "pairwise_blend"
+  },
+  "stage": "assessment",
+  "fold": 4,
+  "metrics": {
+    "rows": 5305,
+    "macro_f1": 0.9908361313655233,
+    "accuracy": 0.9898209236569274,
+    "log_loss": 0.09116002140073735,
+    "errors": 54,
+    "f1_recyclable": 0.9875,
+    "f1_electronic": 0.9949685534591195,
+    "f1_organic": 0.9900398406374502,
+    "recyclable_to_organic": 21,
+    "organic_to_recyclable": 25,
+    "ro_errors": 46,
+    "confusion_matrix": [
+      [
+        1975,
+        3,
+        21
+      ],
+      [
+        1,
+        791,
+        1
+      ],
+      [
+        25,
+        3,
+        2485
+      ]
+    ],
+    "classification_report": {
+      "Recyclable": {
+        "precision": 0.9870064967516242,
+        "recall": 0.9879939969984992,
+        "f1-score": 0.9875,
+        "support": 1999.0
+      },
+      "Electronic": {
+        "precision": 0.9924717691342535,
+        "recall": 0.9974779319041615,
+        "f1-score": 0.9949685534591195,
+        "support": 793.0
+      },
+      "Organic": {
+        "precision": 0.9912245712006382,
+        "recall": 0.9888579387186629,
+        "f1-score": 0.9900398406374502,
+        "support": 2513.0
+      },
+      "accuracy": 0.9898209236569274,
+      "macro avg": {
+        "precision": 0.9902342790288386,
+        "recall": 0.9914432892071078,
+        "f1-score": 0.9908361313655233,
+        "support": 5305.0
+      },
+      "weighted avg": {
+        "precision": 0.9898215734886264,
+        "recall": 0.9898209236569274,
+        "f1-score": 0.9898195442818085,
+        "support": 5305.0
+      }
+    }
+  }
+}

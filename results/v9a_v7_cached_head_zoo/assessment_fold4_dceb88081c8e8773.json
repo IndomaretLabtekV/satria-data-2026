@@ -1,0 +1,90 @@
+{
+  "type": "standalone",
+  "base_metadata": {
+    "best_epoch": 7,
+    "best_eval_macro_f1": 0.9909847442149493,
+    "best_eval_log_loss": 0.08950298521624385,
+    "training_seconds": 9.403437208000014,
+    "parameter_count": 4212739,
+    "label_smoothing": 0.05,
+    "class_weights": [
+      0.88425,
+      2.2329545454545454,
+      0.7036005569922419
+    ],
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.2838921969409443,
+        "eval_macro_f1": 0.9874419306115776,
+        "eval_log_loss": 0.0915915808392186
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.23466936287741985,
+        "eval_macro_f1": 0.9893727065094895,
+        "eval_log_loss": 0.091084221142061
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.22692526295260135,
+        "eval_macro_f1": 0.9887470284953426,
+        "eval_log_loss": 0.09322212636348216
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.22291766426984783,
+        "eval_macro_f1": 0.9891970098281854,
+        "eval_log_loss": 0.0944389090915773
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.22124364507006225,
+        "eval_macro_f1": 0.9901250556444632,
+        "eval_log_loss": 0.09016998094797926
+      },
+      {
+        "epoch": 6,
+        "train_loss": 0.21898203436329142,
+        "eval_macro_f1": 0.9905504582435841,
+        "eval_log_loss": 0.09104363627842922
+      },
+      {
+        "epoch": 7,
+        "train_loss": 0.21782052205741578,
+        "eval_macro_f1": 0.9909847442149493,
+        "eval_log_loss": 0.08950298521624385
+      },
+      {
+        "epoch": 8,
+        "train_loss": 0.21706958080835634,
+        "eval_macro_f1": 0.9906910528137822,
+        "eval_log_loss": 0.08835785439558744
+      },
+      {
+        "epoch": 9,
+        "train_loss": 0.2164890689131295,
+        "eval_macro_f1": 0.9905374519700753,
+        "eval_log_loss": 0.09131223363145405
+      },
+      {
+        "epoch": 10,
+        "train_loss": 0.21591894316095825,
+        "eval_macro_f1": 0.9908435593848498,
+        "eval_log_loss": 0.08908006956793413
+      },
+      {
+        "epoch": 11,
+        "train_loss": 0.21569197704897403,
+        "eval_macro_f1": 0.9905448778832756,
+        "eval_log_loss": 0.09387887658776586
+      },
+      {
+        "epoch": 12,
+        "train_loss": 0.21528138349787834,
+        "eval_macro_f1": 0.9908435593848498,
+        "eval_log_loss": 0.09309806733458229
+      }
+    ]
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+  "candidate_order": [
+    "C1",
+    "C2",
+    "C3"
+  ],
+  "cleaning_manifest_sha256": "9687504d834f24577c411215352533d743de8d149ffeed0fc3214add87430c6c",
+  "confirmation_allowed": false,
+  "diagnostic_candidate": "C1",
+  "fold_signature": "0a06976e5dc3cdb0b3f1f5043ff033bf95a40dd2b0cb82154bbf34d701ee305c",
+  "gate_results": {
+    "C1": {
+      "conditions": {
+        "corrected": true,
+        "electronic_preservation": true,
+        "gain": false,
+        "locked_contract_unchanged": true,
+        "macro_f1": false,
+        "net_corrections": false,
+        "not_one_sample_dependent": false,
+        "ro_error_reduction": false,
+        "total_errors": false,
+        "treatment_defensible": true,
+        "treatment_provenance_complete": true,
+        "validation_complete": true
+      },
+      "gates": {
+        "maximum_electronic_f1_degradation": 0.0005,
+        "maximum_total_errors": 59,
+        "minimum_corrected": 5,
+        "minimum_gain": 0.0003,
+        "minimum_macro_f1": 0.9903,
+        "minimum_net_corrections": 2,
+        "minimum_ro_error_reduction": 3
+      },
+      "observed": {
+        "active_training_drops": 9,
+        "active_training_relabels": 0,
+        "corrected": 8,
+        "disagreements": 19,
+        "electronic_f1_delta": 5.551715618890007e-06,
+        "gain": -0.0004471933541789763,
+        "macro_f1": 0.9894708184364228,
+        "net_corrections": -3,
+        "regressed": 11,
+        "ro_error_reduction": -3,
+        "ro_errors": 57,
+        "total_errors": 64
+      },
+      "pass": false
+    },
+    "C2": {
+      "conditions": {
+        "corrected": true,
+        "electronic_preservation": true,
+        "gain": false,
+        "locked_contract_unchanged": true,
+        "macro_f1": false,
+        "net_corrections": false,
+        "not_one_sample_dependent": false,
+        "ro_error_reduction": false,
+        "total_errors": false,
+        "treatment_defensible": true,
+        "treatment_provenance_complete": true,
+        "validation_complete": true
+      },
+      "gates": {
+        "maximum_electronic_f1_degradation": 0.0005,
+        "maximum_total_errors": 59,
+        "minimum_corrected": 5,
+        "minimum_gain": 0.0003,
+        "minimum_macro_f1": 0.9903,
+        "minimum_net_corrections": 2,
+        "minimum_ro_error_reduction": 3
+      },
+      "observed": {
+        "active_training_drops": 1,
+        "active_training_relabels": 8,
+        "corrected": 6,
+        "disagreements": 18,
+        "electronic_f1_delta": 0.0006277359154733819,
+        "gain": -0.0006152172524618305,
+        "macro_f1": 0.98930279453814,
+        "net_corrections": -5,
+        "regressed": 11,
+        "ro_error_reduction": -6,
+        "ro_errors": 60,
+        "total_errors": 66
+      },
+      "pass": false
+    },
+    "C3": {
+      "conditions": {
+        "corrected": false,
+        "electronic_preservation": true,
+        "gain": false,
+        "locked_contract_unchanged": true,
+        "macro_f1": false,
+        "net_corrections": false,
+        "not_one_sample_dependent": false,
+        "ro_error_reduction": false,
+        "total_errors": false,
+        "treatment_defensible": true,
+        "treatment_provenance_complete": true,
+        "validation_complete": true
+      },
+      "gates": {
+        "maximum_electronic_f1_degradation": 0.0005,
+        "maximum_total_errors": 59,
+        "minimum_corrected": 5,
+        "minimum_gain": 0.0003,
+        "minimum_macro_f1": 0.9903,
+        "minimum_net_corrections": 2,
+        "minimum_ro_error_reduction": 3
+      },
+      "observed": {
+        "active_training_drops": 1,
+        "active_training_relabels": 8,
+        "corrected": 4,
+        "disagreements": 14,
+        "electronic_f1_delta": 0.0006277359154733819,
+        "gain": -0.0006172146949828816,
+        "macro_f1": 0.9893007970956189,
+        "net_corrections": -5,
+        "regressed": 9,
+        "ro_error_reduction": -6,
+        "ro_errors": 60,
+        "total_errors": 66
+      },
+      "pass": false
+    }
+  },
+  "locked_contract_signature": "b9073d45febd7e4bc75ccc7ead90557056682f02731bd48f17a1377f607727dc",
+  "manifest_frozen": true,
+  "model_id": "facebook/dinov3-vit7b16-pretrain-lvd1689m",
+  "model_revision": "b80367753773648a6793235ab9c65cdbb029506f",
+  "noise_interpretation": "No robust fold-0 gain beyond the locked one-to-five-sample-noise guard was accepted.",
+  "official_test_accessed": false,
+  "pass": false,
+  "reason": "No locked drop-versus-relabel candidate passed every fold-0 gate; retain V7.",
+  "revision": "v9_crossfitted_drop_vs_relabel_v2",
+  "run_mode": "SCREEN",
+  "schema_version": 2,
+  "seed": 42,
+  "selected_candidate": null,
+  "submission_created": false,
+  "validation_complete": true
+}

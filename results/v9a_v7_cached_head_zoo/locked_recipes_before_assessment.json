@@ -1,0 +1,58 @@
+{
+  "selection_source": "development_fold_0_only",
+  "manual_test_labels_accessed": false,
+  "selected_keys": [
+    "8ed362eb569205b9",
+    "35e966fbb1c1dfd7",
+    "2b8161d1788b0756",
+    "85a24bec6d8a75c5"
+  ],
+  "recipes": {
+    "8ed362eb569205b9": {
+      "type": "standalone",
+      "model": "torch_msd_mlp512",
+      "readout": "mean_last4_concat",
+      "purpose": "head_zoo"
+    },
+    "35e966fbb1c1dfd7": {
+      "type": "blend",
+      "left": {
+        "type": "standalone",
+        "model": "torch_msd_mlp512",
+        "readout": "mean_last4_concat",
+        "purpose": "head_zoo"
+      },
+      "right": {
+        "type": "standalone",
+        "model": "torch_mlp512",
+        "readout": "final_concat",
+        "purpose": "head_zoo"
+      },
+      "alpha_left": 0.9,
+      "purpose": "pairwise_blend"
+    },
+    "2b8161d1788b0756": {
+      "type": "blend",
+      "left": {
+        "type": "standalone",
+        "model": "torch_msd_mlp512",
+        "readout": "mean_last4_concat",
+        "purpose": "head_zoo"
+      },
+      "right": {
+        "type": "standalone",
+        "model": "torch_mlp512",
+        "readout": "mean_last4_concat",
+        "purpose": "head_zoo"
+      },
+      "alpha_left": 0.7,
+      "purpose": "pairwise_blend"
+    },
+    "85a24bec6d8a75c5": {
+      "type": "standalone",
+      "model": "torch_mlp512",
+      "readout": "final_concat",
+      "purpose": "head_zoo"
+    }
+  }
+}

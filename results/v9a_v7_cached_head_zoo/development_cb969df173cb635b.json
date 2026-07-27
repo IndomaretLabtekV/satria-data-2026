@@ -1,0 +1,77 @@
+{
+  "status": "success",
+  "key": "cb969df173cb635b",
+  "spec": {
+    "type": "standalone",
+    "model": "linear_svc",
+    "readout": "mean_last4_concat",
+    "purpose": "head_zoo"
+  },
+  "metrics": {
+    "rows": 5306,
+    "macro_f1": 0.9869169008532372,
+    "accuracy": 0.9849227289860535,
+    "log_loss": 0.09395483575986345,
+    "errors": 80,
+    "f1_recyclable": 0.9805486284289276,
+    "f1_electronic": 0.9949431099873578,
+    "f1_organic": 0.9852589641434263,
+    "recyclable_to_organic": 32,
+    "organic_to_recyclable": 40,
+    "ro_errors": 72,
+    "confusion_matrix": [
+      [
+        1966,
+        2,
+        32
+      ],
+      [
+        4,
+        787,
+        1
+      ],
+      [
+        40,
+        1,
+        2473
+      ]
+    ],
+    "classification_report": {
+      "Recyclable": {
+        "precision": 0.9781094527363184,
+        "recall": 0.983,
+        "f1-score": 0.9805486284289276,
+        "support": 2000.0
+      },
+      "Electronic": {
+        "precision": 0.9962025316455696,
+        "recall": 0.9936868686868687,
+        "f1-score": 0.9949431099873578,
+        "support": 792.0
+      },
+      "Organic": {
+        "precision": 0.9868316041500399,
+        "recall": 0.9836913285600637,
+        "f1-score": 0.9852589641434263,
+        "support": 2514.0
+      },
+      "accuracy": 0.9849227289860535,
+      "macro avg": {
+        "precision": 0.9870478628439759,
+        "recall": 0.986792732415644,
+        "f1-score": 0.9869169008532372,
+        "support": 5306.0
+      },
+      "weighted avg": {
+        "precision": 0.9849426994664773,
+        "recall": 0.9849227289860535,
+        "f1-score": 0.9849289928052046,
+        "support": 5306.0
+      }
+    }
+  },
+  "metadata": {
+    "training_seconds": 51.057906513000034,
+    "model_class": "LinearSVC"
+  }
+}

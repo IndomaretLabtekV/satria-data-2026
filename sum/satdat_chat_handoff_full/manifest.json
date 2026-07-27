@@ -1,0 +1,18 @@
+{
+  "project": "SATDAT / BDC Satria Data 2026",
+  "generated_files": [
+    "00_MASTER_HANDOFF.md",
+    "01_CHRONOLOGY.md",
+    "02_CURRENT_GROUNDING.md",
+    "03_PATHS_AND_ARTIFACTS.md",
+    "04_NEXT_ACTIONS.md"
+  ],
+  "current_best": {
+    "model": "facebook/dinov3-vit7b16-pretrain-lvd1689m",
+    "backbone": "frozen",
+    "head": "regularized_mlp_final",
+    "fold0_macro_f1": 0.989918,
+    "five_fold_oof_macro_f1": 0.9901360067264733
+  },
+  "next_experiment": "V10 cache-only multi-seed original-data ensemble"
+}

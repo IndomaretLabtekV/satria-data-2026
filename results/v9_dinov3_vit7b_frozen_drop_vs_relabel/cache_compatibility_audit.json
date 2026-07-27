@@ -1,0 +1,31 @@
+{
+  "backbone_frozen": true,
+  "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+  "cleaning_manifest_sha256": null,
+  "complete_nonoverlapping_coverage": true,
+  "dtype": "float16",
+  "feature_shape": [
+    26527,
+    4,
+    2,
+    4096
+  ],
+  "fold_signature": "0a06976e5dc3cdb0b3f1f5043ff033bf95a40dd2b0cb82154bbf34d701ee305c",
+  "model_id": "facebook/dinov3-vit7b16-pretrain-lvd1689m",
+  "model_revision": "b80367753773648a6793235ab9c65cdbb029506f",
+  "official_final_layernorm_before_pooling": true,
+  "official_test_accessed": false,
+  "pass": true,
+  "retained_shape": [
+    26527,
+    2,
+    4096
+  ],
+  "revision": "v9_crossfitted_drop_vs_relabel_v2",
+  "rows": 26527,
+  "run_mode": "SCREEN",
+  "schema_version": 2,
+  "seed": 42,
+  "shards": 104,
+  "submission_created": false
+}

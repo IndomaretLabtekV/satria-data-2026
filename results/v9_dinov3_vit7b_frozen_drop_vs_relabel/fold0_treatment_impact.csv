@@ -1,0 +1,13 @@
+candidate,validation_fold,class_label,class_name,training_rows_before,dropped,relabeled_out,relabeled_in,training_rows_after_treatment,globally_flagged_validation_rows_retained,validation_rows_filtered,validation_labels_modified,cleaning_manifest_sha256
+C0,0,0,Recyclable,7999,0,0,0,7999,0,False,False,9687504d834f24577c411215352533d743de8d149ffeed0fc3214add87430c6c
+C0,0,1,Electronic,3169,0,0,0,3169,0,False,False,9687504d834f24577c411215352533d743de8d149ffeed0fc3214add87430c6c
+C0,0,2,Organic,10053,0,0,0,10053,0,False,False,9687504d834f24577c411215352533d743de8d149ffeed0fc3214add87430c6c
+C1,0,0,Recyclable,7999,5,0,0,7994,3,False,False,9687504d834f24577c411215352533d743de8d149ffeed0fc3214add87430c6c
+C1,0,1,Electronic,3169,0,0,0,3169,3,False,False,9687504d834f24577c411215352533d743de8d149ffeed0fc3214add87430c6c
+C1,0,2,Organic,10053,4,0,0,10049,3,False,False,9687504d834f24577c411215352533d743de8d149ffeed0fc3214add87430c6c
+C2,0,0,Recyclable,7999,1,4,2,7996,3,False,False,9687504d834f24577c411215352533d743de8d149ffeed0fc3214add87430c6c
+C2,0,1,Electronic,3169,0,0,4,3173,3,False,False,9687504d834f24577c411215352533d743de8d149ffeed0fc3214add87430c6c
+C2,0,2,Organic,10053,0,4,2,10051,3,False,False,9687504d834f24577c411215352533d743de8d149ffeed0fc3214add87430c6c
+C3,0,0,Recyclable,7999,1,4,2,7996,3,False,False,9687504d834f24577c411215352533d743de8d149ffeed0fc3214add87430c6c
+C3,0,1,Electronic,3169,0,0,4,3173,3,False,False,9687504d834f24577c411215352533d743de8d149ffeed0fc3214add87430c6c
+C3,0,2,Organic,10053,0,4,2,10051,3,False,False,9687504d834f24577c411215352533d743de8d149ffeed0fc3214add87430c6c

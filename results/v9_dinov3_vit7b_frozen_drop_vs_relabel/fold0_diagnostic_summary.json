@@ -1,0 +1,236 @@
+{
+  "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+  "candidate": "C1",
+  "cleaning_manifest_sha256": "9687504d834f24577c411215352533d743de8d149ffeed0fc3214add87430c6c",
+  "confidence_margin_summary": {
+    "C0": {
+      "confidence": {
+        "mean": 0.9222517548398205,
+        "median": 0.9329660927611744,
+        "q10": 0.8804584484762665,
+        "q90": 0.9866611779301953
+      },
+      "margin": {
+        "mean": 0.866383233173718,
+        "median": 0.8813248260188267,
+        "q10": 0.8042511786000655,
+        "q90": 0.9783796292007698
+      }
+    },
+    "candidate": {
+      "confidence": {
+        "mean": 0.9285739020808602,
+        "median": 0.9389247303096099,
+        "q10": 0.8934000385199989,
+        "q90": 0.9875261297178759
+      },
+      "margin": {
+        "mean": 0.8777083615084372,
+        "median": 0.8926135158701017,
+        "q10": 0.8253877449621114,
+        "q90": 0.9798780218108163
+      }
+    }
+  },
+  "corrected": 8,
+  "corrected_nonreviewed": 0,
+  "corrected_reviewed": 8,
+  "disagreement_rate": 0.003580851865812288,
+  "disagreements": 19,
+  "fold_signature": "0a06976e5dc3cdb0b3f1f5043ff033bf95a40dd2b0cb82154bbf34d701ee305c",
+  "model_id": "facebook/dinov3-vit7b16-pretrain-lvd1689m",
+  "model_revision": "b80367753773648a6793235ab9c65cdbb029506f",
+  "net_corrections": -3,
+  "official_test_accessed": false,
+  "probability_correlation_flat": 0.9985711040862808,
+  "regressed": 11,
+  "regressed_nonreviewed": 5,
+  "regressed_reviewed": 6,
+  "reviewed_validation_rows": 91,
+  "reviewed_vs_nonreviewed_metrics": {
+    "nonreviewed": {
+      "C0": {
+        "accuracy": 1.0,
+        "classification_report": {
+          "Electronic": {
+            "f1-score": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 788.0
+          },
+          "Organic": {
+            "f1-score": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 2467.0
+          },
+          "Recyclable": {
+            "f1-score": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 1960.0
+          },
+          "accuracy": 1.0,
+          "macro avg": {
+            "f1-score": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 5215.0
+          },
+          "weighted avg": {
+            "f1-score": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 5215.0
+          }
+        },
+        "macro_f1": 1.0,
+        "multiclass_log_loss": 0.07779662171100192,
+        "organic_to_recyclable": 0,
+        "recyclable_to_organic": 0,
+        "rows": 5215,
+        "total_errors": 0
+      },
+      "candidate": {
+        "accuracy": 0.9990412272291467,
+        "classification_report": {
+          "Electronic": {
+            "f1-score": 0.9993658845909955,
+            "precision": 0.9987325728770595,
+            "recall": 1.0,
+            "support": 788.0
+          },
+          "Organic": {
+            "f1-score": 0.999189298743413,
+            "precision": 0.999189298743413,
+            "recall": 0.999189298743413,
+            "support": 2467.0
+          },
+          "Recyclable": {
+            "f1-score": 0.9987241643276346,
+            "precision": 0.9989790709545686,
+            "recall": 0.9984693877551021,
+            "support": 1960.0
+          },
+          "accuracy": 0.9990412272291467,
+          "macro avg": {
+            "f1-score": 0.9990931158873476,
+            "precision": 0.9989669808583471,
+            "recall": 0.9992195621661718,
+            "support": 5215.0
+          },
+          "weighted avg": {
+            "f1-score": 0.9990411657027551,
+            "precision": 0.9990412744962756,
+            "recall": 0.9990412272291467,
+            "support": 5215.0
+          }
+        },
+        "macro_f1": 0.9990931158873476,
+        "multiclass_log_loss": 0.07142585612794691,
+        "organic_to_recyclable": 2,
+        "recyclable_to_organic": 2,
+        "rows": 5215,
+        "total_errors": 5
+      }
+    },
+    "reviewed": {
+      "C0": {
+        "accuracy": 0.32967032967032966,
+        "classification_report": {
+          "Electronic": {
+            "f1-score": 0.36363636363636365,
+            "precision": 0.2857142857142857,
+            "recall": 0.5,
+            "support": 4.0
+          },
+          "Organic": {
+            "f1-score": 0.32941176470588235,
+            "precision": 0.3684210526315789,
+            "recall": 0.2978723404255319,
+            "support": 47.0
+          },
+          "Recyclable": {
+            "f1-score": 0.32558139534883723,
+            "precision": 0.30434782608695654,
+            "recall": 0.35,
+            "support": 40.0
+          },
+          "accuracy": 0.32967032967032966,
+          "macro avg": {
+            "f1-score": 0.33954317456369437,
+            "precision": 0.3194943881442737,
+            "recall": 0.3826241134751773,
+            "support": 91.0
+          },
+          "weighted avg": {
+            "f1-score": 0.329232463842587,
+            "precision": 0.3366215347254902,
+            "recall": 0.32967032967032966,
+            "support": 91.0
+          }
+        },
+        "macro_f1": 0.33954317456369437,
+        "multiclass_log_loss": 1.4381721381756234,
+        "organic_to_recyclable": 30,
+        "recyclable_to_organic": 24,
+        "rows": 91,
+        "total_errors": 61
+      },
+      "candidate": {
+        "accuracy": 0.3516483516483517,
+        "classification_report": {
+          "Electronic": {
+            "f1-score": 0.5,
+            "precision": 0.375,
+            "recall": 0.75,
+            "support": 4.0
+          },
+          "Organic": {
+            "f1-score": 0.3,
+            "precision": 0.36363636363636365,
+            "recall": 0.2553191489361702,
+            "support": 47.0
+          },
+          "Recyclable": {
+            "f1-score": 0.37777777777777777,
+            "precision": 0.34,
+            "recall": 0.425,
+            "support": 40.0
+          },
+          "accuracy": 0.3516483516483517,
+          "macro avg": {
+            "f1-score": 0.3925925925925926,
+            "precision": 0.35954545454545456,
+            "recall": 0.4767730496453901,
+            "support": 91.0
+          },
+          "weighted avg": {
+            "f1-score": 0.3429792429792429,
+            "precision": 0.35374625374625374,
+            "recall": 0.3516483516483517,
+            "support": 91.0
+          }
+        },
+        "macro_f1": 0.3925925925925926,
+        "multiclass_log_loss": 1.4132798334849366,
+        "organic_to_recyclable": 32,
+        "recyclable_to_organic": 21,
+        "rows": 91,
+        "total_errors": 59
+      }
+    }
+  },
+  "revision": "v9_crossfitted_drop_vs_relabel_v2",
+  "run_mode": "SCREEN",
+  "schema_version": 2,
+  "seed": 42,
+  "status_counts": {
+    "corrected": 8,
+    "regressed": 11,
+    "unchanged_correct": 5234,
+    "unchanged_wrong": 53
+  },
+  "submission_created": false,
+  "validation_rows": 5306
+}

@@ -1,0 +1,76 @@
+{
+  "selection_basis": "train_only_cross_validation",
+  "development_fold": 0,
+  "assessment_folds": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "manual_test_labels_accessed": false,
+  "test_images_accessed": false,
+  "best_key": "35e966fbb1c1dfd7",
+  "best_recipe": {
+    "type": "blend",
+    "left": {
+      "type": "standalone",
+      "model": "torch_msd_mlp512",
+      "readout": "mean_last4_concat",
+      "purpose": "head_zoo"
+    },
+    "right": {
+      "type": "standalone",
+      "model": "torch_mlp512",
+      "readout": "final_concat",
+      "purpose": "head_zoo"
+    },
+    "alpha_left": 0.9,
+    "purpose": "pairwise_blend"
+  },
+  "best_metrics": {
+    "key": "35e966fbb1c1dfd7",
+    "recipe_type": "blend",
+    "folds_won_against_control": 2,
+    "mean_fold_macro_f1": 0.9904395685925576,
+    "std_fold_macro_f1": 0.000720562511214698,
+    "rows": 21221,
+    "macro_f1": 0.9904393207699855,
+    "accuracy": 0.9893972951321803,
+    "log_loss": 0.09224824081721991,
+    "errors": 225,
+    "f1_recyclable": 0.986576762190173,
+    "f1_electronic": 0.9948039678790742,
+    "f1_organic": 0.9899372322407094,
+    "recyclable_to_organic": 82,
+    "organic_to_recyclable": 110,
+    "ro_errors": 192
+  },
+  "control_key": "85a24bec6d8a75c5",
+  "control_recipe": {
+    "type": "standalone",
+    "model": "torch_mlp512",
+    "readout": "final_concat",
+    "purpose": "head_zoo"
+  },
+  "control_metrics": {
+    "key": "85a24bec6d8a75c5",
+    "recipe_type": "standalone",
+    "folds_won_against_control": 0,
+    "mean_fold_macro_f1": 0.990301015068631,
+    "std_fold_macro_f1": 0.0007796262297768543,
+    "rows": 21221,
+    "macro_f1": 0.9903007998213612,
+    "accuracy": 0.9893972951321803,
+    "log_loss": 0.0928136549084425,
+    "errors": 225,
+    "f1_recyclable": 0.9866450324513231,
+    "f1_electronic": 0.9941741458038105,
+    "f1_organic": 0.99008322120895,
+    "recyclable_to_organic": 76,
+    "organic_to_recyclable": 112,
+    "ro_errors": 188
+  },
+  "macro_f1_gain_over_control": 0.00013852094862432107,
+  "adoption_recommendation": false,
+  "next_step": "Use this locked recipe in a separate automated test-inference notebook. Do not inspect or use test labels."
+}

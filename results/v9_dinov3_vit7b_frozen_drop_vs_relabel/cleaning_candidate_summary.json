@@ -1,0 +1,121 @@
+{
+  "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+  "candidate_contract_sha256": "f1f93f745332460c76a1cd71e675cf7bbd9f3f4097cd98e3b20c133deeb1357d",
+  "cleaning_manifest_sha256": null,
+  "confidence_summary": {
+    "oof_margin": {
+      "maximum": 0.9745424361965056,
+      "mean": 0.40618755424191977,
+      "median": 0.39611815771323733,
+      "minimum": 0.0012741699999999634
+    },
+    "oof_original_probability": {
+      "maximum": 0.8894763350946625,
+      "mean": 0.29108718417542134,
+      "median": 0.27467618461707743,
+      "minimum": 0.008612317595221075
+    },
+    "oof_top_probability": {
+      "maximum": 0.9831547537917267,
+      "mean": 0.6509870097149973,
+      "median": 0.633832098417044,
+      "minimum": 0.36675271467010856
+    },
+    "rows": 382
+  },
+  "contact_sheets": [
+    "contact_01_tier_a_automatic_safe_drop_0_to_2.png",
+    "contact_02_tier_a_automatic_safe_drop_2_to_0.png",
+    "contact_03_tier_b_manual_obvious_mislabel_0_to_1.png",
+    "contact_04_tier_b_manual_obvious_mislabel_0_to_2.png",
+    "contact_05_tier_b_manual_obvious_mislabel_2_to_0.png",
+    "contact_06_tier_b_manual_obvious_mislabel_2_to_1.png",
+    "contact_07_tier_c_ambiguous_keep_0_to_0.png",
+    "contact_08_tier_c_ambiguous_keep_0_to_1.png",
+    "contact_09_tier_c_ambiguous_keep_0_to_2.png",
+    "contact_10_tier_c_ambiguous_keep_1_to_0.png",
+    "contact_11_tier_c_ambiguous_keep_1_to_1.png",
+    "contact_12_tier_c_ambiguous_keep_1_to_2.png"
+  ],
+  "fold_signature": "0a06976e5dc3cdb0b3f1f5043ff033bf95a40dd2b0cb82154bbf34d701ee305c",
+  "independent_backbone_oof_available": false,
+  "model_id": "facebook/dinov3-vit7b16-pretrain-lvd1689m",
+  "model_revision": "b80367753773648a6793235ab9c65cdbb029506f",
+  "objective_drop_count": 2,
+  "official_test_accessed": false,
+  "oof_sources": [
+    "V7 regularized_mlp_final",
+    "V7 baseline_mlp_final"
+  ],
+  "pair_counts": [
+    {
+      "oof_predicted_label": 0,
+      "original_label": 0,
+      "rows": 40
+    },
+    {
+      "oof_predicted_label": 1,
+      "original_label": 0,
+      "rows": 20
+    },
+    {
+      "oof_predicted_label": 2,
+      "original_label": 0,
+      "rows": 105
+    },
+    {
+      "oof_predicted_label": 0,
+      "original_label": 1,
+      "rows": 12
+    },
+    {
+      "oof_predicted_label": 1,
+      "original_label": 1,
+      "rows": 6
+    },
+    {
+      "oof_predicted_label": 2,
+      "original_label": 1,
+      "rows": 3
+    },
+    {
+      "oof_predicted_label": 0,
+      "original_label": 2,
+      "rows": 136
+    },
+    {
+      "oof_predicted_label": 1,
+      "original_label": 2,
+      "rows": 11
+    },
+    {
+      "oof_predicted_label": 2,
+      "original_label": 2,
+      "rows": 49
+    }
+  ],
+  "ranking_file_sha256": "e71e903d08598805ada0decc5b58c1ea2527edf12c8397f6dd80ac4fa7cf3a63",
+  "raw_data_sha256_recomputed": "73bd0d3c17e75e7c0f10e4324ffa9ef81f6224cd2b3ba0e53e9f2aea7fde3212",
+  "raw_train_root": "/kaggle/input/datasets/riantamaputra/bdc-2026-waste-classification-dataset/train",
+  "relabeling": false,
+  "revision": "v9_crossfitted_audited_exclusion_v1",
+  "rows": 382,
+  "run_mode": "AUDIT",
+  "schema_version": 1,
+  "seed": 42,
+  "semantic_default_action": "KEEP",
+  "semantic_review_count": 23,
+  "semantic_thresholds": {
+    "baseline_original_max": 0.005,
+    "baseline_top_min": 0.99,
+    "selected_margin_min": 0.8,
+    "selected_original_max": 0.05,
+    "selected_top_min": 0.9
+  },
+  "submission_created": false,
+  "tier_counts": {
+    "TIER_A_AUTOMATIC_SAFE_DROP": 2,
+    "TIER_B_MANUAL_OBVIOUS_MISLABEL": 23,
+    "TIER_C_AMBIGUOUS_KEEP": 357
+  }
+}

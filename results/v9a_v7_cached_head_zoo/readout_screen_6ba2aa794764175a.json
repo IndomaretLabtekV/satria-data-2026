@@ -1,0 +1,75 @@
+{
+  "spec": {
+    "type": "standalone",
+    "model": "sgd_log",
+    "readout": "final_sum__l2",
+    "purpose": "readout_screen"
+  },
+  "metrics": {
+    "rows": 5306,
+    "macro_f1": 0.9813379213027464,
+    "accuracy": 0.9792687523558236,
+    "log_loss": 0.11053459399096252,
+    "errors": 110,
+    "f1_recyclable": 0.9738870927629942,
+    "f1_electronic": 0.98989898989899,
+    "f1_organic": 0.9802276812462553,
+    "recyclable_to_organic": 37,
+    "organic_to_recyclable": 57,
+    "ro_errors": 94,
+    "confusion_matrix": [
+      [
+        1958,
+        5,
+        37
+      ],
+      [
+        6,
+        784,
+        2
+      ],
+      [
+        57,
+        3,
+        2454
+      ]
+    ],
+    "classification_report": {
+      "Recyclable": {
+        "precision": 0.9688273132112816,
+        "recall": 0.979,
+        "f1-score": 0.9738870927629942,
+        "support": 2000.0
+      },
+      "Electronic": {
+        "precision": 0.98989898989899,
+        "recall": 0.98989898989899,
+        "f1-score": 0.98989898989899,
+        "support": 792.0
+      },
+      "Organic": {
+        "precision": 0.9843561973525873,
+        "recall": 0.9761336515513126,
+        "f1-score": 0.9802276812462553,
+        "support": 2514.0
+      },
+      "accuracy": 0.9792687523558236,
+      "macro avg": {
+        "precision": 0.9810275001542862,
+        "recall": 0.9816775471501008,
+        "f1-score": 0.9813379213027464,
+        "support": 5306.0
+      },
+      "weighted avg": {
+        "precision": 0.9793302123194436,
+        "recall": 0.9792687523558236,
+        "f1-score": 0.9792812996945108,
+        "support": 5306.0
+      }
+    }
+  },
+  "metadata": {
+    "training_seconds": 6.39289581099996,
+    "model_class": "SGDClassifier"
+  }
+}
