@@ -1,0 +1,516 @@
+{
+  "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+  "cleaning_manifest_sha256": null,
+  "complete_oof_rows": 26527,
+  "control_checkpoint_metadata": {
+    "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+    "candidate": "regularized_mlp_final",
+    "candidate_spec": {
+      "dropout": 0.4,
+      "label_smoothing": 0.05,
+      "readout": "regularized official final-normed last-block concat"
+    },
+    "class_weights": [
+      0.8843188881874084,
+      2.232144832611084,
+      0.7036373615264893
+    ],
+    "gradient_clip_max_norm": 1.0,
+    "learning_rate": 0.0008,
+    "max_epochs": 15,
+    "patience": 5,
+    "revision_marker": "v7_official_final_norm_before_pooling_v2",
+    "schema_version": 1,
+    "seed": 42,
+    "stage": "development",
+    "training_folds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "validation_fold": 0,
+    "weight_decay": 0.0001
+  },
+  "fivefold_baseline": {
+    "accuracy": 0.9875975421268895,
+    "classification_report": {
+      "Electronic": {
+        "f1-score": 0.9943217665615142,
+        "precision": 0.9939455095862765,
+        "recall": 0.9946983085079525,
+        "support": 3961.0
+      },
+      "Organic": {
+        "f1-score": 0.988044950984299,
+        "precision": 0.9896224155823421,
+        "recall": 0.9864725073605475,
+        "support": 12567.0
+      },
+      "Recyclable": {
+        "f1-score": 0.9843773396556027,
+        "precision": 0.9825627740135512,
+        "recall": 0.9861986198619862,
+        "support": 9999.0
+      },
+      "accuracy": 0.9875975421268895,
+      "macro avg": {
+        "f1-score": 0.9889146857338053,
+        "precision": 0.9887102330607233,
+        "recall": 0.9891231452434953,
+        "support": 26527.0
+      },
+      "weighted avg": {
+        "f1-score": 0.9875997449989149,
+        "precision": 0.9876069000435795,
+        "recall": 0.9875975421268895,
+        "support": 26527.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        9861,
+        16,
+        122
+      ],
+      [
+        13,
+        3940,
+        8
+      ],
+      [
+        162,
+        8,
+        12397
+      ]
+    ],
+    "macro_f1": 0.9889146857338053,
+    "multiclass_log_loss": 0.061942316134574814,
+    "organic_to_recyclable": 162,
+    "recyclable_to_organic": 122,
+    "rows": 26527,
+    "total_errors": 329
+  },
+  "fivefold_selected": {
+    "accuracy": 0.9891808346213292,
+    "classification_report": {
+      "Electronic": {
+        "f1-score": 0.9942050894431846,
+        "precision": 0.9922051797837566,
+        "recall": 0.9962130775056803,
+        "support": 3961.0
+      },
+      "Organic": {
+        "f1-score": 0.9898386132695756,
+        "precision": 0.9913793103448276,
+        "recall": 0.9883026975411793,
+        "support": 12567.0
+      },
+      "Recyclable": {
+        "f1-score": 0.98636431746666,
+        "precision": 0.9852324885252445,
+        "recall": 0.9874987498749875,
+        "support": 9999.0
+      },
+      "accuracy": 0.9891808346213292,
+      "macro avg": {
+        "f1-score": 0.9901360067264733,
+        "precision": 0.9896056595512762,
+        "recall": 0.9906715083072823,
+        "support": 26527.0
+      },
+      "weighted avg": {
+        "f1-score": 0.9891810239602044,
+        "precision": 0.9891856660380302,
+        "recall": 0.9891808346213292,
+        "support": 26527.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        9874,
+        20,
+        105
+      ],
+      [
+        12,
+        3946,
+        3
+      ],
+      [
+        136,
+        11,
+        12420
+      ]
+    ],
+    "macro_f1": 0.9901360067264733,
+    "multiclass_log_loss": 0.09325886555001613,
+    "organic_to_recyclable": 136,
+    "recyclable_to_organic": 105,
+    "rows": 26527,
+    "total_errors": 287
+  },
+  "fold0_control": {
+    "accuracy": 0.9885035808518658,
+    "best_epoch": 5,
+    "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+    "candidate": "regularized_mlp_final",
+    "candidate_spec": {
+      "dropout": 0.4,
+      "label_smoothing": 0.05,
+      "readout": "regularized official final-normed last-block concat"
+    },
+    "checkpoint_file": "/kaggle/working/v7_dinov3_vit7b_frozen_raw/heads/development_regularized_mlp_final_fold0_seed42.pt",
+    "class_weights_from_training_partition": [
+      0.8843188881874084,
+      2.232144832611084,
+      0.7036373615264893
+    ],
+    "classification_report": {
+      "Electronic": {
+        "f1-score": 0.9955891619407687,
+        "precision": 0.9937106918238994,
+        "recall": 0.9974747474747475,
+        "support": 792.0
+      },
+      "Organic": {
+        "f1-score": 0.9886431560071728,
+        "precision": 0.9904191616766467,
+        "recall": 0.986873508353222,
+        "support": 2514.0
+      },
+      "Recyclable": {
+        "f1-score": 0.9855217174238642,
+        "precision": 0.9840478564307079,
+        "recall": 0.987,
+        "support": 2000.0
+      },
+      "accuracy": 0.9885035808518658,
+      "macro avg": {
+        "f1-score": 0.9899180117906018,
+        "precision": 0.9893925699770847,
+        "recall": 0.9904494186093231,
+        "support": 5306.0
+      },
+      "weighted avg": {
+        "f1-score": 0.9885033820781851,
+        "precision": 0.9885089244706057,
+        "recall": 0.9885035808518658,
+        "support": 5306.0
+      }
+    },
+    "confidence_summary": {
+      "all": {
+        "count": 5306,
+        "mean": 0.9222517562078791,
+        "median": 0.9329661130905151,
+        "q10": 0.8804584741592407,
+        "q90": 0.9866611659526825,
+        "std": 0.07093484194071217
+      },
+      "correct": {
+        "count": 5245,
+        "mean": 0.9252073727697276,
+        "median": 0.9332979321479797,
+        "q10": 0.8865261316299439,
+        "q90": 0.9868419885635377,
+        "std": 0.06384512681240584
+      },
+      "errors": {
+        "count": 61,
+        "mean": 0.6681171846194346,
+        "median": 0.6675922870635986,
+        "q10": 0.45965278148651123,
+        "q90": 0.8696756958961487,
+        "std": 0.14784457505647733
+      }
+    },
+    "confusion_matrix": [
+      [
+        1974,
+        2,
+        24
+      ],
+      [
+        2,
+        790,
+        0
+      ],
+      [
+        30,
+        3,
+        2481
+      ]
+    ],
+    "history_file": "/kaggle/working/v7_dinov3_vit7b_frozen_raw/heads/development_regularized_mlp_final_fold0_seed42_history.csv",
+    "macro_f1": 0.9899180117906018,
+    "multiclass_log_loss": 0.10112759881958534,
+    "organic_to_recyclable": 30,
+    "parameter_count": 4212739,
+    "prediction_file": "/kaggle/working/v7_dinov3_vit7b_frozen_raw/heads/development_regularized_mlp_final_fold0_seed42_predictions.csv",
+    "recyclable_to_organic": 24,
+    "revision_marker": "v7_official_final_norm_before_pooling_v2",
+    "rows": 5306,
+    "schema_version": 1,
+    "seed": 42,
+    "stage": "development",
+    "top_two_margin_summary": {
+      "all": {
+        "count": 5306,
+        "mean": 0.8663832346808679,
+        "median": 0.8813248332589865,
+        "q10": 0.8042512163519859,
+        "q90": 0.9783795862458646,
+        "std": 0.11864919392297733
+      },
+      "correct": {
+        "count": 5245,
+        "mean": 0.8712439204054242,
+        "median": 0.881816927343607,
+        "q10": 0.8112068742513656,
+        "q90": 0.9786104978993535,
+        "std": 0.10691321465005284
+      },
+      "errors": {
+        "count": 61,
+        "mean": 0.4484439457415557,
+        "median": 0.4317208379507065,
+        "q10": 0.10043665766716003,
+        "q90": 0.8023426905274391,
+        "std": 0.2549281240742817
+      }
+    },
+    "total_errors": 61,
+    "train_class_counts": [
+      7999,
+      3169,
+      10053
+    ],
+    "trainable_parameter_count": 4212739,
+    "training_folds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "training_seconds": 14.432350618999408,
+    "validation_fold": 0
+  },
+  "fold0_last4_comparator": {
+    "accuracy": 0.9860535243120995,
+    "best_epoch": 3,
+    "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+    "candidate": "last4_layer_weighted_gated",
+    "candidate_spec": {
+      "dropout": 0.25,
+      "label_smoothing": 0.0,
+      "readout": "separate softmax weights over four official-final-normed blocks then gated branches"
+    },
+    "checkpoint_file": "/kaggle/working/v7_dinov3_vit7b_frozen_raw/heads/development_last4_layer_weighted_gated_fold0_seed42.pt",
+    "class_weights_from_training_partition": [
+      0.8843188881874084,
+      2.232144832611084,
+      0.7036373615264893
+    ],
+    "classification_report": {
+      "Electronic": {
+        "f1-score": 0.9962121212121212,
+        "precision": 0.9962121212121212,
+        "recall": 0.9962121212121212,
+        "support": 792.0
+      },
+      "Organic": {
+        "f1-score": 0.9864325618515563,
+        "precision": 0.9895916733386709,
+        "recall": 0.9832935560859188,
+        "support": 2514.0
+      },
+      "Recyclable": {
+        "f1-score": 0.9815737051792829,
+        "precision": 0.9776785714285714,
+        "recall": 0.9855,
+        "support": 2000.0
+      },
+      "accuracy": 0.9860535243120995,
+      "macro avg": {
+        "f1-score": 0.9880727960809867,
+        "precision": 0.9878274553264546,
+        "recall": 0.9883352257660133,
+        "support": 5306.0
+      },
+      "weighted avg": {
+        "f1-score": 0.9860608501419861,
+        "precision": 0.9860894477253227,
+        "recall": 0.9860535243120995,
+        "support": 5306.0
+      }
+    },
+    "confidence_summary": {
+      "all": {
+        "count": 5306,
+        "mean": 0.993259744058004,
+        "median": 0.9999992847442627,
+        "q10": 0.9990965723991394,
+        "q90": 1.0,
+        "std": 0.04201911929022779
+      },
+      "correct": {
+        "count": 5232,
+        "mean": 0.995162999246053,
+        "median": 0.9999994039535522,
+        "q10": 0.9994157195091248,
+        "q90": 1.0,
+        "std": 0.0344919029729647
+      },
+      "errors": {
+        "count": 74,
+        "mean": 0.8586944583299998,
+        "median": 0.9294787347316742,
+        "q10": 0.6051074743270874,
+        "q90": 0.9988628327846527,
+        "std": 0.1553075216739414
+      }
+    },
+    "confusion_matrix": [
+      [
+        1971,
+        3,
+        26
+      ],
+      [
+        3,
+        789,
+        0
+      ],
+      [
+        42,
+        0,
+        2472
+      ]
+    ],
+    "history_file": "/kaggle/working/v7_dinov3_vit7b_frozen_raw/heads/development_last4_layer_weighted_gated_fold0_seed42_history.csv",
+    "macro_f1": 0.9880727960809867,
+    "multiclass_log_loss": 0.053661410395683486,
+    "organic_to_recyclable": 42,
+    "parameter_count": 4738059,
+    "prediction_file": "/kaggle/working/v7_dinov3_vit7b_frozen_raw/heads/development_last4_layer_weighted_gated_fold0_seed42_predictions.csv",
+    "recyclable_to_organic": 26,
+    "revision_marker": "v7_official_final_norm_before_pooling_v2",
+    "rows": 5306,
+    "schema_version": 1,
+    "seed": 42,
+    "stage": "development",
+    "top_two_margin_summary": {
+      "all": {
+        "count": 5306,
+        "mean": 0.9867113074512942,
+        "median": 0.9999987585138683,
+        "q10": 0.998233105201507,
+        "q90": 0.9999999982557519,
+        "std": 0.08278099933835324
+      },
+      "correct": {
+        "count": 5232,
+        "mean": 0.9904883723496974,
+        "median": 0.9999988135755586,
+        "q10": 0.9988789651077241,
+        "q90": 0.9999999983495242,
+        "std": 0.06779935029703969
+      },
+      "errors": {
+        "count": 74,
+        "mean": 0.719662610850679,
+        "median": 0.8616978302598,
+        "q10": 0.2113290846347809,
+        "q90": 0.9977837459999137,
+        "std": 0.3066434742434818
+      }
+    },
+    "total_errors": 74,
+    "train_class_counts": [
+      7999,
+      3169,
+      10053
+    ],
+    "trainable_parameter_count": 4738059,
+    "training_folds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "training_seconds": 12.85481707100007,
+    "validation_fold": 0
+  },
+  "fold_signature": "0a06976e5dc3cdb0b3f1f5043ff033bf95a40dd2b0cb82154bbf34d701ee305c",
+  "folds1_4_selected": {
+    "accuracy": 0.9893501719994345,
+    "classification_report": {
+      "Electronic": {
+        "f1-score": 0.9938592347661785,
+        "precision": 0.9918290383406663,
+        "recall": 0.995897759545598,
+        "support": 3169.0
+      },
+      "Organic": {
+        "f1-score": 0.9901374775851763,
+        "precision": 0.9916192756659683,
+        "recall": 0.98866010146225,
+        "support": 10053.0
+      },
+      "Recyclable": {
+        "f1-score": 0.986575085857009,
+        "precision": 0.9855289421157685,
+        "recall": 0.9876234529316165,
+        "support": 7999.0
+      },
+      "accuracy": 0.9893501719994345,
+      "macro avg": {
+        "f1-score": 0.990190599402788,
+        "precision": 0.9896590853741344,
+        "recall": 0.9907271046464882,
+        "support": 21221.0
+      },
+      "weighted avg": {
+        "f1-score": 0.9893504589278551,
+        "precision": 0.9893549224238057,
+        "recall": 0.9893501719994345,
+        "support": 21221.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        7900,
+        18,
+        81
+      ],
+      [
+        10,
+        3156,
+        3
+      ],
+      [
+        106,
+        8,
+        9939
+      ]
+    ],
+    "macro_f1": 0.990190599402788,
+    "multiclass_log_loss": 0.09129140381332543,
+    "organic_to_recyclable": 106,
+    "recyclable_to_organic": 81,
+    "rows": 21221,
+    "total_errors": 226
+  },
+  "model_id": "facebook/dinov3-vit7b16-pretrain-lvd1689m",
+  "model_revision": "b80367753773648a6793235ab9c65cdbb029506f",
+  "official_test_accessed": false,
+  "pass": true,
+  "revision": "v9_crossfitted_audited_exclusion_v1",
+  "run_mode": "AUDIT",
+  "schema_version": 1,
+  "seed": 42,
+  "selected_baseline_consensus_wrong": 230,
+  "submission_created": false,
+  "v7_root": "/kaggle/input/datasets/riantamaputra/v7-results/v7_dinov3_vit7b_frozen_raw"
+}
