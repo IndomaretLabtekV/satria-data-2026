@@ -1,0 +1,503 @@
+{
+  "candidates": {
+    "ro_specialist_blend75": {
+      "accuracy": 0.9877497173011685,
+      "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+      "candidate": "ro_specialist_blend75",
+      "candidate_spec": {
+        "role": "primary",
+        "specialist_weight": 0.75
+      },
+      "checkpoint_file": "/kaggle/working/v8_dinov3_vit7b_frozen_cache_upgrade/heads/fold0_ro_specialist_blend75_fold0_seed42.pt",
+      "classification_report": {
+        "Electronic": {
+          "f1-score": 0.9955891619407687,
+          "precision": 0.9937106918238994,
+          "recall": 0.9974747474747475,
+          "support": 792.0
+        },
+        "Organic": {
+          "f1-score": 0.9878316377418711,
+          "precision": 0.990796318527411,
+          "recall": 0.984884645982498,
+          "support": 2514.0
+        },
+        "Recyclable": {
+          "f1-score": 0.9845463609172482,
+          "precision": 0.981610337972167,
+          "recall": 0.9875,
+          "support": 2000.0
+        },
+        "accuracy": 0.9877497173011685,
+        "macro avg": {
+          "f1-score": 0.9893223868666294,
+          "precision": 0.9887057827744924,
+          "recall": 0.9899531311524153,
+          "support": 5306.0
+        },
+        "weighted avg": {
+          "f1-score": 0.9877512392338201,
+          "precision": 0.9877688444490715,
+          "recall": 0.9877497173011685,
+          "support": 5306.0
+        }
+      },
+      "classification_report_file": "/kaggle/working/v8_dinov3_vit7b_frozen_cache_upgrade/heads/fold0_ro_specialist_blend75_fold0_seed42_classification_report.csv",
+      "confidence_summary": {
+        "all": {
+          "count": 5306,
+          "mean": 0.918359358370256,
+          "median": 0.9284829094880831,
+          "q10": 0.8763023745980238,
+          "q90": 0.9866611779301954,
+          "std": 0.07246717198848558
+        },
+        "correct": {
+          "count": 5241,
+          "mean": 0.9217649554230534,
+          "median": 0.9287980975850268,
+          "q10": 0.8813351918454521,
+          "q90": 0.9868806640035899,
+          "std": 0.06391240933190155
+        },
+        "errors": {
+          "count": 65,
+          "mean": 0.6437634483131496,
+          "median": 0.6335354503178474,
+          "q10": 0.44985027941820643,
+          "q90": 0.8446891425896761,
+          "std": 0.15160780125610376
+        }
+      },
+      "confusion_matrix": [
+        [
+          1975,
+          2,
+          23
+        ],
+        [
+          2,
+          790,
+          0
+        ],
+        [
+          35,
+          3,
+          2476
+        ]
+      ],
+      "control_checkpoint": "/kaggle/working/v8_dinov3_vit7b_frozen_cache_upgrade/heads/fold0_control_regularized_mlp_final_fold0_seed42.pt",
+      "fold_assignment_sha256": "0a06976e5dc3cdb0b3f1f5043ff033bf95a40dd2b0cb82154bbf34d701ee305c",
+      "fusion_audit": {
+        "electronic_decision_changes": 0,
+        "electronic_probability_max_abs_difference": 2.220446049250313e-16,
+        "rows": 5306,
+        "rows_preserved_to_protect_electronic_decision": 795,
+        "rows_receiving_ro_redistribution": 4511,
+        "specialist_weight": 0.75
+      },
+      "history_file": "/kaggle/working/v8_dinov3_vit7b_frozen_cache_upgrade/heads/fold0_ro_specialist_blend75_fold0_seed42_history.csv",
+      "locked_v8_contract_signature": "5241f8fc5f45ace336d07db424abd4cc59a2ec599219dc5182e21875b7fe97d6",
+      "macro_f1": 0.9893223868666294,
+      "multiclass_log_loss": 0.10445854532672132,
+      "organic_to_recyclable": 35,
+      "prediction_file": "/kaggle/working/v8_dinov3_vit7b_frozen_cache_upgrade/heads/fold0_ro_specialist_blend75_fold0_seed42_predictions.csv",
+      "recyclable_to_organic": 23,
+      "revision_marker": "v8_ro_hierarchical_specialist_final_cache_v1",
+      "rows": 5306,
+      "schema_version": 1,
+      "seed": 42,
+      "specialist_checkpoint": "/kaggle/working/v8_dinov3_vit7b_frozen_cache_upgrade/heads/fold0_specialist_ro_specialist_final_fold0_seed42.pt",
+      "stage": "fold0",
+      "top_two_margin_summary": {
+        "all": {
+          "count": 5306,
+          "mean": 0.8618988224794323,
+          "median": 0.8764580041892622,
+          "q10": 0.7999151941241593,
+          "q90": 0.9783796292007698,
+          "std": 0.12187837418481107
+        },
+        "correct": {
+          "count": 5241,
+          "mean": 0.8676646176110755,
+          "median": 0.8771054792535482,
+          "q10": 0.8068733497630236,
+          "q90": 0.9786221674149297,
+          "std": 0.10688250089743095
+        },
+        "errors": {
+          "count": 65,
+          "mean": 0.39699832578802174,
+          "median": 0.3930542010050529,
+          "q10": 0.031937299004729296,
+          "q90": 0.7606503292497471,
+          "std": 0.26952311082675784
+        }
+      },
+      "total_errors": 65,
+      "validation_fold": 0
+    },
+    "ro_specialist_full": {
+      "accuracy": 0.9879381831888429,
+      "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+      "candidate": "ro_specialist_full",
+      "candidate_spec": {
+        "role": "full-replacement mechanism ablation",
+        "specialist_weight": 1.0
+      },
+      "checkpoint_file": "/kaggle/working/v8_dinov3_vit7b_frozen_cache_upgrade/heads/fold0_ro_specialist_full_fold0_seed42.pt",
+      "classification_report": {
+        "Electronic": {
+          "f1-score": 0.9955891619407687,
+          "precision": 0.9937106918238994,
+          "recall": 0.9974747474747475,
+          "support": 792.0
+        },
+        "Organic": {
+          "f1-score": 0.9880287310454908,
+          "precision": 0.9911929543634908,
+          "recall": 0.984884645982498,
+          "support": 2514.0
+        },
+        "Recyclable": {
+          "f1-score": 0.984799401943683,
+          "precision": 0.9816194734227521,
+          "recall": 0.988,
+          "support": 2000.0
+        },
+        "accuracy": 0.9879381831888429,
+        "macro avg": {
+          "f1-score": 0.9894724316433141,
+          "precision": 0.9888410398700475,
+          "recall": 0.9901197978190819,
+          "support": 5306.0
+        },
+        "weighted avg": {
+          "f1-score": 0.9879400018833054,
+          "precision": 0.9879602152355538,
+          "recall": 0.9879381831888429,
+          "support": 5306.0
+        }
+      },
+      "classification_report_file": "/kaggle/working/v8_dinov3_vit7b_frozen_cache_upgrade/heads/fold0_ro_specialist_full_fold0_seed42_classification_report.csv",
+      "confidence_summary": {
+        "all": {
+          "count": 5306,
+          "mean": 0.9172386717283562,
+          "median": 0.9269732384234994,
+          "q10": 0.8739939805939494,
+          "q90": 0.9866611779301954,
+          "std": 0.07247180593659452
+        },
+        "correct": {
+          "count": 5242,
+          "mean": 0.9204898342373318,
+          "median": 0.9274802045387488,
+          "q10": 0.8789633656779302,
+          "q90": 0.9868709950134763,
+          "std": 0.06466598855981845
+        },
+        "errors": {
+          "count": 64,
+          "mean": 0.6509481424775669,
+          "median": 0.6502309611523223,
+          "q10": 0.4692607630830136,
+          "q90": 0.8523808328461121,
+          "std": 0.14544468914180111
+        }
+      },
+      "confusion_matrix": [
+        [
+          1976,
+          2,
+          22
+        ],
+        [
+          2,
+          790,
+          0
+        ],
+        [
+          35,
+          3,
+          2476
+        ]
+      ],
+      "control_checkpoint": "/kaggle/working/v8_dinov3_vit7b_frozen_cache_upgrade/heads/fold0_control_regularized_mlp_final_fold0_seed42.pt",
+      "fold_assignment_sha256": "0a06976e5dc3cdb0b3f1f5043ff033bf95a40dd2b0cb82154bbf34d701ee305c",
+      "fusion_audit": {
+        "electronic_decision_changes": 0,
+        "electronic_probability_max_abs_difference": 2.220446049250313e-16,
+        "rows": 5306,
+        "rows_preserved_to_protect_electronic_decision": 795,
+        "rows_receiving_ro_redistribution": 4511,
+        "specialist_weight": 1.0
+      },
+      "history_file": "/kaggle/working/v8_dinov3_vit7b_frozen_cache_upgrade/heads/fold0_ro_specialist_full_fold0_seed42_history.csv",
+      "locked_v8_contract_signature": "5241f8fc5f45ace336d07db424abd4cc59a2ec599219dc5182e21875b7fe97d6",
+      "macro_f1": 0.9894724316433141,
+      "multiclass_log_loss": 0.10588677830908554,
+      "organic_to_recyclable": 35,
+      "prediction_file": "/kaggle/working/v8_dinov3_vit7b_frozen_cache_upgrade/heads/fold0_ro_specialist_full_fold0_seed42_predictions.csv",
+      "recyclable_to_organic": 22,
+      "revision_marker": "v8_ro_hierarchical_specialist_final_cache_v1",
+      "rows": 5306,
+      "schema_version": 1,
+      "seed": 42,
+      "specialist_checkpoint": "/kaggle/working/v8_dinov3_vit7b_frozen_cache_upgrade/heads/fold0_specialist_ro_specialist_final_fold0_seed42.pt",
+      "stage": "fold0",
+      "top_two_margin_summary": {
+        "all": {
+          "count": 5306,
+          "mean": 0.8606010933577726,
+          "median": 0.8751686169537755,
+          "q10": 0.7975203459694038,
+          "q90": 0.9783796292007698,
+          "std": 0.1219979164597783
+        },
+        "correct": {
+          "count": 5242,
+          "mean": 0.8661147278719389,
+          "median": 0.8756271560434361,
+          "q10": 0.8034896995623719,
+          "q90": 0.978619259802087,
+          "std": 0.1083080257533829
+        },
+        "errors": {
+          "count": 64,
+          "mean": 0.4089999664318431,
+          "median": 0.4144339487974255,
+          "q10": 0.07074232102245745,
+          "q90": 0.7710000354252837,
+          "std": 0.25824242464622543
+        }
+      },
+      "total_errors": 64,
+      "validation_fold": 0
+    }
+  },
+  "control": {
+    "accuracy": 0.9885035808518658,
+    "best_epoch": 5,
+    "best_selection_log_loss": 0.10112760022556669,
+    "best_selection_macro_f1": 0.9899180117906018,
+    "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+    "candidate": "regularized_mlp_final",
+    "checkpoint_file": "/kaggle/working/v8_dinov3_vit7b_frozen_cache_upgrade/heads/fold0_control_regularized_mlp_final_fold0_seed42.pt",
+    "class_weights": [
+      0.8843188881874084,
+      2.232144832611084,
+      0.7036373615264893
+    ],
+    "classification_report": {
+      "Electronic": {
+        "f1-score": 0.9955891619407687,
+        "precision": 0.9937106918238994,
+        "recall": 0.9974747474747475,
+        "support": 792.0
+      },
+      "Organic": {
+        "f1-score": 0.9886431560071728,
+        "precision": 0.9904191616766467,
+        "recall": 0.986873508353222,
+        "support": 2514.0
+      },
+      "Recyclable": {
+        "f1-score": 0.9855217174238642,
+        "precision": 0.9840478564307079,
+        "recall": 0.987,
+        "support": 2000.0
+      },
+      "accuracy": 0.9885035808518658,
+      "macro avg": {
+        "f1-score": 0.9899180117906018,
+        "precision": 0.9893925699770847,
+        "recall": 0.9904494186093231,
+        "support": 5306.0
+      },
+      "weighted avg": {
+        "f1-score": 0.9885033820781851,
+        "precision": 0.9885089244706057,
+        "recall": 0.9885035808518658,
+        "support": 5306.0
+      }
+    },
+    "classification_report_file": "/kaggle/working/v8_dinov3_vit7b_frozen_cache_upgrade/heads/fold0_control_regularized_mlp_final_fold0_seed42_classification_report.csv",
+    "confidence_summary": {
+      "all": {
+        "count": 5306,
+        "mean": 0.9222517548398205,
+        "median": 0.9329660927611744,
+        "q10": 0.8804584484762665,
+        "q90": 0.9866611779301953,
+        "std": 0.070934841744843
+      },
+      "correct": {
+        "count": 5245,
+        "mean": 0.9252073714009854,
+        "median": 0.9332979594115144,
+        "q10": 0.8865261228732777,
+        "q90": 0.9868419880431353,
+        "std": 0.06384512669525604
+      },
+      "errors": {
+        "count": 61,
+        "mean": 0.6681171833101438,
+        "median": 0.6675922909487575,
+        "q10": 0.4596527546789947,
+        "q90": 0.8696756011878233,
+        "std": 0.1478445713341392
+      }
+    },
+    "confusion_matrix": [
+      [
+        1974,
+        2,
+        24
+      ],
+      [
+        2,
+        790,
+        0
+      ],
+      [
+        30,
+        3,
+        2481
+      ]
+    ],
+    "fold_assignment_sha256": "0a06976e5dc3cdb0b3f1f5043ff033bf95a40dd2b0cb82154bbf34d701ee305c",
+    "history_file": "/kaggle/working/v8_dinov3_vit7b_frozen_cache_upgrade/heads/fold0_control_regularized_mlp_final_fold0_seed42_history.csv",
+    "locked_v8_contract_signature": "5241f8fc5f45ace336d07db424abd4cc59a2ec599219dc5182e21875b7fe97d6",
+    "macro_f1": 0.9899180117906018,
+    "multiclass_log_loss": 0.10112760022556669,
+    "organic_to_recyclable": 30,
+    "parameter_count": 4212739,
+    "prediction_file": "/kaggle/working/v8_dinov3_vit7b_frozen_cache_upgrade/heads/fold0_control_regularized_mlp_final_fold0_seed42_predictions.csv",
+    "probe_kind": "control",
+    "recyclable_to_organic": 24,
+    "revision_marker": "v8_ro_hierarchical_specialist_final_cache_v1",
+    "rows": 5306,
+    "schema_version": 1,
+    "seed": 42,
+    "stage": "fold0_control",
+    "top_two_margin_summary": {
+      "all": {
+        "count": 5306,
+        "mean": 0.866383233173718,
+        "median": 0.8813248260188267,
+        "q10": 0.8042511786000655,
+        "q90": 0.9783796292007698,
+        "std": 0.11864919354068809
+      },
+      "correct": {
+        "count": 5245,
+        "mean": 0.8712439188920528,
+        "median": 0.8818169395037281,
+        "q10": 0.8112068584456682,
+        "q90": 0.9786105369635589,
+        "std": 0.10691321435473465
+      },
+      "errors": {
+        "count": 61,
+        "mean": 0.44844394476937954,
+        "median": 0.4317208545777979,
+        "q10": 0.10043660468132237,
+        "q90": 0.802342590511419,
+        "std": 0.25492812013416555
+      }
+    },
+    "total_errors": 61,
+    "train_class_counts": [
+      7999,
+      3169,
+      10053
+    ],
+    "training_folds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "training_seconds": 17.649519268999995,
+    "validation_fold": 0
+  },
+  "specialist": {
+    "accuracy": 0.9867080194949047,
+    "best_epoch": 5,
+    "best_selection_log_loss": 0.05933137814988102,
+    "best_selection_macro_f1": 0.9865442460008331,
+    "binary_log_loss": 0.05933137825510913,
+    "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+    "candidate": "ro_specialist_final",
+    "checkpoint_file": "/kaggle/working/v8_dinov3_vit7b_frozen_cache_upgrade/heads/fold0_specialist_ro_specialist_final_fold0_seed42.pt",
+    "class_weights": [
+      1.1283910274505615,
+      0.8978414535522461
+    ],
+    "classification_report": {
+      "Organic": {
+        "f1-score": 0.9880287310454908,
+        "precision": 0.9911929543634908,
+        "recall": 0.984884645982498,
+        "support": 2514.0
+      },
+      "Recyclable": {
+        "f1-score": 0.9850597609561753,
+        "precision": 0.9811507936507936,
+        "recall": 0.989,
+        "support": 2000.0
+      },
+      "accuracy": 0.9867080194949047,
+      "macro avg": {
+        "f1-score": 0.9865442460008331,
+        "precision": 0.9861718740071421,
+        "recall": 0.9869423229912491,
+        "support": 4514.0
+      },
+      "weighted avg": {
+        "f1-score": 0.9867132812939111,
+        "precision": 0.986743614216084,
+        "recall": 0.9867080194949047,
+        "support": 4514.0
+      }
+    },
+    "classification_report_file": "/kaggle/working/v8_dinov3_vit7b_frozen_cache_upgrade/heads/fold0_specialist_ro_specialist_final_fold0_seed42_classification_report.csv",
+    "confusion_matrix": [
+      [
+        1978,
+        22
+      ],
+      [
+        38,
+        2476
+      ]
+    ],
+    "fold_assignment_sha256": "0a06976e5dc3cdb0b3f1f5043ff033bf95a40dd2b0cb82154bbf34d701ee305c",
+    "history_file": "/kaggle/working/v8_dinov3_vit7b_frozen_cache_upgrade/heads/fold0_specialist_ro_specialist_final_fold0_seed42_history.csv",
+    "locked_v8_contract_signature": "5241f8fc5f45ace336d07db424abd4cc59a2ec599219dc5182e21875b7fe97d6",
+    "macro_f1": 0.9865442460008331,
+    "parameter_count": 4212226,
+    "prediction_file": "/kaggle/working/v8_dinov3_vit7b_frozen_cache_upgrade/heads/fold0_specialist_ro_specialist_final_fold0_seed42_predictions.csv",
+    "probe_kind": "specialist",
+    "revision_marker": "v8_ro_hierarchical_specialist_final_cache_v1",
+    "rows": 4514,
+    "schema_version": 1,
+    "seed": 42,
+    "stage": "fold0_specialist",
+    "total_errors": 60,
+    "train_class_counts": [
+      7999,
+      10053
+    ],
+    "training_folds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "training_seconds": 14.245275871000047,
+    "validation_fold": 0
+  }
+}

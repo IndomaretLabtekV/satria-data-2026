@@ -1,0 +1,28 @@
+{
+  "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+  "fixed_hyperparameters": {
+    "batch_size": 256,
+    "gradient_clip_max_norm": 1.0,
+    "learning_rate": 0.0008,
+    "max_epochs": 15,
+    "optimizer": "AdamW",
+    "patience": 5,
+    "scheduler": "CosineAnnealingLR",
+    "seed": 42,
+    "weight_decay": 0.0001
+  },
+  "fold_assignment_sha256": "0a06976e5dc3cdb0b3f1f5043ff033bf95a40dd2b0cb82154bbf34d701ee305c",
+  "gates": {
+    "maximum_electronic_f1_degradation": 0.0005,
+    "maximum_ro_errors_exclusive": 187,
+    "minimum_aggregate_macro_f1": 0.9905,
+    "minimum_electronic_f1": 0.9933,
+    "minimum_folds_beating_reproduced_control": 3,
+    "require_total_error_decline": true
+  },
+  "model_id": "facebook/dinov3-vit7b16-pretrain-lvd1689m",
+  "model_revision": "b80367753773648a6793235ab9c65cdbb029506f",
+  "ran": false,
+  "reason": "Fold-0 gate did not pass.",
+  "selected_approach": "binary Recyclable/Organic specialist with Electronic-preserving hierarchical probability-mass fusion"
+}

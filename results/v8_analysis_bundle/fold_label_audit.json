@@ -1,0 +1,60 @@
+{
+  "development_fold": 0,
+  "fold_assignment_sha256": "0a06976e5dc3cdb0b3f1f5043ff033bf95a40dd2b0cb82154bbf34d701ee305c",
+  "fold_rows": [
+    {
+      "class_0_rows": 2000,
+      "class_1_rows": 792,
+      "class_2_rows": 2514,
+      "fold": 0,
+      "rows": 5306
+    },
+    {
+      "class_0_rows": 2000,
+      "class_1_rows": 792,
+      "class_2_rows": 2514,
+      "fold": 1,
+      "rows": 5306
+    },
+    {
+      "class_0_rows": 2000,
+      "class_1_rows": 792,
+      "class_2_rows": 2513,
+      "fold": 2,
+      "rows": 5305
+    },
+    {
+      "class_0_rows": 2000,
+      "class_1_rows": 792,
+      "class_2_rows": 2513,
+      "fold": 3,
+      "rows": 5305
+    },
+    {
+      "class_0_rows": 1999,
+      "class_1_rows": 793,
+      "class_2_rows": 2513,
+      "fold": 4,
+      "rows": 5305
+    }
+  ],
+  "historical_assessment_folds_reused_for_confirmation": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "non_predictive_alignment_fields": [
+    "row_index",
+    "image_id",
+    "fold"
+  ],
+  "official_test_is_not_a_fold": true,
+  "pass": true,
+  "predictive_inputs": [
+    "cached final-layer CLS vector",
+    "cached final-layer true-patch mean vector"
+  ],
+  "revision_marker": "v8_ro_hierarchical_specialist_final_cache_v1",
+  "schema_version": 1
+}

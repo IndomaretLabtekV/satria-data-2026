@@ -1,0 +1,77 @@
+{
+  "accuracy": 0.9867080194949047,
+  "best_epoch": 5,
+  "best_selection_log_loss": 0.05933137814988102,
+  "best_selection_macro_f1": 0.9865442460008331,
+  "binary_log_loss": 0.05933137825510913,
+  "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+  "candidate": "ro_specialist_final",
+  "checkpoint_file": "/kaggle/working/v8_dinov3_vit7b_frozen_cache_upgrade/heads/fold0_specialist_ro_specialist_final_fold0_seed42.pt",
+  "class_weights": [
+    1.1283910274505615,
+    0.8978414535522461
+  ],
+  "classification_report": {
+    "Organic": {
+      "f1-score": 0.9880287310454908,
+      "precision": 0.9911929543634908,
+      "recall": 0.984884645982498,
+      "support": 2514.0
+    },
+    "Recyclable": {
+      "f1-score": 0.9850597609561753,
+      "precision": 0.9811507936507936,
+      "recall": 0.989,
+      "support": 2000.0
+    },
+    "accuracy": 0.9867080194949047,
+    "macro avg": {
+      "f1-score": 0.9865442460008331,
+      "precision": 0.9861718740071421,
+      "recall": 0.9869423229912491,
+      "support": 4514.0
+    },
+    "weighted avg": {
+      "f1-score": 0.9867132812939111,
+      "precision": 0.986743614216084,
+      "recall": 0.9867080194949047,
+      "support": 4514.0
+    }
+  },
+  "classification_report_file": "/kaggle/working/v8_dinov3_vit7b_frozen_cache_upgrade/heads/fold0_specialist_ro_specialist_final_fold0_seed42_classification_report.csv",
+  "confusion_matrix": [
+    [
+      1978,
+      22
+    ],
+    [
+      38,
+      2476
+    ]
+  ],
+  "fold_assignment_sha256": "0a06976e5dc3cdb0b3f1f5043ff033bf95a40dd2b0cb82154bbf34d701ee305c",
+  "history_file": "/kaggle/working/v8_dinov3_vit7b_frozen_cache_upgrade/heads/fold0_specialist_ro_specialist_final_fold0_seed42_history.csv",
+  "locked_v8_contract_signature": "5241f8fc5f45ace336d07db424abd4cc59a2ec599219dc5182e21875b7fe97d6",
+  "macro_f1": 0.9865442460008331,
+  "parameter_count": 4212226,
+  "prediction_file": "/kaggle/working/v8_dinov3_vit7b_frozen_cache_upgrade/heads/fold0_specialist_ro_specialist_final_fold0_seed42_predictions.csv",
+  "probe_kind": "specialist",
+  "revision_marker": "v8_ro_hierarchical_specialist_final_cache_v1",
+  "rows": 4514,
+  "schema_version": 1,
+  "seed": 42,
+  "stage": "fold0_specialist",
+  "total_errors": 60,
+  "train_class_counts": [
+    7999,
+    10053
+  ],
+  "training_folds": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "training_seconds": 14.245275871000047,
+  "validation_fold": 0
+}

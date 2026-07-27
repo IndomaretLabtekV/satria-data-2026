@@ -1,0 +1,648 @@
+{
+  "approach_decision": {
+    "decision_timing": "fixed before any V8 fold-0 scoring",
+    "evidence_reviewed": [
+      "V7 run_manifest.json, experiment_decision.json, head_selection.json",
+      "V7 fold-0 comparison, aggregate metrics, all five head metrics/histories/reports/predictions",
+      "V7 historical folds 1-4 metrics, reports, predictions, high-confidence errors, R/O gallery CSV and PNG",
+      "V7 feature-cache manifest, fold/data signature, model/preprocess audit, preflight, runtime summary",
+      "V7, V6 and V5 notebooks; competition technical guide; project handoff/context notes",
+      "DINOv3 report, selected frozen-readout/layer-selection references, and waste-classification review"
+    ],
+    "expected_mechanism": "learn the dominant R/O boundary directly while leaving the strong main-head Electronic probability and decision mask unchanged",
+    "key_risks": [
+      "The binary specialist may overfit ambiguous or noisy R/O examples.",
+      "A specialist trained without Electronic examples may emit arbitrary R/O probabilities on Electronic inputs; the fusion therefore preserves the main Electronic decision mask.",
+      "Historical folds 1-4 informed the V8 direction and are confirmation folds, not pristine test-like assessment data."
+    ],
+    "primary_candidate": "ro_specialist_blend75",
+    "rejected_alternatives": {
+      "broad_classifier_redesign": "V7 already screened five heads; the selected regularized final-layer MLP won clearly.",
+      "calibration_only": "May improve probability quality but cannot by itself improve argmax Macro F1; threshold tuning would invite post-hoc overfit.",
+      "feature_space_augmentation": "Higher design risk and broader search than justified by the deadline and concentrated error pattern.",
+      "generic_last_four_readout": "The V7 last-four weighted-gated head underperformed the selected final-layer head.",
+      "mass_relabeling_or_sample_removal": "The gallery shows ambiguity, not evidence for automatic label changes; official labels stay canonical."
+    },
+    "related_ablation": "ro_specialist_full",
+    "revision_marker": "v8_ro_hierarchical_specialist_final_cache_v1",
+    "runtime_verified_v7_evidence": {
+      "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+      "control_recipe_resolved_from_checkpoint_metadata": {
+        "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+        "candidate": "regularized_mlp_final",
+        "candidate_spec": {
+          "dropout": 0.4,
+          "label_smoothing": 0.05,
+          "readout": "regularized official final-normed last-block concat"
+        },
+        "class_weights": [
+          0.8843188881874084,
+          2.232144832611084,
+          0.7036373615264893
+        ],
+        "gradient_clip_max_norm": 1.0,
+        "learning_rate": 0.0008,
+        "max_epochs": 15,
+        "patience": 5,
+        "revision_marker": "v7_official_final_norm_before_pooling_v2",
+        "schema_version": 1,
+        "seed": 42,
+        "stage": "development",
+        "training_folds": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "validation_fold": 0,
+        "weight_decay": 0.0001
+      },
+      "fold0": {
+        "last4_weighted_gated_macro_f1": 0.9880727960809867,
+        "selected_control_electronic_f1": 0.9955891619407687,
+        "selected_control_log_loss": 0.10112759881958534,
+        "selected_control_macro_f1": 0.9899180117906018,
+        "selected_control_ro_errors": 54,
+        "selected_control_total_errors": 61
+      },
+      "historical_folds1_4": {
+        "baseline_errors_fixed_by_selected": 65,
+        "baseline_log_loss": 0.06491023841991393,
+        "newly_broken_by_selected": 38,
+        "ro_share_of_selected_errors": 0.827433628318584,
+        "selected_electronic_f1": 0.9938592347661785,
+        "selected_log_loss": 0.0912914039773015,
+        "selected_macro_f1": 0.990190599402788,
+        "selected_ro_errors": 187,
+        "selected_total_errors": 226
+      },
+      "model_id": "facebook/dinov3-vit7b16-pretrain-lvd1689m",
+      "model_revision": "b80367753773648a6793235ab9c65cdbb029506f",
+      "pass": true,
+      "required_artifact_count": 23,
+      "revision_marker": "v8_ro_hierarchical_specialist_final_cache_v1",
+      "schema_version": 1,
+      "test_access_guard_passed": true,
+      "v7_root": "/kaggle/input/datasets/riantamaputra/v7-results/v7_dinov3_vit7b_frozen_raw"
+    },
+    "schema_version": 1,
+    "selected_family": "binary Recyclable/Organic specialist with Electronic-preserving hierarchical probability-mass fusion",
+    "verified_repository_evidence": {
+      "v7_fold0_selected_macro_f1": 0.9899180117906018,
+      "v7_fold0_selected_ro_errors": 54,
+      "v7_fold0_selected_total_errors": 61,
+      "v7_historical_folds1_4_electronic_f1": 0.9938592347661785,
+      "v7_historical_folds1_4_macro_f1": 0.990190599402788,
+      "v7_historical_folds1_4_ro_errors": 187,
+      "v7_historical_folds1_4_total_errors": 226
+    },
+    "why_best_expected_value_now": "R/O accounts for most verified residual errors, the final cached readout already beat the generic last-four alternative, and one binary probe is cheap while the fusion structurally protects Electronic behavior."
+  },
+  "artifact_count": 41,
+  "artifact_inventory": [
+    "approach_decision.json",
+    "cache_compatibility_audit.json",
+    "confirmation_status.json",
+    "control_reproduction.json",
+    "final_adoption_decision.json",
+    "fold0_candidate_comparison.csv",
+    "fold0_candidate_metrics.json",
+    "fold0_confidence_margin_comparison.png",
+    "fold0_confusion_comparison.png",
+    "fold0_control_confidence_bins.csv",
+    "fold0_corrected_samples.csv",
+    "fold0_decision.json",
+    "fold0_diagnostic_summary.json",
+    "fold0_high_confidence_errors.csv",
+    "fold0_paired_error_delta.csv",
+    "fold0_prediction_disagreement_matrix.csv",
+    "fold0_regressed_samples.csv",
+    "fold_label_audit.json",
+    "heads/fold0_control_regularized_mlp_final_fold0_seed42.pt",
+    "heads/fold0_control_regularized_mlp_final_fold0_seed42_classification_report.csv",
+    "heads/fold0_control_regularized_mlp_final_fold0_seed42_history.csv",
+    "heads/fold0_control_regularized_mlp_final_fold0_seed42_metrics.json",
+    "heads/fold0_control_regularized_mlp_final_fold0_seed42_predictions.csv",
+    "heads/fold0_ro_specialist_blend75_fold0_seed42.pt",
+    "heads/fold0_ro_specialist_blend75_fold0_seed42_classification_report.csv",
+    "heads/fold0_ro_specialist_blend75_fold0_seed42_history.csv",
+    "heads/fold0_ro_specialist_blend75_fold0_seed42_metrics.json",
+    "heads/fold0_ro_specialist_blend75_fold0_seed42_predictions.csv",
+    "heads/fold0_ro_specialist_full_fold0_seed42.pt",
+    "heads/fold0_ro_specialist_full_fold0_seed42_classification_report.csv",
+    "heads/fold0_ro_specialist_full_fold0_seed42_history.csv",
+    "heads/fold0_ro_specialist_full_fold0_seed42_metrics.json",
+    "heads/fold0_ro_specialist_full_fold0_seed42_predictions.csv",
+    "heads/fold0_specialist_ro_specialist_final_fold0_seed42.pt",
+    "heads/fold0_specialist_ro_specialist_final_fold0_seed42_classification_report.csv",
+    "heads/fold0_specialist_ro_specialist_final_fold0_seed42_history.csv",
+    "heads/fold0_specialist_ro_specialist_final_fold0_seed42_metrics.json",
+    "heads/fold0_specialist_ro_specialist_final_fold0_seed42_predictions.csv",
+    "locked_v8_contract.json",
+    "run_manifest.json",
+    "v7_artifact_audit.json"
+  ],
+  "backbone_state": "fully frozen in V7; not imported, loaded, instantiated, or forwarded in V8",
+  "competition_compliance": {
+    "difficult_samples_removed_from_model_disagreement": false,
+    "external_labeled_images_used": false,
+    "filenames_paths_metadata_exif_dimensions_used_as_predictive_features": false,
+    "mass_relabeling": false,
+    "official_labeled_train_only": true,
+    "pseudo_labeling": false,
+    "public_pretrained_model_documented": "facebook/dinov3-vit7b16-pretrain-lvd1689m",
+    "submission_created": false,
+    "template_accessed": false,
+    "test_access_guard_active": true,
+    "test_embedding_or_inference": false,
+    "test_hashed_or_decoded": false,
+    "test_inspected_or_enumerated": false,
+    "test_tuning_or_calibration": false,
+    "visual_cached_features_only": true
+  },
+  "confirmation_status": {
+    "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+    "fixed_hyperparameters": {
+      "batch_size": 256,
+      "gradient_clip_max_norm": 1.0,
+      "learning_rate": 0.0008,
+      "max_epochs": 15,
+      "optimizer": "AdamW",
+      "patience": 5,
+      "scheduler": "CosineAnnealingLR",
+      "seed": 42,
+      "weight_decay": 0.0001
+    },
+    "fold_assignment_sha256": "0a06976e5dc3cdb0b3f1f5043ff033bf95a40dd2b0cb82154bbf34d701ee305c",
+    "gates": {
+      "maximum_electronic_f1_degradation": 0.0005,
+      "maximum_ro_errors_exclusive": 187,
+      "minimum_aggregate_macro_f1": 0.9905,
+      "minimum_electronic_f1": 0.9933,
+      "minimum_folds_beating_reproduced_control": 3,
+      "require_total_error_decline": true
+    },
+    "model_id": "facebook/dinov3-vit7b16-pretrain-lvd1689m",
+    "model_revision": "b80367753773648a6793235ab9c65cdbb029506f",
+    "ran": false,
+    "reason": "Fold-0 gate did not pass.",
+    "selected_approach": "binary Recyclable/Organic specialist with Electronic-preserving hierarchical probability-mass fusion"
+  },
+  "control_reproduction": {
+    "absolute_macro_f1_difference": 0.0,
+    "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+    "candidate": "regularized_mlp_final",
+    "checkpoint_file": "/kaggle/working/v8_dinov3_vit7b_frozen_cache_upgrade/heads/fold0_control_regularized_mlp_final_fold0_seed42.pt",
+    "expected_v7_macro_f1": 0.9899180117906018,
+    "fold_assignment_sha256": "0a06976e5dc3cdb0b3f1f5043ff033bf95a40dd2b0cb82154bbf34d701ee305c",
+    "maximum_allowed_difference": 0.0002,
+    "pass": true,
+    "reproduced_macro_f1": 0.9899180117906018,
+    "resolved_v7_recipe": {
+      "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+      "candidate": "regularized_mlp_final",
+      "candidate_spec": {
+        "dropout": 0.4,
+        "label_smoothing": 0.05,
+        "readout": "regularized official final-normed last-block concat"
+      },
+      "class_weights": [
+        0.8843188881874084,
+        2.232144832611084,
+        0.7036373615264893
+      ],
+      "gradient_clip_max_norm": 1.0,
+      "learning_rate": 0.0008,
+      "max_epochs": 15,
+      "patience": 5,
+      "revision_marker": "v7_official_final_norm_before_pooling_v2",
+      "schema_version": 1,
+      "seed": 42,
+      "stage": "development",
+      "training_folds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "validation_fold": 0,
+      "weight_decay": 0.0001
+    },
+    "revision_marker": "v8_ro_hierarchical_specialist_final_cache_v1",
+    "schema_version": 1,
+    "validation_fold": 0
+  },
+  "environment": {
+    "cuda_available": true,
+    "device": "cuda:0",
+    "python": "3.12.13",
+    "torch": "2.10.0+cu128"
+  },
+  "experiment_name": "v8_dinov3_vit7b_frozen_cache_upgrade",
+  "final_adoption_decision": {
+    "adopt_v8": false,
+    "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+    "confirmation_ran": false,
+    "final_pipeline": "V7 regularized_mlp_final",
+    "fixed_hyperparameters": {
+      "batch_size": 256,
+      "gradient_clip_max_norm": 1.0,
+      "learning_rate": 0.0008,
+      "max_epochs": 15,
+      "optimizer": "AdamW",
+      "patience": 5,
+      "scheduler": "CosineAnnealingLR",
+      "seed": 42,
+      "weight_decay": 0.0001
+    },
+    "fold0_decision": {
+      "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+      "candidate_ranking": [
+        "ro_specialist_full",
+        "ro_specialist_blend75"
+      ],
+      "diagnostic_candidate": "ro_specialist_full",
+      "fixed_hyperparameters": {
+        "batch_size": 256,
+        "gradient_clip_max_norm": 1.0,
+        "learning_rate": 0.0008,
+        "max_epochs": 15,
+        "optimizer": "AdamW",
+        "patience": 5,
+        "scheduler": "CosineAnnealingLR",
+        "seed": 42,
+        "weight_decay": 0.0001
+      },
+      "fold_assignment_sha256": "0a06976e5dc3cdb0b3f1f5043ff033bf95a40dd2b0cb82154bbf34d701ee305c",
+      "gate_results": {
+        "ro_specialist_blend75": {
+          "conditions": {
+            "corrected_samples": true,
+            "electronic_decision_invariant": true,
+            "electronic_f1": true,
+            "gain_over_control": false,
+            "locked_contract_unchanged": true,
+            "macro_f1": false,
+            "not_single_sample_dependent": false,
+            "ro_error_reduction": false,
+            "total_errors": false
+          },
+          "gates": {
+            "maximum_electronic_f1_degradation": 0.0005,
+            "maximum_total_error_increase": 0,
+            "minimum_corrected_samples": 4,
+            "minimum_gain_over_reproduced_control": 0.0003,
+            "minimum_macro_f1": 0.9903,
+            "minimum_net_corrections": 3,
+            "minimum_ro_error_reduction": 3
+          },
+          "observed": {
+            "corrected_samples": 6,
+            "electronic_f1": 0.9955891619407687,
+            "electronic_f1_delta": 0.0,
+            "gain_over_control": -0.0005956249239723599,
+            "macro_f1": 0.9893223868666294,
+            "net_corrections": -4,
+            "prediction_disagreements": 16,
+            "regressed_samples": 10,
+            "ro_error_reduction": -4,
+            "ro_errors": 58,
+            "total_error_delta": 4,
+            "total_errors": 65
+          },
+          "pass": false
+        },
+        "ro_specialist_full": {
+          "conditions": {
+            "corrected_samples": true,
+            "electronic_decision_invariant": true,
+            "electronic_f1": true,
+            "gain_over_control": false,
+            "locked_contract_unchanged": true,
+            "macro_f1": false,
+            "not_single_sample_dependent": false,
+            "ro_error_reduction": false,
+            "total_errors": false
+          },
+          "gates": {
+            "maximum_electronic_f1_degradation": 0.0005,
+            "maximum_total_error_increase": 0,
+            "minimum_corrected_samples": 4,
+            "minimum_gain_over_reproduced_control": 0.0003,
+            "minimum_macro_f1": 0.9903,
+            "minimum_net_corrections": 3,
+            "minimum_ro_error_reduction": 3
+          },
+          "observed": {
+            "corrected_samples": 10,
+            "electronic_f1": 0.9955891619407687,
+            "electronic_f1_delta": 0.0,
+            "gain_over_control": -0.000445580147287683,
+            "macro_f1": 0.9894724316433141,
+            "net_corrections": -3,
+            "prediction_disagreements": 23,
+            "regressed_samples": 13,
+            "ro_error_reduction": -3,
+            "ro_errors": 57,
+            "total_error_delta": 3,
+            "total_errors": 64
+          },
+          "pass": false
+        }
+      },
+      "gates": {
+        "maximum_electronic_f1_degradation": 0.0005,
+        "maximum_total_error_increase": 0,
+        "minimum_corrected_samples": 4,
+        "minimum_gain_over_reproduced_control": 0.0003,
+        "minimum_macro_f1": 0.9903,
+        "minimum_net_corrections": 3,
+        "minimum_ro_error_reduction": 3
+      },
+      "historical_folds1_4_accessed_for_v8_direction": true,
+      "locked_contract_signature": "5241f8fc5f45ace336d07db424abd4cc59a2ec599219dc5182e21875b7fe97d6",
+      "model_id": "facebook/dinov3-vit7b16-pretrain-lvd1689m",
+      "model_revision": "b80367753773648a6793235ab9c65cdbb029506f",
+      "official_test_accessed": false,
+      "pass": false,
+      "reason": "No locked specialist fusion passed every fold-0 gate; stop cleanly and retain V7.",
+      "revision_marker": "v8_ro_hierarchical_specialist_final_cache_v1",
+      "schema_version": 1,
+      "selected_approach": "binary Recyclable/Organic specialist with Electronic-preserving hierarchical probability-mass fusion",
+      "selected_candidate": null
+    },
+    "fold_assignment_sha256": "0a06976e5dc3cdb0b3f1f5043ff033bf95a40dd2b0cb82154bbf34d701ee305c",
+    "gates": {
+      "confirmation": {
+        "maximum_electronic_f1_degradation": 0.0005,
+        "maximum_ro_errors_exclusive": 187,
+        "minimum_aggregate_macro_f1": 0.9905,
+        "minimum_electronic_f1": 0.9933,
+        "minimum_folds_beating_reproduced_control": 3,
+        "require_total_error_decline": true
+      },
+      "fold0": {
+        "maximum_electronic_f1_degradation": 0.0005,
+        "maximum_total_error_increase": 0,
+        "minimum_corrected_samples": 4,
+        "minimum_gain_over_reproduced_control": 0.0003,
+        "minimum_macro_f1": 0.9903,
+        "minimum_net_corrections": 3,
+        "minimum_ro_error_reduction": 3
+      }
+    },
+    "model_id": "facebook/dinov3-vit7b16-pretrain-lvd1689m",
+    "model_revision": "b80367753773648a6793235ab9c65cdbb029506f",
+    "official_test_accessed": false,
+    "reason": "No locked specialist fusion passed every fold-0 gate; stop cleanly and retain V7.",
+    "revision_marker": "v8_ro_hierarchical_specialist_final_cache_v1",
+    "schema_version": 1,
+    "selected_approach": "binary Recyclable/Organic specialist with Electronic-preserving hierarchical probability-mass fusion",
+    "submission_created": false
+  },
+  "fixed_hyperparameters": {
+    "batch_size": 256,
+    "gradient_clip_max_norm": 1.0,
+    "learning_rate": 0.0008,
+    "max_epochs": 15,
+    "optimizer": "AdamW",
+    "patience": 5,
+    "scheduler": "CosineAnnealingLR",
+    "seed": 42,
+    "weight_decay": 0.0001
+  },
+  "fold0_decision": {
+    "cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+    "candidate_ranking": [
+      "ro_specialist_full",
+      "ro_specialist_blend75"
+    ],
+    "diagnostic_candidate": "ro_specialist_full",
+    "fixed_hyperparameters": {
+      "batch_size": 256,
+      "gradient_clip_max_norm": 1.0,
+      "learning_rate": 0.0008,
+      "max_epochs": 15,
+      "optimizer": "AdamW",
+      "patience": 5,
+      "scheduler": "CosineAnnealingLR",
+      "seed": 42,
+      "weight_decay": 0.0001
+    },
+    "fold_assignment_sha256": "0a06976e5dc3cdb0b3f1f5043ff033bf95a40dd2b0cb82154bbf34d701ee305c",
+    "gate_results": {
+      "ro_specialist_blend75": {
+        "conditions": {
+          "corrected_samples": true,
+          "electronic_decision_invariant": true,
+          "electronic_f1": true,
+          "gain_over_control": false,
+          "locked_contract_unchanged": true,
+          "macro_f1": false,
+          "not_single_sample_dependent": false,
+          "ro_error_reduction": false,
+          "total_errors": false
+        },
+        "gates": {
+          "maximum_electronic_f1_degradation": 0.0005,
+          "maximum_total_error_increase": 0,
+          "minimum_corrected_samples": 4,
+          "minimum_gain_over_reproduced_control": 0.0003,
+          "minimum_macro_f1": 0.9903,
+          "minimum_net_corrections": 3,
+          "minimum_ro_error_reduction": 3
+        },
+        "observed": {
+          "corrected_samples": 6,
+          "electronic_f1": 0.9955891619407687,
+          "electronic_f1_delta": 0.0,
+          "gain_over_control": -0.0005956249239723599,
+          "macro_f1": 0.9893223868666294,
+          "net_corrections": -4,
+          "prediction_disagreements": 16,
+          "regressed_samples": 10,
+          "ro_error_reduction": -4,
+          "ro_errors": 58,
+          "total_error_delta": 4,
+          "total_errors": 65
+        },
+        "pass": false
+      },
+      "ro_specialist_full": {
+        "conditions": {
+          "corrected_samples": true,
+          "electronic_decision_invariant": true,
+          "electronic_f1": true,
+          "gain_over_control": false,
+          "locked_contract_unchanged": true,
+          "macro_f1": false,
+          "not_single_sample_dependent": false,
+          "ro_error_reduction": false,
+          "total_errors": false
+        },
+        "gates": {
+          "maximum_electronic_f1_degradation": 0.0005,
+          "maximum_total_error_increase": 0,
+          "minimum_corrected_samples": 4,
+          "minimum_gain_over_reproduced_control": 0.0003,
+          "minimum_macro_f1": 0.9903,
+          "minimum_net_corrections": 3,
+          "minimum_ro_error_reduction": 3
+        },
+        "observed": {
+          "corrected_samples": 10,
+          "electronic_f1": 0.9955891619407687,
+          "electronic_f1_delta": 0.0,
+          "gain_over_control": -0.000445580147287683,
+          "macro_f1": 0.9894724316433141,
+          "net_corrections": -3,
+          "prediction_disagreements": 23,
+          "regressed_samples": 13,
+          "ro_error_reduction": -3,
+          "ro_errors": 57,
+          "total_error_delta": 3,
+          "total_errors": 64
+        },
+        "pass": false
+      }
+    },
+    "gates": {
+      "maximum_electronic_f1_degradation": 0.0005,
+      "maximum_total_error_increase": 0,
+      "minimum_corrected_samples": 4,
+      "minimum_gain_over_reproduced_control": 0.0003,
+      "minimum_macro_f1": 0.9903,
+      "minimum_net_corrections": 3,
+      "minimum_ro_error_reduction": 3
+    },
+    "historical_folds1_4_accessed_for_v8_direction": true,
+    "locked_contract_signature": "5241f8fc5f45ace336d07db424abd4cc59a2ec599219dc5182e21875b7fe97d6",
+    "model_id": "facebook/dinov3-vit7b16-pretrain-lvd1689m",
+    "model_revision": "b80367753773648a6793235ab9c65cdbb029506f",
+    "official_test_accessed": false,
+    "pass": false,
+    "reason": "No locked specialist fusion passed every fold-0 gate; stop cleanly and retain V7.",
+    "revision_marker": "v8_ro_hierarchical_specialist_final_cache_v1",
+    "schema_version": 1,
+    "selected_approach": "binary Recyclable/Organic specialist with Electronic-preserving hierarchical probability-mass fusion",
+    "selected_candidate": null
+  },
+  "fold_assignment_sha256": "0a06976e5dc3cdb0b3f1f5043ff033bf95a40dd2b0cb82154bbf34d701ee305c",
+  "gates": {
+    "confirmation": {
+      "maximum_electronic_f1_degradation": 0.0005,
+      "maximum_ro_errors_exclusive": 187,
+      "minimum_aggregate_macro_f1": 0.9905,
+      "minimum_electronic_f1": 0.9933,
+      "minimum_folds_beating_reproduced_control": 3,
+      "require_total_error_decline": true
+    },
+    "fold0": {
+      "maximum_electronic_f1_degradation": 0.0005,
+      "maximum_total_error_increase": 0,
+      "minimum_corrected_samples": 4,
+      "minimum_gain_over_reproduced_control": 0.0003,
+      "minimum_macro_f1": 0.9903,
+      "minimum_net_corrections": 3,
+      "minimum_ro_error_reduction": 3
+    }
+  },
+  "limitations": [
+    "Folds 1-4 informed the V8 direction and are historical assessment folds reused for confirmation, not pristine test-like data.",
+    "The image gallery suggests ambiguity; suspicious rows are manual-review candidates only and official labels remain unchanged.",
+    "The notebook must reproduce V7 within tolerance at runtime before any V8 screening.",
+    "No local or Kaggle runtime success is implied by the static notebook artifact."
+  ],
+  "locked_v8_contract": {
+    "backbone_loaded_or_forwarded": false,
+    "cache_only": true,
+    "candidate_selection": "passing candidates ranked by Macro F1, then lower log loss, then fixed candidate order",
+    "confirmation_folds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "confirmation_gates": {
+      "maximum_electronic_f1_degradation": 0.0005,
+      "maximum_ro_errors_exclusive": 187,
+      "minimum_aggregate_macro_f1": 0.9905,
+      "minimum_electronic_f1": 0.9933,
+      "minimum_folds_beating_reproduced_control": 3,
+      "require_total_error_decline": true
+    },
+    "control": {
+      "architecture": "LayerNorm(8192)-Linear(512)-GELU-Dropout(0.40)-Linear(3)",
+      "label_smoothing": 0.05,
+      "name": "regularized_mlp_final",
+      "weighted_cross_entropy": true
+    },
+    "control_reproduction_tolerance": 0.0002,
+    "development_fold": 0,
+    "feature_readout": "final cached block concat(CLS, mean true patches)",
+    "fold0_gates": {
+      "maximum_electronic_f1_degradation": 0.0005,
+      "maximum_total_error_increase": 0,
+      "minimum_corrected_samples": 4,
+      "minimum_gain_over_reproduced_control": 0.0003,
+      "minimum_macro_f1": 0.9903,
+      "minimum_net_corrections": 3,
+      "minimum_ro_error_reduction": 3
+    },
+    "fold_assignment_sha256": "0a06976e5dc3cdb0b3f1f5043ff033bf95a40dd2b0cb82154bbf34d701ee305c",
+    "fusion_invariants": [
+      "main Electronic probability preserved",
+      "main Electronic decision mask preserved",
+      "only R/O probability mass redistributed"
+    ],
+    "fusion_specs": {
+      "ro_specialist_blend75": {
+        "role": "primary",
+        "specialist_weight": 0.75
+      },
+      "ro_specialist_full": {
+        "role": "full-replacement mechanism ablation",
+        "specialist_weight": 1.0
+      }
+    },
+    "model_id": "facebook/dinov3-vit7b16-pretrain-lvd1689m",
+    "model_revision": "b80367753773648a6793235ab9c65cdbb029506f",
+    "official_test_accessed": false,
+    "revision_marker": "v8_ro_hierarchical_specialist_final_cache_v1",
+    "schema_version": 1,
+    "single_sample_dependency_guard": "Require at least four corrected samples and at least three net corrections; high-confidence residuals are manual-review candidates only.",
+    "specialist": {
+      "architecture": "LayerNorm(8192)-Linear(512)-GELU-Dropout(0.40)-Linear(2)",
+      "checkpoint_selection": "binary validation Macro F1, then lower binary log loss",
+      "label_smoothing": 0.05,
+      "name": "ro_specialist_final",
+      "training_labels": [
+        0,
+        2
+      ],
+      "weighted_cross_entropy": true
+    },
+    "submission_created": false,
+    "training": {
+      "batch_size": 256,
+      "gradient_clip_max_norm": 1.0,
+      "learning_rate": 0.0008,
+      "max_epochs": 15,
+      "optimizer": "AdamW",
+      "patience": 5,
+      "scheduler": "CosineAnnealingLR",
+      "seed": 42,
+      "weight_decay": 0.0001
+    },
+    "v7_cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc"
+  },
+  "locked_v8_contract_signature": "5241f8fc5f45ace336d07db424abd4cc59a2ec599219dc5182e21875b7fe97d6",
+  "model_id_inherited_from_v7": "facebook/dinov3-vit7b16-pretrain-lvd1689m",
+  "model_revision_inherited_from_v7": "b80367753773648a6793235ab9c65cdbb029506f",
+  "notebook_elapsed_seconds": 56.397832264000044,
+  "revision_marker": "v8_ro_hierarchical_specialist_final_cache_v1",
+  "schema_version": 1,
+  "selected_approach": "binary Recyclable/Organic specialist with Electronic-preserving hierarchical probability-mass fusion",
+  "v7_cache_signature": "c722dc39a8cba286d3aba34d88f3e8f87071353bc6585e755873659de8560ddc",
+  "v7_root": "/kaggle/input/datasets/riantamaputra/v7-results/v7_dinov3_vit7b_frozen_raw"
+}
