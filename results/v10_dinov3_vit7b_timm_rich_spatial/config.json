@@ -1,0 +1,38 @@
+{
+  "artifact_dir": "/kaggle/working/v10_dinov3_vit7b_timm_rich_spatial",
+  "backbone_backend": "timm",
+  "feature_batch_size": 4,
+  "feature_loader_workers": 2,
+  "feature_shard_size": 256,
+  "generate_control_submission_if_rich_rejected": true,
+  "historical_references": {
+    "v7": {
+      "five_fold_oof_macro_f1": 0.9901360067264733,
+      "five_fold_oof_recyclable_organic_errors": 241,
+      "five_fold_oof_total_errors": 287,
+      "fold0_macro_f1": 0.989918,
+      "model_id": "facebook/dinov3-vit7b16-pretrain-lvd1689m",
+      "status": "historical adopted result, transformers backend, CLS + patch-mean readout"
+    },
+    "v9a": {
+      "adoption_recommendation": false,
+      "assessment_fold_macro_f1_std": 0.000720562511214698,
+      "best_assessment_macro_f1": 0.9904393207699855,
+      "best_recipe_type": "pairwise blend, forbidden by the V10 single-model contract",
+      "control_assessment_macro_f1": 0.9903007998213612,
+      "folds_won_against_control": 2,
+      "macro_f1_gain_over_control": 0.00013852094862432107,
+      "status": "historical rejected result from results/v9a_v7_cached_head_zoo/final_train_only_decision.json"
+    }
+  },
+  "locked_contract_signature": "e58ab25748ae375018d00602f1e2c86cd6d174bc7453da28ff5b6d5f9ad7d808",
+  "prior_cache_search_roots": [
+    "/kaggle/input"
+  ],
+  "team_name": "CHANGE_ME",
+  "test_access_state_at_configuration_time": {
+    "manual_test_labels_accessed": false,
+    "test_images_accessed": false
+  },
+  "zip_include_feature_cache": false
+}

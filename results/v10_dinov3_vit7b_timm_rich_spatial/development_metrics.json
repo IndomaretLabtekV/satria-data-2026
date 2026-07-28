@@ -1,0 +1,307 @@
+{
+  "candidates": [
+    "timm_control",
+    "rich_spatial_fusion"
+  ],
+  "development_fold": 0,
+  "historical_reference_note": "V7 used the Transformers backend; this is context, not a V10 claim.",
+  "historical_reference_v7_fold0_macro_f1": 0.989918,
+  "metrics": {
+    "rich_spatial_fusion": {
+      "accuracy": 0.9864304560874482,
+      "best_epoch": 4,
+      "cache_signature": "fb872b0a49b7d75c8c371d6e259c3a498e55baa2c034dbf14000938f8b7a7e21",
+      "candidate": "rich_spatial_fusion",
+      "candidate_spec": {
+        "architecture": "per-branch LayerNorm(4096) -> shared Linear(4096, 256) -> GELU -> Dropout(0.1) -> concat -> LayerNorm -> Linear(512) -> GELU -> Dropout(0.4) -> Linear(3)",
+        "input_branches": [
+          "block_m4_cls",
+          "block_m4_patch_mean",
+          "block_m3_cls",
+          "block_m3_patch_mean",
+          "block_m2_cls",
+          "block_m2_patch_mean",
+          "block_m1_cls",
+          "block_m1_patch_mean",
+          "final_patch_std",
+          "final_patch_max",
+          "final_top10_salient_mean",
+          "final_top25_salient_mean",
+          "final_top50_salient_mean",
+          "final_quadrant_top_left_mean",
+          "final_quadrant_top_right_mean",
+          "final_quadrant_bottom_left_mean",
+          "final_quadrant_bottom_right_mean"
+        ],
+        "input_dim": 4352,
+        "parameter_count": 3427075,
+        "purpose": "consume every rich spatial and distributional branch in one regularized head"
+      },
+      "class_weights": [
+        0.8843188881874084,
+        2.232144832611084,
+        0.7036373615264893
+      ],
+      "confidence_summary": {
+        "all": {
+          "count": 5306,
+          "mean": 0.9449649138836553,
+          "median": 0.9473425456692908,
+          "q10": 0.9326909219689636,
+          "q90": 0.9935536405601603,
+          "std": 0.05126094065526522
+        },
+        "correct": {
+          "count": 5234,
+          "mean": 0.9475492929222797,
+          "median": 0.9475126145813753,
+          "q10": 0.9336296825765209,
+          "q90": 0.9935977848695834,
+          "std": 0.042536522181383686
+        },
+        "errors": {
+          "count": 72,
+          "mean": 0.7570949154369793,
+          "median": 0.7900087005892484,
+          "q10": 0.4749410897586347,
+          "q90": 0.9397788098028182,
+          "std": 0.16228044507527148
+        }
+      },
+      "confusion_matrix": [
+        [
+          1966,
+          4,
+          30
+        ],
+        [
+          2,
+          790,
+          0
+        ],
+        [
+          35,
+          1,
+          2478
+        ]
+      ],
+      "electronic_errors": 2,
+      "f1_electronic": 0.9955891619407687,
+      "f1_organic": 0.986857825567503,
+      "f1_recyclable": 0.9822633025231077,
+      "locked_contract_signature": "e58ab25748ae375018d00602f1e2c86cd6d174bc7453da28ff5b6d5f9ad7d808",
+      "log_loss": 0.08614553650507427,
+      "macro_f1": 0.9882367633437932,
+      "margin_summary": {
+        "all": {
+          "count": 5306,
+          "mean": 0.9041071114113288,
+          "median": 0.9068905952371844,
+          "q10": 0.882057320103689,
+          "q90": 0.9900344910020951,
+          "std": 0.087730442697676
+        },
+        "correct": {
+          "count": 5234,
+          "mean": 0.9084292870533855,
+          "median": 0.9072713872816077,
+          "q10": 0.883325944238043,
+          "q90": 0.9900916002127513,
+          "std": 0.07258873152486303
+        },
+        "errors": {
+          "count": 72,
+          "mean": 0.5899089543207021,
+          "median": 0.6552357309602399,
+          "q10": 0.06523607035935723,
+          "q90": 0.8981670059259598,
+          "std": 0.28997305909436966
+        }
+      },
+      "organic_to_recyclable": 35,
+      "parameter_count": 3427075,
+      "per_class": {
+        "Electronic": {
+          "f1": 0.9955891619407687,
+          "precision": 0.9937106918238994,
+          "recall": 0.9974747474747475,
+          "support": 792
+        },
+        "Organic": {
+          "f1": 0.986857825567503,
+          "precision": 0.9880382775119617,
+          "recall": 0.9856801909307876,
+          "support": 2514
+        },
+        "Recyclable": {
+          "f1": 0.9822633025231077,
+          "precision": 0.9815277084373439,
+          "recall": 0.983,
+          "support": 2000
+        }
+      },
+      "recyclable_to_organic": 30,
+      "revision_marker": "v10_timm_rich_spatial_17branch_v1",
+      "ro_errors": 65,
+      "rows": 5306,
+      "schema_version": 1,
+      "seed": 42,
+      "stage": "development",
+      "total_errors": 72,
+      "train_class_counts": [
+        7999,
+        3169,
+        10053
+      ],
+      "training_folds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "training_seconds": 33.809292370999174,
+      "validation_fold": 0
+    },
+    "timm_control": {
+      "accuracy": 0.9883151149641914,
+      "best_epoch": 5,
+      "cache_signature": "fb872b0a49b7d75c8c371d6e259c3a498e55baa2c034dbf14000938f8b7a7e21",
+      "candidate": "timm_control",
+      "candidate_spec": {
+        "architecture": "LayerNorm -> Linear(512) -> GELU -> Dropout(0.4) -> Linear(3)",
+        "input_branches": [
+          "block_m1_cls",
+          "block_m1_patch_mean"
+        ],
+        "input_dim": 8192,
+        "parameter_count": 4212739,
+        "purpose": "timm equivalent of the adopted V7 readout on the new cache"
+      },
+      "class_weights": [
+        0.8843188881874084,
+        2.232144832611084,
+        0.7036373615264893
+      ],
+      "confidence_summary": {
+        "all": {
+          "count": 5306,
+          "mean": 0.9216099034597707,
+          "median": 0.9323344739779493,
+          "q10": 0.8790577171063229,
+          "q90": 0.9865745315323216,
+          "std": 0.07174919476209089
+        },
+        "correct": {
+          "count": 5244,
+          "mean": 0.9246987462808788,
+          "median": 0.9328628053315948,
+          "q10": 0.8848053787431077,
+          "q90": 0.9866680648707808,
+          "std": 0.06421147496986875
+        },
+        "errors": {
+          "count": 62,
+          "mean": 0.6603535848486086,
+          "median": 0.6564766805417548,
+          "q10": 0.44391256705230225,
+          "q90": 0.8725460128243167,
+          "std": 0.15088795851390996
+        }
+      },
+      "confusion_matrix": [
+        [
+          1976,
+          2,
+          22
+        ],
+        [
+          2,
+          790,
+          0
+        ],
+        [
+          33,
+          3,
+          2478
+        ]
+      ],
+      "electronic_errors": 2,
+      "f1_electronic": 0.9955891619407687,
+      "f1_organic": 0.9884323893099322,
+      "f1_recyclable": 0.9852904512590377,
+      "locked_contract_signature": "e58ab25748ae375018d00602f1e2c86cd6d174bc7453da28ff5b6d5f9ad7d808",
+      "log_loss": 0.10262680183226831,
+      "macro_f1": 0.9897706675032462,
+      "margin_summary": {
+        "all": {
+          "count": 5306,
+          "mean": 0.8648269432795899,
+          "median": 0.8795591103498785,
+          "q10": 0.8009095973669325,
+          "q90": 0.9778322635314034,
+          "std": 0.12004021043325926
+        },
+        "correct": {
+          "count": 5244,
+          "mean": 0.8699452160046514,
+          "median": 0.880419678518281,
+          "q10": 0.8086980347511356,
+          "q90": 0.9782494566423906,
+          "std": 0.1073227144321152
+        },
+        "errors": {
+          "count": 62,
+          "mean": 0.43192013408245783,
+          "median": 0.4443167306831261,
+          "q10": 0.050195014573533044,
+          "q90": 0.8046360657540169,
+          "std": 0.2633428467186986
+        }
+      },
+      "organic_to_recyclable": 33,
+      "parameter_count": 4212739,
+      "per_class": {
+        "Electronic": {
+          "f1": 0.9955891619407687,
+          "precision": 0.9937106918238994,
+          "recall": 0.9974747474747475,
+          "support": 792
+        },
+        "Organic": {
+          "f1": 0.9884323893099322,
+          "precision": 0.9912,
+          "recall": 0.9856801909307876,
+          "support": 2514
+        },
+        "Recyclable": {
+          "f1": 0.9852904512590377,
+          "precision": 0.9825957235206365,
+          "recall": 0.988,
+          "support": 2000
+        }
+      },
+      "recyclable_to_organic": 22,
+      "revision_marker": "v10_timm_rich_spatial_17branch_v1",
+      "ro_errors": 55,
+      "rows": 5306,
+      "schema_version": 1,
+      "seed": 42,
+      "stage": "development",
+      "total_errors": 62,
+      "train_class_counts": [
+        7999,
+        3169,
+        10053
+      ],
+      "training_folds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "training_seconds": 31.397395501000574,
+      "validation_fold": 0
+    }
+  },
+  "test_images_accessed": false
+}

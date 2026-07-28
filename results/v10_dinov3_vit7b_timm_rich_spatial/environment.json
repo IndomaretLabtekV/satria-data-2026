@@ -1,0 +1,29 @@
+{
+  "environment": {
+    "accelerate_version": "1.13.0",
+    "cuda_version": "12.8",
+    "cudnn_version": 91002,
+    "numpy_version": "2.0.2",
+    "pandas_version": "2.3.3",
+    "platform": "Linux-6.12.90+-x86_64-with-glibc2.35",
+    "python_version": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+    "safetensors_version": "0.7.0",
+    "timm_version": "1.0.26",
+    "torch_version": "2.10.0+cu128",
+    "transformers_version": "4.57.6"
+  },
+  "gpus": [
+    {
+      "device_id": 0,
+      "multi_processor_count": 40,
+      "name": "Tesla T4",
+      "total_vram_gib": 14.56219482421875
+    },
+    {
+      "device_id": 1,
+      "multi_processor_count": 40,
+      "name": "Tesla T4",
+      "total_vram_gib": 14.56219482421875
+    }
+  ]
+}

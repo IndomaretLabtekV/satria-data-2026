@@ -1,0 +1,13 @@
+{
+  "architecture": "LayerNorm -> Linear(512) -> GELU -> Dropout(0.4) -> Linear(3)",
+  "branch_names_match": true,
+  "candidate": "timm_control",
+  "checkpoint": "/kaggle/working/v10_dinov3_vit7b_timm_rich_spatial/final_head.pt",
+  "max_abs_probability_difference": 2.9801131784523704e-08,
+  "pass": true,
+  "predictions_identical": true,
+  "rows": 1458,
+  "submission_row_order_identical": true,
+  "test_cache_signature_matches": true,
+  "tolerance": 1e-06
+}

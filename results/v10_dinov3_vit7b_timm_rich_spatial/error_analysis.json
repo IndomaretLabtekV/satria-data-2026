@@ -1,0 +1,12 @@
+{
+  "comparability_note": "V7 numbers come from the Transformers backend and the CLS + patch-mean cache; they are project context for the same folds and labels, not a protocol-matched causal comparison.",
+  "historical_v7_five_fold_oof_errors": 287,
+  "historical_v7_five_fold_oof_ro_errors": 241,
+  "oof_electronic_errors": 16,
+  "oof_high_confidence_errors": 33,
+  "oof_recyclable_organic_errors": 242,
+  "oof_total_errors": 287,
+  "recyclable_organic_share_of_errors": 0.8432055749128919,
+  "selected_candidate": "timm_control",
+  "test_images_inspected_for_model_decisions": false
+}

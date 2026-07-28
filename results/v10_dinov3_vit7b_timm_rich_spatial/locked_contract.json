@@ -1,0 +1,121 @@
+{
+  "locked_contract": {
+    "assessment_folds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "backbone_backend": "timm",
+    "backbone_dtype": "float16",
+    "backbone_frozen": true,
+    "branch_count": 17,
+    "branch_names": [
+      "block_m4_cls",
+      "block_m4_patch_mean",
+      "block_m3_cls",
+      "block_m3_patch_mean",
+      "block_m2_cls",
+      "block_m2_patch_mean",
+      "block_m1_cls",
+      "block_m1_patch_mean",
+      "final_patch_std",
+      "final_patch_max",
+      "final_top10_salient_mean",
+      "final_top25_salient_mean",
+      "final_top50_salient_mean",
+      "final_quadrant_top_left_mean",
+      "final_quadrant_top_right_mean",
+      "final_quadrant_bottom_left_mean",
+      "final_quadrant_bottom_right_mean"
+    ],
+    "candidates": [
+      "timm_control",
+      "rich_spatial_fusion"
+    ],
+    "control_branch_names": [
+      "block_m1_cls",
+      "block_m1_patch_mean"
+    ],
+    "development_fold": 0,
+    "experiment_name": "v10_dinov3_vit7b_timm_rich_spatial",
+    "experiment_purpose": "patch-aware rich spatial readout of a frozen DINOv3 ViT-7B, single-model end-to-end",
+    "feature_storage_dtype": "float16",
+    "feature_view": "orig",
+    "gates": {
+      "assessment_max_electronic_f1_drop": 0.0005,
+      "assessment_max_single_fold_gain_share": 0.75,
+      "assessment_min_folds_won": 3,
+      "assessment_min_macro_f1_gain": 0.0015,
+      "development_max_electronic_f1_drop": 0.0005,
+      "development_min_macro_f1_gain": 0.0015
+    },
+    "grid_size": 16,
+    "head_protocol": {
+      "batch_size": 256,
+      "class_weights": "total / (num_classes * class_count) from the current training partition",
+      "early_stopping_patience": 5,
+      "gradient_clip_max_norm": 1.0,
+      "label_smoothing": 0.05,
+      "learning_rate": 0.0008,
+      "max_epochs": 15,
+      "model_selection_metric": "validation Macro F1, log loss as secondary diagnostic",
+      "optimizer": "AdamW",
+      "predict_batch_size": 512,
+      "scheduler": "CosineAnnealingLR",
+      "threshold_tuning": false,
+      "weight_decay": 0.0001
+    },
+    "image_size": 256,
+    "last_n_blocks": 4,
+    "n_folds": 5,
+    "normalization_timing": "before CLS extraction and every patch statistic",
+    "official_raw_counts": {
+      "0": 9999,
+      "1": 3961,
+      "2": 12567
+    },
+    "official_test_rows": 1458,
+    "patch_size_expected": 16,
+    "per_token_normalization": "official pretrained DINOv3 final norm, applied exactly once per token",
+    "pooling_compute_dtype": "float32",
+    "revision_marker": "v10_timm_rich_spatial_17branch_v1",
+    "saliency_definition": "cosine similarity between final normalized CLS and final normalized true patch tokens",
+    "salient_top_k": [
+      26,
+      64,
+      128
+    ],
+    "seed": 42,
+    "sharding_max_memory": {
+      "0": "13GiB",
+      "1": "13GiB"
+    },
+    "sharding_strategy": "explicit_contiguous_two_gpu_streamed",
+    "single_model_contract": {
+      "fold_ensembling": false,
+      "horizontal_flip_inference": false,
+      "manual_prediction_correction": false,
+      "model_soup": false,
+      "multi_crop_inference": false,
+      "multiple_backbone_families": false,
+      "probability_blending": false,
+      "seed_ensembling": false,
+      "specialist_heads": false,
+      "test_time_augmentation": false
+    },
+    "timm_hf_repo_id": "timm/vit_7b_patch16_dinov3.lvd1689m",
+    "timm_model_name": "vit_7b_patch16_dinov3.lvd1689m",
+    "token_contract": {
+      "cls_position": "prefix token 0",
+      "hidden_size": 4096,
+      "patch_token_count": 256,
+      "prefix_token_count": 5,
+      "register_token_count": 4,
+      "register_tokens_excluded_from_every_patch_statistic": true,
+      "sequence_token_count": 261
+    },
+    "transformers_model_id": "facebook/dinov3-vit7b16-pretrain-lvd1689m"
+  },
+  "locked_contract_signature": "e58ab25748ae375018d00602f1e2c86cd6d174bc7453da28ff5b6d5f9ad7d808"
+}

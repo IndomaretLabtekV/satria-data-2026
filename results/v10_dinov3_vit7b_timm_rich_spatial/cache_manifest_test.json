@@ -1,0 +1,193 @@
+{
+  "cache_identity": {
+    "accelerate_version": "1.13.0",
+    "backbone_dtype": "float16",
+    "backend": "timm",
+    "branch_count": 17,
+    "branch_names": [
+      "block_m4_cls",
+      "block_m4_patch_mean",
+      "block_m3_cls",
+      "block_m3_patch_mean",
+      "block_m2_cls",
+      "block_m2_patch_mean",
+      "block_m1_cls",
+      "block_m1_patch_mean",
+      "final_patch_std",
+      "final_patch_max",
+      "final_top10_salient_mean",
+      "final_top25_salient_mean",
+      "final_top50_salient_mean",
+      "final_quadrant_top_left_mean",
+      "final_quadrant_top_right_mean",
+      "final_quadrant_bottom_left_mean",
+      "final_quadrant_bottom_right_mean"
+    ],
+    "cuda_version": "12.8",
+    "feature_storage_dtype": "float16",
+    "feature_view": "orig",
+    "fold_assignment_sha256": null,
+    "gpu_names": [
+      "Tesla T4",
+      "Tesla T4"
+    ],
+    "identity_scope": "frozen_backbone_features_only_no_head_hyperparameters",
+    "image_size": 256,
+    "labels_sha256": null,
+    "last_block_indices": [
+      36,
+      37,
+      38,
+      39
+    ],
+    "last_n_blocks": 4,
+    "model_repository": "timm/vit_7b_patch16_dinov3.lvd1689m",
+    "model_revision": "b40f6c827cb02b13c7a23a76cf598489bb0f94e5",
+    "ordered_image_ids_sha256": "ad33ddad16d3b8996896b6d43c6a5193532334a7413efe2e38dd5b17cc957886",
+    "per_token_normalization": "official pretrained DINOv3 final norm applied exactly once",
+    "pooling_compute_dtype": "float32",
+    "preflight_signature": "bb64b549e3b42ad8d1389109568eeae390aaa0e701b2e48a70a9557ce8e0947a",
+    "preprocess_signature": "f9f83661728d270736b581bf88e5497c57ac07a885fbf55c377aa75c5bddd6c0",
+    "qkv_bias_behavior": "timm disables qkv_bias because the original projection biases are all zero",
+    "raw_patch_tokens_stored": false,
+    "revision_marker": "v10_timm_rich_spatial_17branch_v1",
+    "rope_period_dtype_behavior": "timm float32 initialisation kept (original checkpoint stores bfloat16 periods)",
+    "row_count": 1458,
+    "saliency_definition": "final CLS to final true-patch cosine similarity",
+    "salient_top_k": [
+      26,
+      64,
+      128
+    ],
+    "schema_version": 1,
+    "split": "test",
+    "timm_model_name": "vit_7b_patch16_dinov3.lvd1689m",
+    "timm_version": "1.0.26",
+    "token_contract": {
+      "hidden_size": 4096,
+      "patch_token_count": 256,
+      "prefix_token_count": 5,
+      "register_token_count": 4,
+      "register_tokens_excluded": true,
+      "sequence_token_count": 261
+    },
+    "torch_version": "2.10.0+cu128"
+  },
+  "cache_signature": "f790abd24353fb59ac4606988867cb9eddf26cdbeba0f3ca7c76d6451653eb7d",
+  "complete": true,
+  "elapsed_seconds_this_session": 1.4941140620003353,
+  "feature_bytes": 203046912,
+  "feature_tensor_shape": [
+    1458,
+    17,
+    4096
+  ],
+  "gpu_memory": [
+    {
+      "allocated_gib": 6.305970668792725,
+      "device_id": 0,
+      "peak_allocated_gib": 6.783503532409668,
+      "peak_reserved_gib": 6.82421875,
+      "reserved_gib": 6.509765625
+    },
+    {
+      "allocated_gib": 6.2607574462890625,
+      "device_id": 1,
+      "peak_allocated_gib": 6.4040679931640625,
+      "peak_reserved_gib": 6.431640625,
+      "reserved_gib": 6.2734375
+    }
+  ],
+  "manual_test_labels_accessed": false,
+  "new_extraction_images_per_second": null,
+  "new_extraction_seconds": 0.0,
+  "revision_marker": "v10_timm_rich_spatial_17branch_v1",
+  "rows": 1458,
+  "rows_reused_this_session": 1458,
+  "rows_written_this_session": 0,
+  "schema_version": 1,
+  "shard_count": 6,
+  "shard_size": 256,
+  "shards": [
+    {
+      "elapsed_seconds": 0.14332657600061793,
+      "end": 256,
+      "estimated_remaining_hours": null,
+      "file_name": "test_000000_000256.pt",
+      "host_rss_gib": 7.115848541259766,
+      "new_extraction_images_per_second": null,
+      "rows": 256,
+      "shard_count": 6,
+      "shard_index": 0,
+      "start": 0,
+      "status": "reused"
+    },
+    {
+      "elapsed_seconds": 0.28061591400000907,
+      "end": 512,
+      "estimated_remaining_hours": null,
+      "file_name": "test_000256_000512.pt",
+      "host_rss_gib": 7.148075103759766,
+      "new_extraction_images_per_second": null,
+      "rows": 256,
+      "shard_count": 6,
+      "shard_index": 1,
+      "start": 256,
+      "status": "reused"
+    },
+    {
+      "elapsed_seconds": 0.41275841600054264,
+      "end": 768,
+      "estimated_remaining_hours": null,
+      "file_name": "test_000512_000768.pt",
+      "host_rss_gib": 7.164676666259766,
+      "new_extraction_images_per_second": null,
+      "rows": 256,
+      "shard_count": 6,
+      "shard_index": 2,
+      "start": 512,
+      "status": "reused"
+    },
+    {
+      "elapsed_seconds": 0.548240848000205,
+      "end": 1024,
+      "estimated_remaining_hours": null,
+      "file_name": "test_000768_001024.pt",
+      "host_rss_gib": 7.181278228759766,
+      "new_extraction_images_per_second": null,
+      "rows": 256,
+      "shard_count": 6,
+      "shard_index": 3,
+      "start": 768,
+      "status": "reused"
+    },
+    {
+      "elapsed_seconds": 0.6793515790004676,
+      "end": 1280,
+      "estimated_remaining_hours": null,
+      "file_name": "test_001024_001280.pt",
+      "host_rss_gib": 7.181278228759766,
+      "new_extraction_images_per_second": null,
+      "rows": 256,
+      "shard_count": 6,
+      "shard_index": 4,
+      "start": 1024,
+      "status": "reused"
+    },
+    {
+      "elapsed_seconds": 0.7556922020003185,
+      "end": 1458,
+      "estimated_remaining_hours": null,
+      "file_name": "test_001280_001458.pt",
+      "host_rss_gib": 7.181278228759766,
+      "new_extraction_images_per_second": null,
+      "rows": 178,
+      "shard_count": 6,
+      "shard_index": 5,
+      "start": 1280,
+      "status": "reused"
+    }
+  ],
+  "split": "test",
+  "test_images_accessed": true
+}

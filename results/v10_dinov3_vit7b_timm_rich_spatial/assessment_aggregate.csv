@@ -1,0 +1,2 @@
+candidate,rows,macro_f1,accuracy,log_loss,total_errors,ro_errors,electronic_errors,f1_electronic
+timm_control,21221,0.9902651575909283,0.9893972951321803,0.09218856587969554,225,187,14,0.9940138626339005

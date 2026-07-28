@@ -1,0 +1,272 @@
+{
+  "selection_decision": {
+    "additional_architectures_tuned_after_gate": false,
+    "adoption_gate_checks": {},
+    "assessed_candidates": [
+      "timm_control"
+    ],
+    "assessment_aggregate": {
+      "timm_control": {
+        "accuracy": 0.9893972951321803,
+        "candidate": "timm_control",
+        "confidence_summary": {
+          "all": {
+            "count": 21221,
+            "mean": 0.9305057724845223,
+            "median": 0.9416046067047564,
+            "q10": 0.8913361216652629,
+            "q90": 0.988099451753886,
+            "std": 0.06757120074933631
+          },
+          "correct": {
+            "count": 20996,
+            "mean": 0.9330282568623072,
+            "median": 0.9418838691862665,
+            "q10": 0.8947525936695331,
+            "q90": 0.9882199544594716,
+            "std": 0.061128577284109725
+          },
+          "errors": {
+            "count": 225,
+            "mean": 0.6951187413913259,
+            "median": 0.6968339197779702,
+            "q10": 0.4747188474818246,
+            "q90": 0.9088777771862464,
+            "std": 0.16105580260071853
+          }
+        },
+        "confusion_matrix": [
+          [
+            7908,
+            17,
+            74
+          ],
+          [
+            10,
+            3155,
+            4
+          ],
+          [
+            113,
+            7,
+            9933
+          ]
+        ],
+        "electronic_errors": 14,
+        "f1_electronic": 0.9940138626339005,
+        "f1_organic": 0.9901315789473685,
+        "f1_recyclable": 0.986650031191516,
+        "folds": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "log_loss": 0.09218856587969554,
+        "macro_f1": 0.9902651575909283,
+        "margin_summary": {
+          "all": {
+            "count": 21221,
+            "mean": 0.8808057935320347,
+            "median": 0.8968870949736183,
+            "q10": 0.821613170728524,
+            "q90": 0.9808517425283361,
+            "std": 0.11388340425224897
+          },
+          "correct": {
+            "count": 20996,
+            "mean": 0.8851180478426576,
+            "median": 0.8974287739712454,
+            "q10": 0.8272346896844152,
+            "q90": 0.9810758345721988,
+            "std": 0.10245711724181052
+          },
+          "errors": {
+            "count": 225,
+            "mean": 0.47840538683943806,
+            "median": 0.4766927958233216,
+            "q10": 0.07187069164961903,
+            "q90": 0.8512399873802815,
+            "std": 0.2828095470626689
+          }
+        },
+        "organic_to_recyclable": 113,
+        "per_class": {
+          "Electronic": {
+            "f1": 0.9940138626339005,
+            "precision": 0.9924504561182762,
+            "recall": 0.995582202587567,
+            "support": 3169
+          },
+          "Organic": {
+            "f1": 0.9901315789473685,
+            "precision": 0.9922085705723704,
+            "recall": 0.9880632646971054,
+            "support": 10053
+          },
+          "Recyclable": {
+            "f1": 0.986650031191516,
+            "precision": 0.9846843481509152,
+            "recall": 0.9886235779472434,
+            "support": 7999
+          }
+        },
+        "recyclable_to_organic": 74,
+        "ro_errors": 187,
+        "rows": 21221,
+        "total_errors": 225
+      }
+    },
+    "assessment_folds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "assessment_summary": {
+      "reason": "rich candidate was rejected at the development gate and never reached assessment"
+    },
+    "blending_used": false,
+    "cache_signature": "fb872b0a49b7d75c8c371d6e259c3a498e55baa2c034dbf14000938f8b7a7e21",
+    "data_contract_signature": "cd41e21bfdfa48215390403eb72acf669d1e0b1d9e1f443931ee6b506c4ef22c",
+    "development_fold": 0,
+    "development_gate_checks": {
+      "electronic_f1_stable": true,
+      "macro_f1_gain_at_least_threshold": false,
+      "no_row_order_or_fold_mismatch": true,
+      "predictions_and_probabilities_finite": true,
+      "ro_errors_decrease": false,
+      "single_model_contract_respected": true,
+      "total_errors_decrease": false
+    },
+    "generate_control_submission_if_rich_rejected": true,
+    "historical_reference_v9a": {
+      "adoption_recommendation": false,
+      "assessment_fold_macro_f1_std": 0.000720562511214698,
+      "best_assessment_macro_f1": 0.9904393207699855,
+      "best_recipe_type": "pairwise blend, forbidden by the V10 single-model contract",
+      "control_assessment_macro_f1": 0.9903007998213612,
+      "folds_won_against_control": 2,
+      "macro_f1_gain_over_control": 0.00013852094862432107,
+      "status": "historical rejected result from results/v9a_v7_cached_head_zoo/final_train_only_decision.json"
+    },
+    "locked_contract_signature": "e58ab25748ae375018d00602f1e2c86cd6d174bc7453da28ff5b6d5f9ad7d808",
+    "manual_test_labels_accessed": false,
+    "out_of_fold_metrics": {
+      "timm_control": {
+        "accuracy": 0.9891808346213292,
+        "confidence_summary": {
+          "all": {
+            "count": 26527,
+            "mean": 0.9287263974686767,
+            "median": 0.9396680338603121,
+            "q10": 0.8889676686077856,
+            "q90": 0.9877924650000627,
+            "std": 0.06851977235629048
+          },
+          "correct": {
+            "count": 26240,
+            "mean": 0.9313636244884882,
+            "median": 0.9400194954468182,
+            "q10": 0.8926718287195786,
+            "q90": 0.9879345941493229,
+            "std": 0.06184675205836064
+          },
+          "errors": {
+            "count": 287,
+            "mean": 0.687608498514502,
+            "median": 0.6834560806360283,
+            "q10": 0.469948829281062,
+            "q90": 0.9050792732272451,
+            "std": 0.15955709425267614
+          }
+        },
+        "confusion_matrix": [
+          [
+            9884,
+            19,
+            96
+          ],
+          [
+            12,
+            3945,
+            4
+          ],
+          [
+            146,
+            10,
+            12411
+          ]
+        ],
+        "electronic_errors": 16,
+        "f1_electronic": 0.994328922495274,
+        "f1_organic": 0.989791849429779,
+        "f1_recyclable": 0.9863779252532309,
+        "log_loss": 0.09427644916707636,
+        "macro_f1": 0.9901662323927614,
+        "margin_summary": {
+          "all": {
+            "count": 26527,
+            "mean": 0.8776096620644933,
+            "median": 0.89351006123984,
+            "q10": 0.8171024425422923,
+            "q90": 0.9802588370351694,
+            "std": 0.11531852436102427
+          },
+          "correct": {
+            "count": 26240,
+            "mean": 0.8820857944067388,
+            "median": 0.894105037487589,
+            "q10": 0.8219624190907587,
+            "q90": 0.9804736258173458,
+            "std": 0.10362557319911263
+          },
+          "errors": {
+            "count": 287,
+            "mean": 0.4683632764877559,
+            "median": 0.46582301317074537,
+            "q10": 0.062015820623607956,
+            "q90": 0.8408242471726639,
+            "std": 0.27937509562014473
+          }
+        },
+        "organic_to_recyclable": 146,
+        "per_class": {
+          "Electronic": {
+            "f1": 0.994328922495274,
+            "precision": 0.9927025666834424,
+            "recall": 0.9959606160060591,
+            "support": 3961
+          },
+          "Organic": {
+            "f1": 0.989791849429779,
+            "precision": 0.992007033810247,
+            "recall": 0.9875865361661494,
+            "support": 12567
+          },
+          "Recyclable": {
+            "f1": 0.9863779252532309,
+            "precision": 0.9842660824536945,
+            "recall": 0.9884988498849885,
+            "support": 9999
+          }
+        },
+        "recyclable_to_organic": 96,
+        "ro_errors": 242,
+        "rows": 26527,
+        "total_errors": 287
+      }
+    },
+    "preflight_signature": "bb64b549e3b42ad8d1389109568eeae390aaa0e701b2e48a70a9557ce8e0947a",
+    "recipe_signature": "1ce68a290a451f213a2a0beaff5ec08f354aa80ac031f3d96d892a44894a42bd",
+    "revision_marker": "v10_timm_rich_spatial_17branch_v1",
+    "rich_adopted": false,
+    "rich_passed_development_gate": false,
+    "schema_version": 1,
+    "selected_candidate": "timm_control",
+    "selection_basis": "train_only_cross_validation",
+    "selection_reason": "rich_spatial_fusion did not clear a locked gate; timm_control is the train-only fallback recipe",
+    "test_images_accessed": false
+  },
+  "selection_decision_signature": "0dec224a20976d13b918af4ef68ce823fdb068c5defe2fbe51ffe75662082f30"
+}

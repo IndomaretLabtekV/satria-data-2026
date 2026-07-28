@@ -1,0 +1,47 @@
+{
+  "assessment_folds": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "development_fold": 0,
+  "fold_assignment_sha256": "0a06976e5dc3cdb0b3f1f5043ff033bf95a40dd2b0cb82154bbf34d701ee305c",
+  "fold_class_counts": {
+    "0": {
+      "0": 2000,
+      "1": 792,
+      "2": 2514
+    },
+    "1": {
+      "0": 2000,
+      "1": 792,
+      "2": 2514
+    },
+    "2": {
+      "0": 2000,
+      "1": 792,
+      "2": 2513
+    },
+    "3": {
+      "0": 2000,
+      "1": 792,
+      "2": 2513
+    },
+    "4": {
+      "0": 1999,
+      "1": 793,
+      "2": 2513
+    }
+  },
+  "fold_definition": {
+    "implementation": "sklearn.model_selection.StratifiedKFold",
+    "n_splits": 5,
+    "ordering": "relative official image_id ascending before the split",
+    "random_state": 42,
+    "shuffle": true
+  },
+  "revision_marker": "v10_timm_rich_spatial_17branch_v1",
+  "schema_version": 1,
+  "validation_labels": "always the official original labels; no drop and no relabel"
+}

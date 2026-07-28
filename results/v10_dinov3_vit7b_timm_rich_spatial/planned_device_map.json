@@ -1,0 +1,164 @@
+{
+  "block_attribute": "blocks",
+  "budget_rows": [
+    {
+      "device": "cuda:0",
+      "device_free_gib": 14.45977783203125,
+      "device_total_gib": 14.56219482421875,
+      "planned_static_gib": 6.2577362060546875,
+      "projected_headroom_gib": 8.304458618164062
+    },
+    {
+      "device": "cuda:1",
+      "device_free_gib": 14.45977783203125,
+      "device_total_gib": 14.56219482421875,
+      "planned_static_gib": 6.2518463134765625,
+      "projected_headroom_gib": 8.310348510742188
+    }
+  ],
+  "checkpoint_files": [
+    "/root/.cache/huggingface/hub/models--timm--vit_7b_patch16_dinov3.lvd1689m/snapshots/b40f6c827cb02b13c7a23a76cf598489bb0f94e5/model.safetensors"
+  ],
+  "checkpoint_total_gib": 25.01922046393156,
+  "contiguous_split_index": 20,
+  "cuda_0_block_range": [
+    0,
+    19
+  ],
+  "cuda_1_block_range": [
+    20,
+    39
+  ],
+  "device_map": {
+    "blocks.0": "cuda:0",
+    "blocks.1": "cuda:0",
+    "blocks.10": "cuda:0",
+    "blocks.11": "cuda:0",
+    "blocks.12": "cuda:0",
+    "blocks.13": "cuda:0",
+    "blocks.14": "cuda:0",
+    "blocks.15": "cuda:0",
+    "blocks.16": "cuda:0",
+    "blocks.17": "cuda:0",
+    "blocks.18": "cuda:0",
+    "blocks.19": "cuda:0",
+    "blocks.2": "cuda:0",
+    "blocks.20": "cuda:1",
+    "blocks.21": "cuda:1",
+    "blocks.22": "cuda:1",
+    "blocks.23": "cuda:1",
+    "blocks.24": "cuda:1",
+    "blocks.25": "cuda:1",
+    "blocks.26": "cuda:1",
+    "blocks.27": "cuda:1",
+    "blocks.28": "cuda:1",
+    "blocks.29": "cuda:1",
+    "blocks.3": "cuda:0",
+    "blocks.30": "cuda:1",
+    "blocks.31": "cuda:1",
+    "blocks.32": "cuda:1",
+    "blocks.33": "cuda:1",
+    "blocks.34": "cuda:1",
+    "blocks.35": "cuda:1",
+    "blocks.36": "cuda:1",
+    "blocks.37": "cuda:1",
+    "blocks.38": "cuda:1",
+    "blocks.39": "cuda:1",
+    "blocks.4": "cuda:0",
+    "blocks.5": "cuda:0",
+    "blocks.6": "cuda:0",
+    "blocks.7": "cuda:0",
+    "blocks.8": "cuda:0",
+    "blocks.9": "cuda:0",
+    "cls_token": "cuda:0",
+    "fc_norm": "cuda:1",
+    "head": "cuda:1",
+    "head_drop": "cuda:1",
+    "norm": "cuda:1",
+    "norm_pre": "cuda:0",
+    "patch_embed": "cuda:0",
+    "pos_drop": "cuda:0",
+    "reg_token": "cuda:0",
+    "rope": "cuda:0"
+  },
+  "estimated_static_bytes": {
+    "cuda:0": 6719193088,
+    "cuda:1": 6712868864
+  },
+  "estimated_static_gib": {
+    "cuda:0": 6.2577362060546875,
+    "cuda:1": 6.2518463134765625
+  },
+  "estimated_total_static_gib": 12.50958251953125,
+  "input_side_modules": [
+    "patch_embed",
+    "pos_drop",
+    "rope",
+    "norm_pre"
+  ],
+  "load_report": {
+    "missing_keys": [],
+    "tensors_loaded": 606,
+    "unexpected_keys": []
+  },
+  "memory_after_load": [
+    {
+      "allocated_gib": 6.257736682891846,
+      "device_id": 0,
+      "free_gib": 8.17266845703125,
+      "label": "after_checkpoint_load",
+      "peak_allocated_gib": 6.257736682891846,
+      "reserved_gib": 6.271484375,
+      "total_gib": 14.56219482421875
+    },
+    {
+      "allocated_gib": 6.2518463134765625,
+      "device_id": 1,
+      "free_gib": 8.19219970703125,
+      "label": "after_checkpoint_load",
+      "peak_allocated_gib": 6.2518463134765625,
+      "reserved_gib": 6.251953125,
+      "total_gib": 14.56219482421875
+    }
+  ],
+  "memory_before_load": [
+    {
+      "allocated_gib": 0.0,
+      "device_id": 0,
+      "free_gib": 14.45977783203125,
+      "label": "before_checkpoint_load",
+      "peak_allocated_gib": 0.0,
+      "reserved_gib": 0.0,
+      "total_gib": 14.56219482421875
+    },
+    {
+      "allocated_gib": 0.0,
+      "device_id": 1,
+      "free_gib": 14.45977783203125,
+      "label": "before_checkpoint_load",
+      "peak_allocated_gib": 0.0,
+      "reserved_gib": 0.0,
+      "total_gib": 14.56219482421875
+    }
+  ],
+  "memory_kind": "estimated static parameter and persistent-buffer memory, not measured CUDA allocation",
+  "min_runtime_headroom_gib": 3.0,
+  "no_split_module_classes": [
+    "EvaBlock"
+  ],
+  "output_side_modules": [
+    "norm",
+    "fc_norm",
+    "head_drop",
+    "head"
+  ],
+  "per_block_static_gib": 0.312591552734375,
+  "root_tensor_names": [
+    "cls_token",
+    "reg_token"
+  ],
+  "static_memory_limit_gib": 10.5,
+  "strategy": "explicit_contiguous_two_gpu_streamed",
+  "target_dtype": "float16",
+  "transformer_block_count": 40
+}

@@ -1,0 +1,116 @@
+{
+  "data_contract": {
+    "canonical_data": "official raw labeled train images only",
+    "class_dir_to_label": {
+      "0_Recyclable": 0,
+      "1_Electronic": 1,
+      "2_Organic": 2
+    },
+    "dropped_or_relabeled_rows": 0,
+    "external_labeled_images_used": false,
+    "fold_signature": {
+      "assessment_folds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "development_fold": 0,
+      "fold_assignment_sha256": "0a06976e5dc3cdb0b3f1f5043ff033bf95a40dd2b0cb82154bbf34d701ee305c",
+      "fold_class_counts": {
+        "0": {
+          "0": 2000,
+          "1": 792,
+          "2": 2514
+        },
+        "1": {
+          "0": 2000,
+          "1": 792,
+          "2": 2514
+        },
+        "2": {
+          "0": 2000,
+          "1": 792,
+          "2": 2513
+        },
+        "3": {
+          "0": 2000,
+          "1": 792,
+          "2": 2513
+        },
+        "4": {
+          "0": 1999,
+          "1": 793,
+          "2": 2513
+        }
+      },
+      "fold_definition": {
+        "implementation": "sklearn.model_selection.StratifiedKFold",
+        "n_splits": 5,
+        "ordering": "relative official image_id ascending before the split",
+        "random_state": 42,
+        "shuffle": true
+      },
+      "revision_marker": "v10_timm_rich_spatial_17branch_v1",
+      "schema_version": 1,
+      "validation_labels": "always the official original labels; no drop and no relabel"
+    },
+    "labels_sha256": "719d36e9918b1fd09711c06d1b259fca08ca6eb4d973de1388d5e3ddecf22d35",
+    "manual_test_labels_accessed": false,
+    "metadata_used_as_feature": false,
+    "official_class_codes": {
+      "0": "Recyclable",
+      "1": "Electronic",
+      "2": "Organic"
+    },
+    "ordered_image_ids_sha256": "210f8f14797be49bad962e81f1da660a257ec28ee2136b54a7516950a66cb2e8",
+    "preprocess_config": {
+      "antialias": true,
+      "augmentation": "none",
+      "center_crop": false,
+      "deviation_from_timm_default": "timm resolves bicubic interpolation with crop_pct 1.0; V10 deliberately keeps the V7 bilinear direct-square resize so the comparison isolates representation, not geometry",
+      "documented_future_ablation": "model-native bicubic preprocessing, not implemented as a candidate here",
+      "feature_view": "orig",
+      "image_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "image_std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "interpolation": "bilinear",
+      "large_image_guard": {
+        "downscaled_to_max_side": 1024,
+        "max_source_side": 4096,
+        "megapixel_threshold": 8000000,
+        "purpose": "decoder memory safety only, never a predictive feature",
+        "resample": "LANCZOS"
+      },
+      "letterbox": false,
+      "open": "PIL, EXIF transpose, RGB conversion",
+      "rescale_factor": 0.00392156862745098,
+      "resize_geometry": "direct_square",
+      "spatial_override": {
+        "height": 256,
+        "width": 256
+      }
+    },
+    "preprocess_signature": "f9f83661728d270736b581bf88e5497c57ac07a885fbf55c377aa75c5bddd6c0",
+    "previous_feature_caches_reused": "only when the complete V10 cache signature matches exactly",
+    "raw_class_counts": {
+      "0": 9999,
+      "1": 3961,
+      "2": 12567
+    },
+    "raw_data_sha256": "73bd0d3c17e75e7c0f10e4324ffa9ef81f6224cd2b3ba0e53e9f2aea7fde3212",
+    "raw_train_root": "/kaggle/input/datasets/riantamaputra/bdc-2026-waste-classification-dataset/train",
+    "revision_marker": "v10_timm_rich_spatial_17branch_v1",
+    "row_count": 26527,
+    "schema_version": 1,
+    "test_images_accessed": false
+  },
+  "data_contract_signature": "cd41e21bfdfa48215390403eb72acf669d1e0b1d9e1f443931ee6b506c4ef22c"
+}
