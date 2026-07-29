@@ -1,0 +1,112 @@
+SESSION PROGRESS — BDC Satria Data 2026
+Ditulis: 29 Juli 2026
+Deadline: 30 Juli 2026, 16:00 WIB
+Submission tersisa: 1 dari 3
+
+===============================================================================
+STATE SAAT INI
+===============================================================================
+Champion         : V10 `timm_control`, five-fold OOF Macro F1 0.9901662323927614
+                   287 error, 242 R/O, Electronic F1 0.994328922495274
+                   checkpoint: results/v10_dinov3_vit7b_timm_rich_spatial/final_head.pt
+Sedang menunggu  : user menjalankan V13 di Kaggle T4 x2
+Notebook V13     : scripts/v13-dinov3-vit7b-model-native-resampling.ipynb
+                   status = READY, BELUM PERNAH DIJALANKAN oleh siapa pun
+
+===============================================================================
+EKSPERIMEN YANG SEDANG BERJALAN — V13
+===============================================================================
+Hipotesis   : resize bilinear V7/V10 adalah mismatch terhadap prapemrosesan
+              pretraining DINOv3 (timm me-resolve bicubic). 95,2% citra train
+              di-upsample ke 256x256, dan pada upsampling antialias tidak
+              berpengaruh, jadi selisih bilinear vs bicubic murni selisih kernel.
+              Bilinear membuang frekuensi tinggi = tekstur. Batas R/O adalah
+              keputusan tekstur, dan 84% error ada di sana.
+
+Perubahan   : SATU. InterpolationMode.BILINEAR -> BICUBIC.
+              Geometri (direct-square 256), antialias, mean/std, readout,
+              head, optimizer, fold, dan seed semuanya identik dengan V10.
+
+Desain      : dua varian diekstraksi di sesi yang sama pada backbone yang sama
+              1. bilinear_v10_control  (dijalankan lebih dulu, sengaja)
+              2. bicubic_model_native
+              Kontrol berfungsi ganda sebagai uji regresi pipeline terhadap
+              angka champion. Ini memperbaiki cacat perbandingan CONTEXT §13.5.
+
+Runtime     : ± 4,5 jam total (2 x 1,9 jam ekstraksi + head + test + submission)
+              Cache resumable dan atomik; sesi putus bisa dilanjutkan.
+
+Output      : SATU submission tervalidasi apa pun hasilnya.
+              bicubic lolos gate -> submission dari bicubic
+              bicubic gagal gate -> submission dari kontrol (= resep V10)
+
+===============================================================================
+GATE YANG DIKUNCI (sudah ada di dalam notebook, tidak perlu dihitung manual)
+===============================================================================
+0. integritas pipeline : kontrol in-session mereproduksi 0.9901662323927614
+                         dalam +/- 0.0010   <- dicek PALING DULU
+1. gain OOF Macro F1   >= +0.0003
+2. total error OOF     turun
+3. error R/O OOF       turun
+4. menang              >= 3 dari 4 fold penilaian (fold 1-4)
+5. Electronic F1 turun <= 0.0005
+6. konsentrasi gain    <= 75% dari satu fold
+7. tanda gain konsisten pada seed 42 / 314 / 2026
+8. tidak ada akses test selama seleksi
+
+Cek tambahan (bukan gate, tapi wajib dibaca):
+  - `gain exceeds 2x seed noise` — kalau False, gain lebih kecil dari deraunya
+    sendiri; jangan klaim menang walaupun gate lolos.
+  - `errors on upsampled` harus turun lebih banyak daripada `errors on
+    native-res`. Kalau tidak, mekanismenya salah.
+
+===============================================================================
+LANGKAH BERIKUTNYA
+===============================================================================
+[ ] 1. User isi TEAM_NAME di sel konfigurasi V13.
+[ ] 2. User jalankan V13 di Kaggle (GPU T4 x2, internet ON, Secret HF_TOKEN ada).
+[ ] 3. User salin "V13 RESULT BLOCK" dari sel terakhir dan laporkan balik.
+[ ] 4. Baru setelah angka itu ada: tambahkan baris hasil ke ledger CONTEXT.md §5
+       dan putuskan submission terakhir.
+
+JANGAN merancang eksperimen susulan sebelum angka V13 masuk.
+
+===============================================================================
+KEPUTUSAN YANG SUDAH DIAMBIL SESI INI (jangan dibongkar ulang)
+===============================================================================
+- V12 (ViT-L LoRA @320) TIDAK dijalankan. Dua alasan, keduanya berdiri sendiri:
+  a) notebooknya membuat submission dari rata-rata probabilitas 5 fold
+     (`average = normalize_probabilities(np.mean(fold_probabilities, axis=0))`
+      di §17) — itu fold ensembling, dilarang single-model contract;
+  b) 5 fold butuh ± 10-20 jam di T4 x2, sedangkan gate menuntut menang >= 3
+     dari 4 confirmation fold. Screen fold 0 saja tidak pernah cukup untuk
+     adopsi, jadi menjalankan V12 tidak bisa mengubah isi submission terakhir.
+  Notebook tetap disimpan untuk kompetisi berikutnya.
+
+- V11B label audit dan grouped validation TIDAK didahulukan. V9 sudah menguji
+  drop dan relabel secara empiris; keduanya MENURUNKAN Macro F1. Grouped
+  validation adalah koreksi pengukuran yang menurunkan angka dan tidak
+  mengubah model. Dengan 1 submission tersisa, jam GPU lebih baik dipakai
+  untuk kandidat yang bisa mengubah hasil.
+
+- V12B (geometri rectangular) melemah: 95,2% citra sudah di-upsample pada 256,
+  jadi menaikkan resolusi menambah token tanpa menambah informasi.
+
+===============================================================================
+JANGAN DIHAPUS
+===============================================================================
+- v7_dinov3_vit7b_frozen_raw/feature_cache/shards   (104 shard, cache V7)
+- results/v10_dinov3_vit7b_timm_rich_spatial/final_head.pt
+- cache V13 di /kaggle/working/.../feature_cache/ — simpan sebagai Kaggle
+  Dataset kalau sempat; kalau bicubic menang, itu dasar semua eksperimen
+  berikutnya dan menghemat 1,9 jam ekstraksi.
+
+===============================================================================
+KONTEKS LEADERBOARD (untuk membaca hasil secara jujur)
+===============================================================================
+Skor hampir linier terhadap jumlah error pada 1.458 citra: 100 - 0,0538 * k.
+  rank 1-3 = 0 error | rank 4-5 = 1 | rank 6 = 2 | rank 15 = 5 | rank 20 = 7
+Error rate OOF champion 1,082% -> proyeksi ± 16 error di test.
+Top-20 menuntut ± 0,48%, yaitu separuh error saat ini. Tidak ada kandidat
+tersisa yang realistis mencapai itu dalam < 1,5 hari. Tujuan yang jujur untuk
+submission terakhir: model tunggal terkuat yang lolos gate, bukan 0,997.
