@@ -1,7 +1,0 @@
-experiment,scope,macro_f1,protocol_note
-v5 ViT-L project reference,fold 0,0.985022,project reference; prior resolution/precision/views/seeds differ
-v6 ViT-H+ project reference,fold 0,0.9851880585732143,384px FP32 final-layer project reference; not causal
-v7 ViT-7B baseline_mlp_final,fold 0,0.987817584442138,native 256px FP16; official pretrained final LayerNorm per token before final-block CLS/true-patch pooling
-v5 ViT-L project reference,assessment folds 1-4,0.986432,project reference; prior views/seeds differ
-v7 ViT-7B baseline_mlp_final,assessment folds 1-4,0.9891895283555739,native 256px FP16 frozen assessment; official pretrained final LayerNorm per token before final-block CLS/true-patch pooling
-v7 ViT-7B selected regularized_mlp_final,assessment folds 1-4,0.990190599402788,architecture fixed after fold-0 selection; official-final-normed cached readout

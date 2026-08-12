@@ -1,5 +1,49 @@
-# Dataset
+# Data and generated artifacts
 data/
+results/
+artifacts/
+outputs/
+cache/
+checkpoints/
+wandb/
 
-# Prompt
-PROMPT.md
+# Model / feature files
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.npy
+*.npz
+*.pkl
+*.joblib
+
+# Competition outputs
+submission*.csv
+oof*.csv
+predictions*.csv
+
+# Secrets and local environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+
+# Python / notebooks
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Archives
+*.zip
+*.tar
+*.tar.gz

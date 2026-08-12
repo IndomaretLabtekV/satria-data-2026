@@ -1,3 +1,0 @@
-row_index,image_id,label,fold,control_prediction,candidate_prediction,control_confidence,candidate_confidence,control_margin,candidate_margin,status,manual_review_candidate,candidate
-17615,2_Organic/O_1978.jpg,2,0,0,0,0.9309652218551778,0.9369072575953087,0.8865523638960486,0.8924943996361795,unchanged_error,True,ro_specialist_full
-22924,2_Organic/O_6757.jpg,2,0,0,0,0.9183792276744657,0.9172100074268517,0.8586271932124557,0.8574579729648417,unchanged_error,True,ro_specialist_full
